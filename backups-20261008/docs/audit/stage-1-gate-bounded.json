@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-24T05:51:07.956Z",
+  "scope": "AUDIT_ONLY_NOT_V2_ACCEPTANCE",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 14558,
+      "output_tokens": 42
+    },
+    "answers": {
+      "stage1": {
+        "type": "choice",
+        "choice": "FAIL",
+        "confidence": 0.32,
+        "probabilities": {
+          "PASS": 0.07,
+          "FAIL": 0.55,
+          "UNVERIFIED": 0.38
+        }
+      }
+    },
+    "helper": {}
+  },
+  "authority": "NONE_HISTORICAL_TYPESAFE_CLASSIFIER",
+  "supersededBy": "services/jev/auditor",
+  "notice": "This is not a JEV Auditor acceptance receipt. Do not use it to gate or approve migration."
+}

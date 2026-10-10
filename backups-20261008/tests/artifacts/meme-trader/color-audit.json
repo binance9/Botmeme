@@ -1,0 +1,304 @@
+{
+  "reference_size": [
+    1536,
+    1024
+  ],
+  "render_size": [
+    1536,
+    1024
+  ],
+  "scope": "Median RGB in 12 fixed blank surface regions only. Not full-image equality.",
+  "regions": [
+    {
+      "name": "sidebar",
+      "box": [
+        70,
+        480,
+        170,
+        580
+      ],
+      "reference_rgb": [
+        17,
+        25,
+        34
+      ],
+      "render_rgb": [
+        18,
+        26,
+        35
+      ],
+      "absolute_rgb_delta": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "page",
+      "box": [
+        554,
+        349,
+        870,
+        356
+      ],
+      "reference_rgb": [
+        250,
+        251,
+        253
+      ],
+      "render_rgb": [
+        249,
+        250,
+        252
+      ],
+      "absolute_rgb_delta": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "panel",
+      "box": [
+        270,
+        445,
+        650,
+        451
+      ],
+      "reference_rgb": [
+        254,
+        254,
+        254
+      ],
+      "render_rgb": [
+        254,
+        254,
+        254
+      ],
+      "absolute_rgb_delta": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "JEV",
+      "box": [
+        480,
+        303,
+        526,
+        308
+      ],
+      "reference_rgb": [
+        241,
+        252,
+        248
+      ],
+      "render_rgb": [
+        242,
+        252,
+        248
+      ],
+      "absolute_rgb_delta": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "CODEX 1",
+      "box": [
+        805,
+        302,
+        850,
+        308
+      ],
+      "reference_rgb": [
+        242,
+        250,
+        254
+      ],
+      "render_rgb": [
+        242,
+        250,
+        254
+      ],
+      "absolute_rgb_delta": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "CODEX 2",
+      "box": [
+        1120,
+        303,
+        1170,
+        309
+      ],
+      "reference_rgb": [
+        247,
+        246,
+        254
+      ],
+      "render_rgb": [
+        247,
+        246,
+        254
+      ],
+      "absolute_rgb_delta": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "CODEX 3",
+      "box": [
+        1430,
+        303,
+        1490,
+        309
+      ],
+      "reference_rgb": [
+        254,
+        249,
+        248
+      ],
+      "render_rgb": [
+        254,
+        250,
+        248
+      ],
+      "absolute_rgb_delta": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "metric",
+      "box": [
+        1030,
+        485,
+        1080,
+        490
+      ],
+      "reference_rgb": [
+        247,
+        248,
+        251
+      ],
+      "render_rgb": [
+        247,
+        249,
+        251
+      ],
+      "absolute_rgb_delta": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "JEV track",
+      "box": [
+        470,
+        229,
+        480,
+        235
+      ],
+      "reference_rgb": [
+        230,
+        241,
+        239
+      ],
+      "render_rgb": [
+        230,
+        242,
+        239
+      ],
+      "absolute_rgb_delta": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "CODEX 1 track",
+      "box": [
+        795,
+        229,
+        805,
+        235
+      ],
+      "reference_rgb": [
+        231,
+        238,
+        244
+      ],
+      "render_rgb": [
+        232,
+        239,
+        245
+      ],
+      "absolute_rgb_delta": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "CODEX 2 track",
+      "box": [
+        1120,
+        229,
+        1130,
+        235
+      ],
+      "reference_rgb": [
+        234,
+        234,
+        247
+      ],
+      "render_rgb": [
+        233,
+        232,
+        247
+      ],
+      "absolute_rgb_delta": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "name": "CODEX 3 track",
+      "box": [
+        1440,
+        229,
+        1450,
+        235
+      ],
+      "reference_rgb": [
+        234,
+        234,
+        235
+      ],
+      "render_rgb": [
+        233,
+        233,
+        235
+      ],
+      "absolute_rgb_delta": [
+        1,
+        1,
+        0
+      ]
+    }
+  ],
+  "max_channel_delta": 2,
+  "exact_sample_matches": 3,
+  "whole_image_identical": false
+}

@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-24T05:48:23.836Z",
+  "file": "src/vault.mjs",
+  "sha256": "59caf1673cd6bb14847ff2b61a4e626ab0927ed4f9bdf818c83b7ce6b69b94bb",
+  "recommendation": "REWRITE",
+  "scope": "STATIC_MIGRATION_RECOMMENDATION_ONLY",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 3151,
+      "output_tokens": 41
+    },
+    "answers": {
+      "audit": {
+        "type": "choice",
+        "choice": "PASS",
+        "confidence": 0.13,
+        "probabilities": {
+          "UNVERIFIED": 0.32,
+          "PASS": 0.42,
+          "FAIL": 0.26
+        }
+      }
+    },
+    "helper": {}
+  }
+}

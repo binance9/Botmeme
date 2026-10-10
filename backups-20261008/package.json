@@ -1,0 +1,29 @@
+{
+  "name": "botmeme",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node scripts/serve-meme-trader.cjs",
+    "test": "node --test tests/state-layer.test.cjs",
+    "test:runtime": "node --test tests/runtime-contracts.test.cjs tests/runtime-events.test.cjs tests/runtime-trace.test.cjs tests/runtime-recovery.test.cjs tests/hunter.test.cjs tests/market-data.test.cjs tests/state-layer.test.cjs",
+    "test:ui": "node tests/run-ui.cjs",
+    "test:auditor": "node --test tests/auditor.test.cjs tests/auditor-evidence.test.cjs tests/auditor-v2.test.cjs tests/auditor-cli.test.cjs",
+    "audit:jev": "node scripts/jev-audit.cjs",
+    "test:jev-decision": "node --test tests/jev-decision.test.cjs",
+    "test:safety": "node --test tests/safety-gate.test.cjs tests/exit-manager.test.cjs tests/jev-decision-service.test.cjs tests/jev-decision.test.cjs",
+    "test:ui-merge": "node --test tests/ui-merge.test.cjs"
+  },
+  "devDependencies": {
+    "electron": "31.7.7",
+    "esbuild": "0.28.2"
+  },
+  "allowScripts": {
+    "electron@31.7.7": true
+  },
+  "dependencies": {
+    "@okxconnect/universal-provider": "1.9.1",
+    "@solana/web3.js": "^1.98.4",
+    "acorn": "8.18.0",
+    "qrcode": "1.5.4"
+  }
+}

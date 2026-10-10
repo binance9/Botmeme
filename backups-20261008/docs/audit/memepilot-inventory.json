@@ -1,0 +1,1013 @@
+{
+  "at": "2026-09-24T05:46:23.371Z",
+  "root": "C:/botcode 1/MemePilot",
+  "readOnly": true,
+  "entries": [
+    {
+      "file": ".env.example",
+      "coverage": "PRIVATE_CONFIG_OR_RUNTIME_DATA_NOT_TRANSMITTED"
+    },
+    {
+      "file": ".gitignore",
+      "bytes": 47,
+      "sha256": "88785dc1d5caba1f0a66544d5c9b541962c7ff10ffa2741f67c4937d27f6bd16",
+      "coverage": "HASH_ONLY_ASSET_OR_GENERATED"
+    },
+    {
+      "file": ".run-token.txt",
+      "coverage": "PRIVATE_CONFIG_OR_RUNTIME_DATA_NOT_TRANSMITTED"
+    },
+    {
+      "file": "ARCHITECTURE.md",
+      "bytes": 2741,
+      "sha256": "edb280a275a6ab9ac919689f7d67aedc9cf97f579b5870975fefa0fea013b8db",
+      "coverage": "SOURCE_READ",
+      "lines": 42,
+      "imports": []
+    },
+    {
+      "file": "backups/",
+      "coverage": "EXCLUDED_ARCHIVE_DEPENDENCY_OR_PRIVATE_DATA"
+    },
+    {
+      "file": "data/",
+      "coverage": "EXCLUDED_ARCHIVE_DEPENDENCY_OR_PRIVATE_DATA"
+    },
+    {
+      "file": "docs/DATA_SOURCES.md",
+      "bytes": 12533,
+      "sha256": "1d1f097ec14df70f053df249ac8377a5dd05b875bdf2045e35c94eab7c2a80dd",
+      "coverage": "SOURCE_READ",
+      "lines": 82,
+      "imports": []
+    },
+    {
+      "file": "docs/ORG_CHART.md",
+      "bytes": 2741,
+      "sha256": "edb280a275a6ab9ac919689f7d67aedc9cf97f579b5870975fefa0fea013b8db",
+      "coverage": "SOURCE_READ",
+      "lines": 42,
+      "imports": []
+    },
+    {
+      "file": "docs/PAPER_PROFILE.md",
+      "bytes": 3293,
+      "sha256": "bbb2020a97cac2e3dbbfee3fe04ee6c02a47cd93d4c1a8d5db5f9625b63ef2e9",
+      "coverage": "SOURCE_READ",
+      "lines": 17,
+      "imports": []
+    },
+    {
+      "file": "docs/RESEARCH_BOT_2026_09_23.md",
+      "bytes": 7534,
+      "sha256": "081d1d2a3799de607419571dab3f5c0c6c636a84dea758db017f530ab9d2e0df",
+      "coverage": "SOURCE_READ",
+      "lines": 66,
+      "imports": []
+    },
+    {
+      "file": "docs/RUNTIME_TRACE.md",
+      "bytes": 4105,
+      "sha256": "3564f4208a50b872bfc52c89287cb6fd9911eefe9dcb36ff1c0737ffcba2425f",
+      "coverage": "SOURCE_READ",
+      "lines": 35,
+      "imports": []
+    },
+    {
+      "file": "docs/WALLET_CONNECTION.md",
+      "bytes": 3736,
+      "sha256": "63336f4ce78e537c46197cec1700f1c3bcd0c9333cd0e0e316ebf81b5cda293d",
+      "coverage": "SOURCE_READ",
+      "lines": 33,
+      "imports": []
+    },
+    {
+      "file": "evidence/",
+      "coverage": "EXCLUDED_ARCHIVE_DEPENDENCY_OR_PRIVATE_DATA"
+    },
+    {
+      "file": "node_modules/",
+      "coverage": "EXCLUDED_ARCHIVE_DEPENDENCY_OR_PRIVATE_DATA"
+    },
+    {
+      "file": "package-lock.json",
+      "bytes": 104178,
+      "sha256": "8791058fe8b6f5760531790cd46fe59ed802880b2f08da29ca5148bfbeeef1cb",
+      "coverage": "HASH_ONLY_ASSET_OR_GENERATED"
+    },
+    {
+      "file": "package.json",
+      "bytes": 424,
+      "sha256": "f420eae8fad4dfe7ef28dd8e01cf2e730905338c6fe039ee84254192eb29ff53",
+      "coverage": "SOURCE_READ",
+      "lines": 1,
+      "imports": []
+    },
+    {
+      "file": "PROJECT_MAP.md",
+      "bytes": 17638,
+      "sha256": "2a1279033d2f63dd4c1904467f4aa71a89cf7ebaf06886f633c6c1a3ad756889",
+      "coverage": "SOURCE_READ",
+      "lines": 59,
+      "imports": []
+    },
+    {
+      "file": "public-desk/app.js",
+      "bytes": 10592,
+      "sha256": "2e0f85ba153beb5a097265a4bae2fa91acf37f2f5983eb63a92f99e605eca13c",
+      "coverage": "SOURCE_READ",
+      "lines": 122,
+      "imports": []
+    },
+    {
+      "file": "public-desk/connected.css",
+      "bytes": 1872,
+      "sha256": "95f48ac1c76fac4fa20cb9ec71804d35c4d82a313790abe68b966ae16afb3eb1",
+      "coverage": "SOURCE_READ",
+      "lines": 18,
+      "imports": []
+    },
+    {
+      "file": "public-desk/connected.js",
+      "bytes": 12955,
+      "sha256": "bd20f5d4d4e3a75eb5a6e105af90500c1ed2eaf15aaa3d35fbb46845111f2da8",
+      "coverage": "SOURCE_READ",
+      "lines": 118,
+      "imports": [
+        "./projection.mjs"
+      ]
+    },
+    {
+      "file": "public-desk/dashboard.html",
+      "bytes": 7619,
+      "sha256": "570f58baa6d2a5df4c67e34600dee3dbd9e3070952fabbf911e00fd9acc88297",
+      "coverage": "SOURCE_READ",
+      "lines": 11,
+      "imports": []
+    },
+    {
+      "file": "public-desk/fit.css",
+      "bytes": 206,
+      "sha256": "0c0e433fcf014d41f09f2eaf4edce43a50e473795d9b59f2f9a440090cce85f5",
+      "coverage": "SOURCE_READ",
+      "lines": 1,
+      "imports": []
+    },
+    {
+      "file": "public-desk/fit.js",
+      "bytes": 841,
+      "sha256": "e46e1df4b92c50142803e99e872d4f46e02623a998035e1b3ea397df81b1580d",
+      "coverage": "SOURCE_READ",
+      "lines": 5,
+      "imports": []
+    },
+    {
+      "file": "public-desk/fonts/pressstart2p.ttf",
+      "bytes": 115280,
+      "sha256": "7b939b816f8ce185dd8c2c59e85fb05d3dcd5cde0c0b0de4a1651cb5af9c2c2b",
+      "coverage": "HASH_ONLY_ASSET_OR_GENERATED"
+    },
+    {
+      "file": "public-desk/fonts/vt323.ttf",
+      "bytes": 147320,
+      "sha256": "954e44d25e0ccd643f4ef15e75d56d3d76590d3c2b1e42b71b13d5df740a51a6",
+      "coverage": "HASH_ONLY_ASSET_OR_GENERATED"
+    },
+    {
+      "file": "public-desk/index.html",
+      "bytes": 6129,
+      "sha256": "37828c70fbae441d0a7e20d4fdf5a64a459ef4a16f6e5ca4ec35d4a13638581b",
+      "coverage": "SOURCE_READ",
+      "lines": 29,
+      "imports": []
+    },
+    {
+      "file": "public-desk/live.css",
+      "bytes": 3676,
+      "sha256": "7f157c2754c42a5a76f7afdc4079688de184730fb6524a43892f818c2e29f350",
+      "coverage": "SOURCE_READ",
+      "lines": 10,
+      "imports": []
+    },
+    {
+      "file": "public-desk/projection.mjs",
+      "bytes": 7207,
+      "sha256": "862682525fe100ddabf44a8154947b9e0d2b5cd0e48bc1061de99a02a2ead199",
+      "coverage": "SOURCE_READ",
+      "lines": 93,
+      "imports": []
+    },
+    {
+      "file": "public-desk/state.mjs",
+      "bytes": 2279,
+      "sha256": "d71b979c8b632adf50e5efcdfc6bf270638f47fdf235dd87629cca0394950bdb",
+      "coverage": "SOURCE_READ",
+      "lines": 17,
+      "imports": []
+    },
+    {
+      "file": "public-desk/style.css",
+      "bytes": 17161,
+      "sha256": "4eb53c5fd95e131983f7698633715aa4ce8cca8ea313b2f312874f33bada4e2e",
+      "coverage": "SOURCE_READ",
+      "lines": 13,
+      "imports": []
+    },
+    {
+      "file": "public-desk/vendor/metamask-solana.js",
+      "bytes": 646868,
+      "sha256": "2124cca97d333f802deeb7e1afd2deffa7c5a2e8f8964db6a23909fcc552feb0",
+      "coverage": "HASH_ONLY_ASSET_OR_GENERATED"
+    },
+    {
+      "file": "public-desk/wallet-networks.mjs",
+      "bytes": 1720,
+      "sha256": "26083bd37ac23e9bcf43cc108599bca8adefd66e228b9778170c1ca041696e83",
+      "coverage": "SOURCE_READ",
+      "lines": 20,
+      "imports": []
+    },
+    {
+      "file": "public-desk/wallet-providers.mjs",
+      "bytes": 10609,
+      "sha256": "87f203220bfb2f383805854168571f05673e516f00e739939d093fb767b329cb",
+      "coverage": "SOURCE_READ",
+      "lines": 160,
+      "imports": [
+        "./wallet-networks.mjs",
+        ","
+      ]
+    },
+    {
+      "file": "public-desk/wallet.css",
+      "bytes": 3568,
+      "sha256": "4e4658ffc7e958231f330c4f013651cddc02a9ea4289b23978590ab9e8519f86",
+      "coverage": "SOURCE_READ",
+      "lines": 5,
+      "imports": []
+    },
+    {
+      "file": "public-desk/wallet.js",
+      "bytes": 20951,
+      "sha256": "b7f7a1156906a01172aa3aa0f9b861e19d8bd6e772f233140644b2629ccd3fa4",
+      "coverage": "SOURCE_READ",
+      "lines": 169,
+      "imports": [
+        "./wallet-networks.mjs",
+        "./wallet-providers.mjs"
+      ]
+    },
+    {
+      "file": "public-test/app.js",
+      "bytes": 9650,
+      "sha256": "e8f7eb3c6b1b96973db2fd30f5caee2b223cbdf168f5eccfc42f4f042b99ac35",
+      "coverage": "SOURCE_READ",
+      "lines": 99,
+      "imports": []
+    },
+    {
+      "file": "public-test/dashboard.html",
+      "bytes": 6675,
+      "sha256": "4865267d18d5c44335ccf3d8f63c7702f0bebd5d42dda1327692e62c60eaf499",
+      "coverage": "SOURCE_READ",
+      "lines": 11,
+      "imports": []
+    },
+    {
+      "file": "public-test/fit.css",
+      "bytes": 206,
+      "sha256": "0c0e433fcf014d41f09f2eaf4edce43a50e473795d9b59f2f9a440090cce85f5",
+      "coverage": "SOURCE_READ",
+      "lines": 1,
+      "imports": []
+    },
+    {
+      "file": "public-test/fit.js",
+      "bytes": 914,
+      "sha256": "59690378a04e8732397f1a2e79b0abd3089098d86e3779e70cc7af117dabd812",
+      "coverage": "SOURCE_READ",
+      "lines": 5,
+      "imports": []
+    },
+    {
+      "file": "public-test/fonts/pressstart2p.ttf",
+      "bytes": 115280,
+      "sha256": "7b939b816f8ce185dd8c2c59e85fb05d3dcd5cde0c0b0de4a1651cb5af9c2c2b",
+      "coverage": "HASH_ONLY_ASSET_OR_GENERATED"
+    },
+    {
+      "file": "public-test/fonts/vt323.ttf",
+      "bytes": 147320,
+      "sha256": "954e44d25e0ccd643f4ef15e75d56d3d76590d3c2b1e42b71b13d5df740a51a6",
+      "coverage": "HASH_ONLY_ASSET_OR_GENERATED"
+    },
+    {
+      "file": "public-test/index.html",
+      "bytes": 436,
+      "sha256": "2aefed28e971197b3e12071aafb922e1f5ff3fa7b1816eeca684349d294cdedb",
+      "coverage": "SOURCE_READ",
+      "lines": 3,
+      "imports": []
+    },
+    {
+      "file": "public-test/style.css",
+      "bytes": 17161,
+      "sha256": "4eb53c5fd95e131983f7698633715aa4ce8cca8ea313b2f312874f33bada4e2e",
+      "coverage": "SOURCE_READ",
+      "lines": 13,
+      "imports": []
+    },
+    {
+      "file": "README.md",
+      "bytes": 4124,
+      "sha256": "9b70aa92472ddcc71daecb1ea0813a7b5718a476d6931ad8dff94ed09d61d273",
+      "coverage": "SOURCE_READ",
+      "lines": 34,
+      "imports": []
+    },
+    {
+      "file": "RUN_DEMO.cmd",
+      "bytes": 267,
+      "sha256": "3334a9433c260206673c0dc5abf866199f77aa5baa3cbdac803b25f7855f423a",
+      "coverage": "SOURCE_READ",
+      "lines": 9,
+      "imports": []
+    },
+    {
+      "file": "RUN_RESEARCH.cmd",
+      "bytes": 58,
+      "sha256": "a4c496e4d8076f928b620821f15a5990cfe81f15027c0faee838ddc6c12f0b86",
+      "coverage": "SOURCE_READ",
+      "lines": 5,
+      "imports": []
+    },
+    {
+      "file": "scripts/check-project-map.mjs",
+      "bytes": 907,
+      "sha256": "d4a8cfcf94f19bc34486f5107fc0347b26f79c54ac25618af87bd8a698245a29",
+      "coverage": "SOURCE_READ",
+      "lines": 6,
+      "imports": [
+        "node:fs",
+        "node:path",
+        "node:url"
+      ]
+    },
+    {
+      "file": "scripts/configure-hidden-input.mjs",
+      "bytes": 1402,
+      "sha256": "e9af1f558e94ffae86d6a322e562bb3b688fe240c69d38216e0aceea617ef557",
+      "coverage": "SOURCE_READ",
+      "lines": 8,
+      "imports": []
+    },
+    {
+      "file": "scripts/jev-consult.mjs",
+      "bytes": 4337,
+      "sha256": "f5625c16c8335708e91df67b5920d2dec3b9a43ca9dd3a541f868673d1a0e417",
+      "coverage": "SOURCE_READ",
+      "lines": 53,
+      "imports": [
+        "../src/vault.mjs",
+        "node:url"
+      ]
+    },
+    {
+      "file": "scripts/jev-ui-consult.mjs",
+      "bytes": 3887,
+      "sha256": "f3e420a775d5c3038ddb2d99e25352cba8df6319d18936b39a18c6596a1b2aa6",
+      "coverage": "SOURCE_READ",
+      "lines": 39,
+      "imports": [
+        "../src/vault.mjs",
+        "node:url"
+      ]
+    },
+    {
+      "file": "scripts/strategy-vote.mjs",
+      "bytes": 5499,
+      "sha256": "662a6dae998e00b0e88525caa7701fbaaedaae4ba4db0417e41c80a8249dbb9e",
+      "coverage": "SOURCE_READ",
+      "lines": 51,
+      "imports": [
+        "../src/vault.mjs",
+        "../src/ceo.mjs",
+        "node:fs/promises",
+        "node:url"
+      ]
+    },
+    {
+      "file": "SECURITY.md",
+      "bytes": 3156,
+      "sha256": "d42e036225481433c4e6187a28827f05ec9b98670c7ae7c5e55b803fee2a1e7f",
+      "coverage": "SOURCE_READ",
+      "lines": 14,
+      "imports": []
+    },
+    {
+      "file": "server-console.log",
+      "coverage": "PRIVATE_CONFIG_OR_RUNTIME_DATA_NOT_TRANSMITTED"
+    },
+    {
+      "file": "server-error.log",
+      "coverage": "PRIVATE_CONFIG_OR_RUNTIME_DATA_NOT_TRANSMITTED"
+    },
+    {
+      "file": "server-output.log",
+      "coverage": "PRIVATE_CONFIG_OR_RUNTIME_DATA_NOT_TRANSMITTED"
+    },
+    {
+      "file": "src/ai.mjs",
+      "bytes": 20100,
+      "sha256": "d276db7dad3c4186a050d5206a514cee235f104fac94d7b9641be1d284291339",
+      "coverage": "SOURCE_READ",
+      "lines": 319,
+      "imports": []
+    },
+    {
+      "file": "src/ceo-schema.json",
+      "bytes": 592,
+      "sha256": "ebe912d609b2c9f4c27deac77d028810f31dd7e76fd92c7d09d63120eca3c093",
+      "coverage": "SOURCE_READ",
+      "lines": 36,
+      "imports": []
+    },
+    {
+      "file": "src/ceo.mjs",
+      "bytes": 6549,
+      "sha256": "84569fffe5d53c8d8f31825f29363855f7d2c0254f6237797ea3ea76f1d1db5a",
+      "coverage": "SOURCE_READ",
+      "lines": 41,
+      "imports": [
+        "node:child_process",
+        "node:fs/promises",
+        "node:os",
+        "node:path",
+        "node:url"
+      ]
+    },
+    {
+      "file": "src/codex-trader.mjs",
+      "bytes": 5302,
+      "sha256": "3bc71e27bd07c19ba3015d4e9d80d577172d1147456d64c3e2d45f954d262c82",
+      "coverage": "SOURCE_READ",
+      "lines": 32,
+      "imports": [
+        "node:child_process",
+        "node:fs/promises",
+        "node:os",
+        "node:path",
+        "node:url"
+      ]
+    },
+    {
+      "file": "src/gmgn.mjs",
+      "bytes": 5071,
+      "sha256": "dc748e793674ca5837eda1edb8cb7af7b149cfb77f853cd7079510d94b701d02",
+      "coverage": "SOURCE_READ",
+      "lines": 70,
+      "imports": [
+        "node:crypto",
+        "@solana/web3.js",
+        ","
+      ]
+    },
+    {
+      "file": "src/ledger.mjs",
+      "bytes": 6928,
+      "sha256": "e9b00a522a2f1b18ad3cd630a070d815bbb25017758fad151236cecfdc323ae1",
+      "coverage": "SOURCE_READ",
+      "lines": 59,
+      "imports": []
+    },
+    {
+      "file": "src/live-supervisor.mjs",
+      "bytes": 2256,
+      "sha256": "97ae7c036f1616d3235a46a1b0fad0a71afdac966d456ad631724618890752bf",
+      "coverage": "SOURCE_READ",
+      "lines": 13,
+      "imports": [
+        "node:crypto",
+        "./robinhood-intelligence.mjs",
+        "./codex-trader.mjs"
+      ]
+    },
+    {
+      "file": "src/live-trade.mjs",
+      "bytes": 5595,
+      "sha256": "d7c83e7b376e71554e7b57fba45a03ab8d485f750ef00159d71e1978548fca64",
+      "coverage": "SOURCE_READ",
+      "lines": 60,
+      "imports": [
+        "@noble/hashes/sha3.js"
+      ]
+    },
+    {
+      "file": "src/paper-engine.mjs",
+      "bytes": 22256,
+      "sha256": "4c599a4909dfc6663363221e939bbce2cce5746483ce0d422c0373d7bae857b3",
+      "coverage": "SOURCE_READ",
+      "lines": 178,
+      "imports": [
+        "node:crypto",
+        "./ledger.mjs",
+        "./paper-policy.mjs",
+        "./paper-policy.mjs"
+      ]
+    },
+    {
+      "file": "src/paper-policy.mjs",
+      "bytes": 5573,
+      "sha256": "d6a8acd5826e7111324a4479ed996a8c3c8e8cdc8acf5a3440deab0b053dae86",
+      "coverage": "SOURCE_READ",
+      "lines": 48,
+      "imports": []
+    },
+    {
+      "file": "src/research-evidence.mjs",
+      "bytes": 2779,
+      "sha256": "ecfe668f40a36054a813a66ac269fa0e46e226dec9d81493d51e4d58401ba46c",
+      "coverage": "SOURCE_READ",
+      "lines": 21,
+      "imports": [
+        "./paper-policy.mjs"
+      ]
+    },
+    {
+      "file": "src/robinhood-autopilot.mjs",
+      "bytes": 14704,
+      "sha256": "96541f24900ddffaa7109e72334d474824df4e2af8d8cb9a6d15a335684688b6",
+      "coverage": "SOURCE_READ",
+      "lines": 41,
+      "imports": [
+        "node:fs/promises",
+        "node:path",
+        "node:url",
+        "@noble/hashes/sha3.js",
+        "./robinhood-signer.mjs",
+        "./live-trade.mjs",
+        "./robinhood-intelligence.mjs",
+        "./codex-trader.mjs"
+      ]
+    },
+    {
+      "file": "src/robinhood-intelligence.mjs",
+      "bytes": 8575,
+      "sha256": "bd9e9d71c276bad9378fe629c98162a3406c59c0aa1b6be72728821a4444468f",
+      "coverage": "SOURCE_READ",
+      "lines": 54,
+      "imports": [
+        "@noble/hashes/sha3.js",
+        "./live-trade.mjs"
+      ]
+    },
+    {
+      "file": "src/robinhood-signer.mjs",
+      "bytes": 2918,
+      "sha256": "1427ca4609deea2d09aa5c34bbb8eb5c068c7da395e8d2513c95dd417d93ec5a",
+      "coverage": "SOURCE_READ",
+      "lines": 31,
+      "imports": [
+        "node:crypto",
+        "node:fs/promises",
+        "node:path",
+        "node:url",
+        "@noble/curves/secp256k1.js",
+        "@noble/hashes/sha3.js",
+        "./vault.mjs"
+      ]
+    },
+    {
+      "file": "src/runtime.mjs",
+      "bytes": 36913,
+      "sha256": "91c1a65293c164daa61ffcd0eebf865131dfa878a53208fd07fa313e0f6ba20f",
+      "coverage": "SOURCE_READ",
+      "lines": 233,
+      "imports": [
+        "node:events",
+        "node:crypto",
+        "./ai.mjs",
+        "./store.mjs",
+        "./solana-source.mjs",
+        "./gmgn.mjs",
+        "./ceo.mjs",
+        "./paper-engine.mjs",
+        "./research-evidence.mjs",
+        "./paper-policy.mjs",
+        "./statistics.mjs",
+        "@solana/web3.js"
+      ]
+    },
+    {
+      "file": "src/server.mjs",
+      "bytes": 11334,
+      "sha256": "244834a077927528586f597e52666755ffdb0712ba11a0f6efb60430dde48671",
+      "coverage": "SOURCE_READ",
+      "lines": 74,
+      "imports": [
+        "node:http",
+        "node:fs/promises",
+        "node:url",
+        "node:path",
+        "node:crypto",
+        "node:child_process",
+        "./runtime.mjs",
+        "./vault.mjs",
+        "./ai.mjs",
+        "./wallet-connection.mjs",
+        "./live-trade.mjs",
+        "./robinhood-autopilot.mjs",
+        "qrcode"
+      ]
+    },
+    {
+      "file": "src/solana-source.mjs",
+      "bytes": 47805,
+      "sha256": "218786491bd77ee392fdc2e635d287fd14e2c38c66291259d586b54d8586b079",
+      "coverage": "SOURCE_READ",
+      "lines": 598,
+      "imports": [
+        "./paper-policy.mjs",
+        "node:events",
+        "node:crypto",
+        "@solana/web3.js",
+        "@coral-xyz/anchor",
+        "@solana/spl-token",
+        "@pump-fun/pump-sdk"
+      ]
+    },
+    {
+      "file": "src/source.mjs",
+      "bytes": 2484,
+      "sha256": "124950637a63833d6706a89ad2c493c51afa4f7ef99a476205218411ac0c2a78",
+      "coverage": "SOURCE_READ",
+      "lines": 25,
+      "imports": [
+        "node:crypto"
+      ]
+    },
+    {
+      "file": "src/statistics.mjs",
+      "bytes": 903,
+      "sha256": "281048766274adbde43c2c3522a1bca5d6d02bee6f5a0d6f45b82a03dd757603",
+      "coverage": "SOURCE_READ",
+      "lines": 9,
+      "imports": []
+    },
+    {
+      "file": "src/store.mjs",
+      "bytes": 1709,
+      "sha256": "d204d15aae033eb39c5e522b3fd1b345354df9674e0bc58ae62799c705decfbb",
+      "coverage": "SOURCE_READ",
+      "lines": 20,
+      "imports": [
+        "node:sqlite",
+        "node:fs",
+        "node:path"
+      ]
+    },
+    {
+      "file": "src/trade-decision-schema.json",
+      "bytes": 549,
+      "sha256": "06baa4a70f5f512f6b068b3628348c178667477ab0837f341b127cbeda3abe3a",
+      "coverage": "SOURCE_READ",
+      "lines": 14,
+      "imports": []
+    },
+    {
+      "file": "src/vault.mjs",
+      "bytes": 5750,
+      "sha256": "59caf1673cd6bb14847ff2b61a4e626ab0927ed4f9bdf818c83b7ce6b69b94bb",
+      "coverage": "SOURCE_READ",
+      "lines": 44,
+      "imports": [
+        "node:child_process",
+        "node:fs/promises",
+        "node:path",
+        "node:util"
+      ]
+    },
+    {
+      "file": "src/wallet-connection.mjs",
+      "bytes": 4344,
+      "sha256": "d9b312d52c7899627a62ab42dddf045c47d0672578f3b6242898b8ec46fa81de",
+      "coverage": "SOURCE_READ",
+      "lines": 61,
+      "imports": [
+        "@solana/web3.js",
+        "../public-desk/wallet-networks.mjs"
+      ]
+    },
+    {
+      "file": "tests/ai.test.mjs",
+      "bytes": 18160,
+      "sha256": "083b6f569ffe69ecb3c756b1102ecf21a2e9fe4ad55ae7329ff32f1eca0d97ca",
+      "coverage": "SOURCE_READ",
+      "lines": 314,
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:util",
+        "../src/ai.mjs"
+      ]
+    },
+    {
+      "file": "tests/ceo.test.mjs",
+      "bytes": 3319,
+      "sha256": "6f0a2a3c49bc2f1f86c83565b5aa69d3253f0b592b88afaebcaac57fadefe20f",
+      "coverage": "SOURCE_READ",
+      "lines": 14,
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:events",
+        "node:stream",
+        "../src/ceo.mjs"
+      ]
+    },
+    {
+      "file": "tests/live-projection.test.mjs",
+      "bytes": 1821,
+      "sha256": "8f5db8856aac476582166d07c5d4e1aa727fafb03e55a07c2c44ee8e17a55066",
+      "coverage": "SOURCE_READ",
+      "lines": 9,
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../public-desk/projection.mjs"
+      ]
+    },
+    {
+      "file": "tests/live-supervisor.test.mjs",
+      "bytes": 1126,
+      "sha256": "d5cde42be80077db8f34838ff3567398016d2aea840ac2fc784daceea21573a2",
+      "coverage": "SOURCE_READ",
+      "lines": 6,
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../src/live-supervisor.mjs"
+      ]
+    },
+    {
+      "file": "tests/live-trade.test.mjs",
+      "bytes": 2098,
+      "sha256": "9308108de0b1dd1f541a6c49e77c98e653f6e79ea928c6f5b0eef321289557bd",
+      "coverage": "SOURCE_READ",
+      "lines": 11,
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../src/live-trade.mjs"
+      ]
+    },
+    {
+      "file": "tests/motion-contract.test.mjs",
+      "bytes": 7192,
+      "sha256": "a7abd04f2cf00330ccdc845afe295078f3095ad3f8eb4cd536bdc977e77c2641",
+      "coverage": "SOURCE_READ",
+      "lines": 83,
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs/promises",
+        "node:crypto",
+        "../public-desk/projection.mjs"
+      ]
+    },
+    {
+      "file": "tests/paper-engine.test.mjs",
+      "bytes": 24941,
+      "sha256": "7d69b749965afd2387e8312419fa84dfc1139cb9acdb291cc08e9e58f95416bf",
+      "coverage": "SOURCE_READ",
+      "lines": 280,
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../src/paper-engine.mjs",
+        "../src/ledger.mjs"
+      ]
+    },
+    {
+      "file": "tests/paper-policy.test.mjs",
+      "bytes": 4172,
+      "sha256": "6b56cc124b34cfb81260d7a388275a1af314c788a72619dad965aaa2e84f160a",
+      "coverage": "SOURCE_READ",
+      "lines": 49,
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../src/paper-policy.mjs"
+      ]
+    },
+    {
+      "file": "tests/research-evidence.test.mjs",
+      "bytes": 1724,
+      "sha256": "32ea3fa2ad3129a4fd0b1b287f809a30db3d515d1ecc0cd0f875560ee4c8bb6a",
+      "coverage": "SOURCE_READ",
+      "lines": 14,
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../src/research-evidence.mjs"
+      ]
+    },
+    {
+      "file": "tests/risk.test.mjs",
+      "bytes": 11449,
+      "sha256": "1ff2d2600677b7bca6e3030ff7e3e57bbfa5503edd0500cd5eb76f21895a193b",
+      "coverage": "SOURCE_READ",
+      "lines": 216,
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs",
+        "node:os",
+        "node:path",
+        "../src/ledger.mjs",
+        "../src/store.mjs",
+        "../src/runtime.mjs",
+        "../src/source.mjs"
+      ]
+    },
+    {
+      "file": "tests/robinhood-autopilot.test.mjs",
+      "bytes": 2698,
+      "sha256": "c638d92663e062a5365ee01dc035e468138bf00a29bdf7d3ab160abacdcb2de3",
+      "coverage": "SOURCE_READ",
+      "lines": 10,
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs/promises",
+        "node:path",
+        "node:os",
+        "../src/robinhood-autopilot.mjs"
+      ]
+    },
+    {
+      "file": "tests/robinhood-intelligence.test.mjs",
+      "bytes": 2110,
+      "sha256": "1d386f7dbbee04b013699d4888e3bad3b13846e91e666af6590b9963536d7f70",
+      "coverage": "SOURCE_READ",
+      "lines": 9,
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../src/robinhood-intelligence.mjs"
+      ]
+    },
+    {
+      "file": "tests/robinhood-signer.test.mjs",
+      "bytes": 805,
+      "sha256": "829e7b236acd88c2ef96b6b6b37e0f86476813d4ceeeec20861db722bbea311b",
+      "coverage": "SOURCE_READ",
+      "lines": 6,
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../src/robinhood-signer.mjs"
+      ]
+    },
+    {
+      "file": "tests/runtime.test.mjs",
+      "bytes": 19748,
+      "sha256": "12569f03266669bfb6bdae5c146dc04414162058be04354bc448b1cc9ba7d1de",
+      "coverage": "SOURCE_READ",
+      "lines": 265,
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:events",
+        "node:fs",
+        "node:os",
+        "node:path",
+        "../src/runtime.mjs",
+        "../src/solana-source.mjs"
+      ]
+    },
+    {
+      "file": "tests/security.test.mjs",
+      "bytes": 4425,
+      "sha256": "868fb2435734712721c217e4cff784742710eb8bb19323da582cbeef7f736f86",
+      "coverage": "SOURCE_READ",
+      "lines": 42,
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs",
+        "node:os",
+        "node:path",
+        "../src/vault.mjs",
+        "../src/runtime.mjs",
+        "../src/server.mjs"
+      ]
+    },
+    {
+      "file": "tests/sources.test.mjs",
+      "bytes": 26238,
+      "sha256": "23f8a877d283e92fc9d471599402d326ba09d14527412e516c317838b0c0b859",
+      "coverage": "SOURCE_READ",
+      "lines": 281,
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:crypto",
+        "@coral-xyz/anchor",
+        "@solana/web3.js",
+        "@solana/spl-token",
+        "@pump-fun/pump-sdk",
+        "../src/solana-source.mjs",
+        "../src/gmgn.mjs"
+      ]
+    },
+    {
+      "file": "tests/statistics.test.mjs",
+      "bytes": 851,
+      "sha256": "87c42a94c443b0005fa851794b9ec6f39a4609f5e7780411fb6e26138498294d",
+      "coverage": "SOURCE_READ",
+      "lines": 4,
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../src/statistics.mjs"
+      ]
+    },
+    {
+      "file": "tests/ui-runtime.test.mjs",
+      "bytes": 3128,
+      "sha256": "774fe12b217fe988a466ee420652dfa24ce59bd6f0484dc844f8048e4144586e",
+      "coverage": "SOURCE_READ",
+      "lines": 25,
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:events",
+        "node:fs/promises",
+        "node:os",
+        "node:path",
+        "../src/server.mjs",
+        "../public-desk/state.mjs"
+      ]
+    },
+    {
+      "file": "tests/wallet-connection.test.mjs",
+      "bytes": 13311,
+      "sha256": "692057caf60cce20426adacfb102e9b603c531732dfa5b322c635a9511e2ca2a",
+      "coverage": "SOURCE_READ",
+      "lines": 128,
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:events",
+        "../src/wallet-connection.mjs",
+        "../public-desk/wallet-networks.mjs",
+        "../public-desk/wallet-providers.mjs",
+        "../src/server.mjs",
+        "node:fs/promises",
+        "node:os",
+        "node:path"
+      ]
+    },
+    {
+      "file": "TEST_REPORT.md",
+      "bytes": 13904,
+      "sha256": "4337b88c3979e7ea6c6b16392f533777c5ab008898677b51912084a7f5a047b6",
+      "coverage": "SOURCE_READ",
+      "lines": 87,
+      "imports": []
+    },
+    {
+      "file": "VIDEO_PARITY_RUNTIME_AUDIT.md",
+      "bytes": 4105,
+      "sha256": "3564f4208a50b872bfc52c89287cb6fd9911eefe9dcb36ff1c0737ffcba2425f",
+      "coverage": "SOURCE_READ",
+      "lines": 35,
+      "imports": []
+    },
+    {
+      "file": "wallet-client/metamask-solana.mjs",
+      "bytes": 402,
+      "sha256": "dc4fa0fe03e0b6097752080603e81ff6037033411bba9e4be5f5365cf1cf62d2",
+      "coverage": "SOURCE_READ",
+      "lines": 12,
+      "imports": [
+        "@metamask/connect-solana"
+      ]
+    },
+    {
+      "file": "wallet-client/package-lock.json",
+      "bytes": 55265,
+      "sha256": "623874271e9e1e93f2b10afc900e1a45841f59369237dfdf1a50b8f314dad028",
+      "coverage": "HASH_ONLY_ASSET_OR_GENERATED"
+    },
+    {
+      "file": "wallet-client/package.json",
+      "bytes": 353,
+      "sha256": "ebb9c3c6949d768ae534e442d076499e144ba9933c11d430230d6ea76db74023",
+      "coverage": "SOURCE_READ",
+      "lines": 9,
+      "imports": []
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+
+PASS Light theme default
+PASS Exactly four AI cards in one desktop row
+PASS Reference sidebar 222px and header 60px
+PASS Reference cards 270px high at y75
+PASS Reference lower panels start at y360
+PASS Wider chart column and paired right panels
+PASS All four progress values change
+PASS Price candles update
+PASS Activity adds live entries
+PASS Order unrealized PnL updates
+PASS Mock order closes and realized PnL updates
+PASS Dark toggle updates actual theme and color
+PASS Dark preference survives reload
+PASS Timeframe control updates accessible chart label
+PASS Activity expands in the existing panel
+PASS Renderer reached requested viewport 1366
+PASS No document horizontal overflow at 1366
+PASS Chart text keeps readable horizontal scale at 1366
+PASS Responsive information order at 1366
+PASS Renderer reached requested viewport 1024
+PASS No document horizontal overflow at 1024
+PASS Chart text keeps readable horizontal scale at 1024
+PASS Responsive information order at 1024
+PASS Renderer reached requested viewport 768
+PASS No document horizontal overflow at 768
+PASS Chart text keeps readable horizontal scale at 768
+PASS Responsive information order at 768
+PASS Renderer reached requested viewport 390
+PASS No document horizontal overflow at 390
+PASS Chart text keeps readable horizontal scale at 390
+PASS Responsive information order at 390
+PASS Renderer reached requested viewport 320
+PASS No document horizontal overflow at 320
+PASS Chart text keeps readable horizontal scale at 320
+PASS Responsive information order at 320
+PASS No renderer errors
+PASS Only local static dashboard requests

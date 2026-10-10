@@ -1,0 +1,60 @@
+{
+  "at": "2026-09-24T05:50:24.825Z",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 15936,
+      "output_tokens": 208
+    },
+    "answers": {
+      "decode": {
+        "type": "choice",
+        "choice": "PORT",
+        "confidence": 0.98,
+        "probabilities": {
+          "DROP": 0,
+          "UNVERIFIED": 0.01,
+          "REWRITE": 0,
+          "PORT": 0.99
+        }
+      },
+      "holders": {
+        "type": "choice",
+        "choice": "PORT",
+        "confidence": 0.5,
+        "probabilities": {
+          "DROP": 0,
+          "UNVERIFIED": 0.26,
+          "REWRITE": 0.11,
+          "PORT": 0.63
+        }
+      },
+      "quotes": {
+        "type": "choice",
+        "choice": "NO",
+        "confidence": 0.96,
+        "probabilities": {
+          "NO": 0.97,
+          "YES": 0,
+          "UNVERIFIED": 0.03
+        }
+      },
+      "bug": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.45,
+        "probabilities": {
+          "DECODER": 0.05,
+          "HOLDERS": 0.09,
+          "BOUNDARIES": 0.14,
+          "QUOTES": 0.03,
+          "UNVERIFIED": 0.14,
+          "RPC": 0.02,
+          "NONE": 0.53
+        }
+      }
+    },
+    "helper": {}
+  }
+}

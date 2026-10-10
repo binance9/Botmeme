@@ -1,0 +1,102 @@
+[
+ {
+  "token": "3P2iQSFN",
+  "http": 500,
+  "reason": "State service error",
+  "ms": 35
+ },
+ {
+  "token": "BiJUera1",
+  "http": 500,
+  "reason": "State service error",
+  "ms": 27
+ },
+ {
+  "token": "2kBiQoui",
+  "http": 500,
+  "reason": "State service error",
+  "ms": 21
+ },
+ {
+  "token": "ELjDZDXY",
+  "http": 500,
+  "reason": "State service error",
+  "ms": 21
+ },
+ {
+  "token": "7SCKSDqW",
+  "http": 500,
+  "reason": "State service error",
+  "ms": 23
+ },
+ {
+  "token": "2FCeMSSB",
+  "http": 500,
+  "reason": "State service error",
+  "ms": 22
+ },
+ {
+  "token": "9SzckUiC",
+  "http": 500,
+  "reason": "State service error",
+  "ms": 21
+ },
+ {
+  "token": "CcQGNtmf",
+  "http": 500,
+  "reason": "State service error",
+  "ms": 19
+ },
+ {
+  "token": "6mWRV9HD",
+  "http": 500,
+  "reason": "State service error",
+  "ms": 23
+ },
+ {
+  "token": "CfLkjsv7",
+  "http": 200,
+  "status": "FILLED",
+  "reason": "Live order filled.",
+  "ms": 13162
+ },
+ {
+  "token": "hvNiDgyW",
+  "error": "ECONNRESET",
+  "ms": 13476
+ },
+ {
+  "token": "2m38gzCk",
+  "http": 200,
+  "status": "FILLED",
+  "reason": "Live order filled.",
+  "ms": 13118
+ },
+ {
+  "token": "GwnmUZjJ",
+  "http": 500,
+  "reason": "State service error",
+  "ms": 22
+ },
+ {
+  "token": "23Akg58H",
+  "http": 409,
+  "status": "REJECTED",
+  "reason": "LIVE_FULL_POSITION_SELL_REQUIRED",
+  "ms": 1486
+ },
+ {
+  "token": "ApbKkS3o",
+  "http": 200,
+  "status": "FILLED",
+  "reason": "Live order filled.",
+  "ms": 13540
+ },
+ {
+  "token": "A9vZxsav",
+  "http": 409,
+  "status": "REJECTED",
+  "reason": "Jupiter: LIVE_REMOTE_UNAVAILABLE: HTTP 400 {\"error\":\"No routes found\",\"errorCode\":\"NO_ROUT",
+  "ms": 3352
+ }
+]

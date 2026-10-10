@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-24T05:50:51.910Z",
+  "scope": "AUDIT_ONLY_NOT_V2_ACCEPTANCE",
+  "response": {
+    "ok": false,
+    "reason": "bad-request",
+    "status": 400,
+    "error": {
+      "error_type": "max_tokens_exceeded"
+    }
+  },
+  "authority": "NONE_HISTORICAL_TYPESAFE_CLASSIFIER",
+  "supersededBy": "services/jev/auditor",
+  "notice": "This is not a JEV Auditor acceptance receipt. Do not use it to gate or approve migration."
+}

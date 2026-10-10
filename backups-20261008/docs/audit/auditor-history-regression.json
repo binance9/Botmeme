@@ -1,0 +1,35 @@
+{
+  "protocolOnly": true,
+  "actualLocalModelCalled": false,
+  "isolatedRoot": "C:\\Users\\BAOAN\\AppData\\Local\\Temp\\botmeme-baseline-history-proof-Cz9VhN",
+  "firstFailure": "FAIL",
+  "receipt_id": "6c6c92c2-575f-4b10-aaa4-11948dc8f2f4",
+  "sameBaseline": {
+    "status": "CHUA_XAC_MINH",
+    "missing": [
+      "UNRESOLVED_PRIOR_FAIL:6c6c92c2-575f-4b10-aaa4-11948dc8f2f4"
+    ]
+  },
+  "switchedBaseline": {
+    "status": "PASS",
+    "missing": []
+  },
+  "sourceUnchanged": true,
+  "protectedDigestChanged": true,
+  "beforeProtectedDigest": "dd93524453bb3a4b27306084a14024b7f6367a63ca1d58f1867da634885a488d",
+  "afterProtectedDigest": "16ebabd3c0c9ee98938f137ad0d0a9a5ba787e44d616cd13864afe54cc9b1a4f",
+  "sourceHash": "e9ddc215228c09b166e444594f011aaa57dd902e762bbf681302a105d52f5753",
+  "newProtectedFiles": [
+    {
+      "root": "C:\\Users\\BAOAN\\AppData\\Local\\Temp\\botmeme-baseline-history-proof-Cz9VhN",
+      "file": "data/audits/6c6c92c2-575f-4b10-aaa4-11948dc8f2f4.json",
+      "sha256": "11db51e8a62dedad5e2f578581a758a62ddf9d0fa9ced2c93b336413b5c557c2"
+    }
+  ],
+  "runtimeExitCodes": [
+    0,
+    0,
+    0
+  ],
+  "dependenciesUnresolved": []
+}

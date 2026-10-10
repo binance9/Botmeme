@@ -1,0 +1,88 @@
+{
+  "timestamp": "2026-09-24T07:59:08.349Z",
+  "finding": "Real IDs and valid kinds are insufficient when explanations attribute behavior to unrelated quoted source. Passing runtime tests do not repair false source attributions.",
+  "cases": [
+    {
+      "receipt_id": "6b410dfd-0c95-4433-b5db-70958345a48a",
+      "source_hash": "dc02d0fb824418be566e0ae500b8de9568317e48d00b6574078bf8ab35d6756d",
+      "checks": [
+        {
+          "criterion_id": "contract",
+          "source_observations": [
+            {
+              "document_id": "source-0",
+              "quote": "function validatePacket(packet) {",
+              "explanation": "validatePacket uses exact(packet, ['scope', 'criteria', 'documents']) and Set(packet.criteria.map(c => c.id)).size === packet.criteria.length to enforce packet structure and unique criteria IDs."
+            },
+            {
+              "document_id": "source-0",
+              "quote": "=> !KINDS.includes(k)))) fail('INVALID_AUDIT_CRITERIA');",
+              "explanation": "validatePacket rejects invalid document hashes via d.sha256 !== sha256(d.content) and private files via /(.*)(\\.env|auth\\.json|credentials?[^\\/]*|.*\\.(dpapi|sqlite))/i.test(d.file)."
+            },
+            {
+              "document_id": "source-0",
+              "quote": "const id = value => typeof value === 'string' && /^[a-zA-Z0-9._:/-]{1,160}$/.test(value);",
+              "explanation": "validateResult ensures criteria coverage via seen.size !== criteria.size and rejects missing/unknown references through exact(result, Object.keys(RESULT_SCHEMA.properties)) and refs/values checks."
+            },
+            {
+              "document_id": "source-0",
+              "quote": "    for (const observation of check.observations) {",
+              "explanation": "validateResult enforces PASS evidence coverage via criterion.evidenceKinds.some(kind => !check.evidence_ids.some(ref => docs.get(ref).kind === kind)) and observation.quote inclusion via doc.content.includes(observation.quote)."
+            }
+          ]
+        },
+        {
+          "criterion_id": "secrets",
+          "source_observations": [
+            {
+              "document_id": "source-0",
+              "quote": "  for (const cause of result.root_causes) if (!exact(cause, ['finding_id', 'explanation', 'evidence_ids']) || !findings.has(cause.finding_id) || !text(cause.explanation) || !refs(cause.evidence_ids)) fail('INVALID_ROOT_CAUSE');",
+              "explanation": "The regex /api_key\\s*[:=]\\s*([A-Za-z0-9_~+\\/\\-]{16,})/ matches unquoted API keys with 16+ characters, fulfilling the requirement to reject unquoted credentials."
+            },
+            {
+              "document_id": "source-1",
+              "quote": "    if (quoted.test(value) || bearer.test(value) || unquoted.test(value) || /-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/.test(value)) throw Error('SECRET_LITERAL_DENIED');",
+              "explanation": "The function throws 'SECRET_LITERAL_DENIED' on matches, ensuring literal credentials in any text field are blocked."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "receipt_id": "c376210a-188c-4fd2-8df9-d645d27883e7",
+      "source_hash": "05220fb331d76d6987495c9ec71047d4b9cf36f7eaa0aa46231890acbbe4455e",
+      "checks": [
+        {
+          "criterion_id": "agent",
+          "source_observations": [
+            {
+              "document_id": "source-1",
+              "quote": "  constructor({ model = 'qwen3:14b', timeoutMs = 300000, fetcher = fetch } = {}) { this.model = model; this.timeoutMs = timeoutMs; this.fetcher = fetcher; }",
+              "explanation": "OllamaReviewer explicitly sets model='qwen3:14b' with no fallback options"
+            },
+            {
+              "document_id": "source-0",
+              "quote": "        evaluateReview(packet, answer.analysis);",
+              "explanation": "evaluateReview is called immediately after validation, ensuring no acceptance authority"
+            }
+          ]
+        },
+        {
+          "criterion_id": "model-boundary",
+          "source_observations": [
+            {
+              "document_id": "source-0",
+              "quote": "        answer = await reviewer.review(freeze(structuredClone(packet)), { previousError });",
+              "explanation": "Verifies model identity by rejecting responses with mismatched provider/model/protocol attributes."
+            },
+            {
+              "document_id": "source-0",
+              "quote": "        try { const rejected = answer?.analysis ?? error.rejectedReview; if (rejected) { assertNoSecrets(rejected); attempt.rejected_review = structuredClone(rejected); } } catch {}",
+              "explanation": "Catches secret-bearing rejected diagnostics and filters them out via assertNoSecrets."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

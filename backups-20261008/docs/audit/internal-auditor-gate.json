@@ -1,0 +1,66 @@
+{
+    "status":  "CHUA_XAC_MINH",
+    "scope":  "JEV Auditor bootstrap only",
+    "protocol":  "evidence-first/2",
+    "checkedAt":  "2026-09-24T09:30:21.7029331Z",
+    "requiredScopes":  [
+                           "auditor-contract",
+                           "auditor-agent",
+                           "auditor-collector",
+                           "auditor-dependencies",
+                           "auditor-integrity",
+                           "auditor-evidence-registry",
+                           "auditor-acceptance",
+                           "auditor-attribution",
+                           "auditor-cli"
+                       ],
+    "receipts":  {
+
+                 },
+    "reason":  "Exact wire readbacks, isolated attribution checks and AST-bound source location evidence are implemented. Regression 204/204 passed. Latest real contract review remains CHUA_XAC_MINH: selected Map declaration does not establish tracking by ID, and overview exceeds selected evidence. No scope frozen; Stage 2 locked.",
+    "migrationPlan":  "CHUA_XAC_MINH",
+    "stage2Allowed":  false,
+    "regression":  {
+                       "command":  "node --test tests/auditor.test.cjs tests/auditor-readback.test.cjs tests/auditor-source-context.test.cjs tests/auditor-evidence.test.cjs tests/auditor-v2.test.cjs tests/auditor-cli.test.cjs tests/state-layer.test.cjs",
+                       "tests":  204,
+                       "passed":  204,
+                       "failed":  0,
+                       "exitCode":  0,
+                       "meaning":  "REGRESSION_ONLY_NOT_JEV_ACCEPTANCE"
+                   },
+    "priorNegativeReceipts":  [
+                                  "eba0871b-15b4-4efe-8cd2-dcc7a819c3d4",
+                                  "de97edb6-2fdd-4d46-9349-e868d6520e91"
+                              ],
+    "currentBlockers":  [
+                            "PRIMARY_REVIEW_CLAIMS_EXCEED_SELECTED_EVIDENCE",
+                            "FRESH_NINE_SCOPE_ACCEPTANCE_WITH_ATTRIBUTION_VETO_REQUIRED"
+                        ],
+    "latestAttempts":  {
+                           "auditor-contract":  "3446674d-be96-4bab-9374-799b5c8c076c",
+                           "auditor-agent":  "19b6bea7-0da9-47a8-8bc2-39d52c77bc54"
+                       },
+    "interruptedReview":  {
+                              "profile":  "auditor-collector",
+                              "reason":  "Stopped task-owned review batch to repair confirmed acceptance bypass; no verdict claimed."
+                          },
+    "liveAttributionCalibration":  {
+                                       "tests":  2,
+                                       "passed":  2,
+                                       "failed":  0,
+                                       "receipts":  [
+                                                        "8138d883-1aa6-41ea-b6e7-2cbe65df98a1",
+                                                        "5ec591eb-f7ee-4904-8b75-123ac7b49a38"
+                                                    ],
+                                       "scope":  "CALIBRATION_NOT_MODULE_ACCEPTANCE"
+                                   },
+    "revokedReceipts":  [
+                            "6b410dfd-0c95-4433-b5db-70958345a48a",
+                            "c376210a-188c-4fd2-8df9-d645d27883e7"
+                        ],
+    "latestContractAttempt":  {
+                                  "receipt_id":  "3446674d-be96-4bab-9374-799b5c8c076c",
+                                  "status":  "CHUA_XAC_MINH",
+                                  "frozen":  false
+                              }
+}

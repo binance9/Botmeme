@@ -1,0 +1,46 @@
+{
+  "at": "2026-09-24T05:49:48.820Z",
+  "file": "src/solana-source.mjs",
+  "sha256": "218786491bd77ee392fdc2e635d287fd14e2c38c66291259d586b54d8586b079",
+  "recommendation": {
+    "file": "src/solana-source.mjs",
+    "purpose": "Pump logs/RPC/holders/quotes/wallet tracking",
+    "currentDependencies": [
+      "./paper-policy.mjs",
+      "node:events",
+      "node:crypto",
+      "@solana/web3.js",
+      "@coral-xyz/anchor",
+      "@solana/spl-token",
+      "@pump-fun/pump-sdk"
+    ],
+    "quality": "Useful bounded logic; adaptation and new verification required",
+    "decision": "PORT",
+    "destination": "core/market-data/providers/solana/{rpc,decode,holders,quotes}; services/jev/discovery",
+    "reason": "Port decodePumpLogs frame authentication and SDK decoding to decode; supportedMintExtensions/mintInfo to validation; rpc allowlist and jsonResponse to rpc; same-slot balance coverage algorithm to holders; quote fee math to paper quote adapter. Rewrite scheduling/reconnect/consume around V2 events. No wholesale SolanaSource import.",
+    "risks": "walletLeaders sort returns BigInt difference (sort comparator requires Number); net observed cash flow is not realized PnL. Omit old wallet ranking. SDK dependencies and provider behavior need runtime verification; model quotes remain simulated",
+    "sha256": "218786491bd77ee392fdc2e635d287fd14e2c38c66291259d586b54d8586b079"
+  },
+  "scope": "STATIC_MIGRATION_RECOMMENDATION_ONLY",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 15946,
+      "output_tokens": 41
+    },
+    "answers": {
+      "audit": {
+        "type": "choice",
+        "choice": "FAIL",
+        "confidence": 0.23,
+        "probabilities": {
+          "UNVERIFIED": 0.11,
+          "PASS": 0.4,
+          "FAIL": 0.49
+        }
+      }
+    },
+    "helper": {}
+  }
+}

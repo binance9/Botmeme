@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-24T05:48:13.639Z",
+  "file": "src/codex-trader.mjs",
+  "sha256": "3bc71e27bd07c19ba3015d4e9d80d577172d1147456d64c3e2d45f954d262c82",
+  "recommendation": "DROP",
+  "scope": "STATIC_MIGRATION_RECOMMENDATION_ONLY",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 2801,
+      "output_tokens": 41
+    },
+    "answers": {
+      "audit": {
+        "type": "choice",
+        "choice": "PASS",
+        "confidence": 0.46,
+        "probabilities": {
+          "UNVERIFIED": 0.19,
+          "FAIL": 0.16,
+          "PASS": 0.65
+        }
+      }
+    },
+    "helper": {}
+  }
+}

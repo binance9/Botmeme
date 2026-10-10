@@ -1,0 +1,2659 @@
+OWNER DASHBOARD FIXES — TEST RESULTS
+
+Expanded regression run (includes all six requested suites):
+node --test --test-reporter=tap tests/live-execution.test.cjs tests/state-layer.test.cjs tests/dashboard-adapter.test.cjs tests/manual-entry.test.cjs tests/wallet-capital.test.cjs tests/exit-manager.test.cjs tests/token-identity.test.cjs tests/runtime-contracts.test.cjs tests/risk.test.cjs tests/strategy-engine.test.cjs
+Exit 0. 411 passed, 0 failed, 0 skipped, 0 cancelled.
+
+TAP version 13
+# Subtest: live overview ignores paper fills while history retains both modes and capital uses live cash
+ok 1 - live overview ignores paper fills while history retains both modes and capital uses live cash
+  ---
+  duration_ms: 36.7058
+  type: 'test'
+  ...
+# Subtest: served UI has no obsolete labels or wallet connection entry points
+ok 2 - served UI has no obsolete labels or wallet connection entry points
+  ---
+  duration_ms: 6.0268
+  type: 'test'
+  ...
+# Subtest: real withdrawal UI validates base58, reserve, quick amounts, confirmation and duplicate submits
+ok 3 - real withdrawal UI validates base58, reserve, quick amounts, confirmation and duplicate submits
+  ---
+  duration_ms: 4.8339
+  type: 'test'
+  ...
+# Subtest: dashboard renders one live SOL wallet and converts capital and PnL to SOL
+ok 4 - dashboard renders one live SOL wallet and converts capital and PnL to SOL
+  ---
+  duration_ms: 4.494
+  type: 'test'
+  ...
+# Subtest: paper SOL settlement uses funding and reference prices without changing USD capital
+ok 5 - paper SOL settlement uses funding and reference prices without changing USD capital
+  ---
+  duration_ms: 9.1565
+  type: 'test'
+  ...
+# Subtest: empty runtime projects frozen UI shape without pretend scan progress or win rate
+ok 6 - empty runtime projects frozen UI shape without pretend scan progress or win rate
+  ---
+  duration_ms: 2.1241
+  type: 'test'
+  ...
+# Subtest: real runtime Hunter activity and observed prices reach one subscribed dashboard projection
+ok 7 - real runtime Hunter activity and observed prices reach one subscribed dashboard projection
+  ---
+  duration_ms: 82.4425
+  type: 'test'
+  ...
+# Subtest: network switch clears old chart and agent state; snapshot and refresh use actual epoch
+ok 8 - network switch clears old chart and agent state; snapshot and refresh use actual epoch
+  ---
+  duration_ms: 2.7022
+  type: 'test'
+  ...
+# Subtest: stale weak and future observed prices never masquerade as current chart data
+ok 9 - stale weak and future observed prices never masquerade as current chart data
+  ---
+  duration_ms: 2.7506
+  type: 'test'
+  ...
+# Subtest: failing SSE listener is isolated and adapter close detaches without closing runtime
+ok 10 - failing SSE listener is isolated and adapter close detaches without closing runtime
+  ---
+  duration_ms: 3.0103
+  type: 'test'
+  ...
+# Subtest: JEV progress uses recorded discovery progress with original MARKET_DATA attribution
+ok 11 - JEV progress uses recorded discovery progress with original MARKET_DATA attribution
+  ---
+  duration_ms: 3.2
+  type: 'test'
+  ...
+# Subtest: scan metrics are plain counts with percentages only while running
+ok 12 - scan metrics are plain counts with percentages only while running
+  ---
+  duration_ms: 3.7815
+  type: 'test'
+  ...
+# Subtest: price wave points preserve observed timestamps and prices rather than candle bucket times
+ok 13 - price wave points preserve observed timestamps and prices rather than candle bucket times
+  ---
+  duration_ms: 4.6326
+  type: 'test'
+  ...
+# Subtest: SOL reference feed keeps the chart alive and observations never steal focus
+ok 14 - SOL reference feed keeps the chart alive and observations never steal focus
+  ---
+  duration_ms: 4.3662
+  type: 'test'
+  ...
+# Subtest: structured scanner counts reach dashboard without parsing activity prose
+ok 15 - structured scanner counts reach dashboard without parsing activity prose
+  ---
+  duration_ms: 2.3886
+  type: 'test'
+  ...
+# Subtest: JEV card follows scan lifecycle instead of retaining an older Hunter result
+ok 16 - JEV card follows scan lifecycle instead of retaining an older Hunter result
+  ---
+  duration_ms: 8.1382
+  type: 'test'
+  ...
+# Subtest: AI completed-task counts deduplicate updates and exclude waiting or failed tasks
+ok 17 - AI completed-task counts deduplicate updates and exclude waiting or failed tasks
+  ---
+  duration_ms: 6.7519
+  type: 'test'
+  ...
+# Subtest: safety and Jev projections show the latest verdict per candidate only
+ok 18 - safety and Jev projections show the latest verdict per candidate only
+  ---
+  duration_ms: 9.0329
+  type: 'test'
+  ...
+# Subtest: protection projection exposes real stop, take-profit and high-water for an open position
+ok 19 - protection projection exposes real stop, take-profit and high-water for an open position
+  ---
+  duration_ms: 275.3401
+  type: 'test'
+  ...
+# Subtest: chart and trades stay on selected network; same-network BUY takes focus
+ok 20 - chart and trades stay on selected network; same-network BUY takes focus
+  ---
+  duration_ms: 2.3905
+  type: 'test'
+  ...
+# Subtest: stop remains at -30%: a -29% quote holds before recovery
+ok 21 - stop remains at -30%: a -29% quote holds before recovery
+  ---
+  duration_ms: 164.911
+  type: 'test'
+  ...
+# Subtest: stagnation: 31 minutes exits fully
+ok 22 - stagnation: 31 minutes exits fully
+  ---
+  duration_ms: 123.8477
+  type: 'test'
+  ...
+# Subtest: stagnation: 30 minute boundary exits fully
+ok 23 - stagnation: 30 minute boundary exits fully
+  ---
+  duration_ms: 104.9029
+  type: 'test'
+  ...
+# Subtest: stagnation: volume 500 holds
+ok 24 - stagnation: volume 500 holds
+  ---
+  duration_ms: 93.3361
+  type: 'test'
+  ...
+# Subtest: stagnation: volume 200 holds
+ok 25 - stagnation: volume 200 holds
+  ---
+  duration_ms: 93.1322
+  type: 'test'
+  ...
+# Subtest: stagnation: 29 minutes holds
+ok 26 - stagnation: 29 minutes holds
+  ---
+  duration_ms: 92.1575
+  type: 'test'
+  ...
+# Subtest: stagnation: price above entry still exits
+ok 27 - stagnation: price above entry still exits
+  ---
+  duration_ms: 92.121
+  type: 'test'
+  ...
+# Subtest: stagnation: stagnation overrides partial recovery with full exit
+ok 28 - stagnation: stagnation overrides partial recovery with full exit
+  ---
+  duration_ms: 100.2742
+  type: 'test'
+  ...
+# Subtest: stagnation: old entry exits fully
+ok 29 - stagnation: old entry exits fully
+  ---
+  duration_ms: 106.2205
+  type: 'test'
+  ...
+# Subtest: stagnation: newborn entry exits fully
+ok 30 - stagnation: newborn entry exits fully
+  ---
+  duration_ms: 91.1617
+  type: 'test'
+  ...
+# Subtest: stagnation: middle age entry exits fully
+ok 31 - stagnation: middle age entry exits fully
+  ---
+  duration_ms: 93.5964
+  type: 'test'
+  ...
+# Subtest: stagnation: five-minute entry remains eligible after crossing the buy window
+ok 32 - stagnation: five-minute entry remains eligible after crossing the buy window
+  ---
+  duration_ms: 91.0243
+  type: 'test'
+  ...
+# Subtest: stagnation: missing volume holds
+ok 33 - stagnation: missing volume holds
+  ---
+  duration_ms: 91.249
+  type: 'test'
+  ...
+# Subtest: open meme position buys only after an approved safety verdict; -31% print cuts the FULL position at -30%
+ok 34 - open meme position buys only after an approved safety verdict; -31% print cuts the FULL position at -30%
+  ---
+  duration_ms: 93.0489
+  type: 'test'
+  ...
+# Subtest: +20% is noise — no exit below x2 and above -30%
+ok 35 - +20% is noise — no exit below x2 and above -30%
+  ---
+  duration_ms: 93.0867
+  type: 'test'
+  ...
+# Subtest: x2 banks half once (RECOVER_ORIGINAL) and never repeats
+ok 36 - x2 banks half once (RECOVER_ORIGINAL) and never repeats
+  ---
+  duration_ms: 123.1202
+  type: 'test'
+  ...
+# Subtest: trailing only governs AFTER the recover tranche (chốt dần)
+ok 37 - trailing only governs AFTER the recover tranche (chốt dần)
+  ---
+  duration_ms: 201.6331
+  type: 'test'
+  ...
+# Subtest: legacy x10 multiple is retired — at x10 only the tranche + trail govern
+ok 38 - legacy x10 multiple is retired — at x10 only the tranche + trail govern
+  ---
+  duration_ms: 107.7347
+  type: 'test'
+  ...
+# Subtest: an availability outage is UNVERIFIED-advisory, an opaque reader failure still blocks the buy
+ok 39 - an availability outage is UNVERIFIED-advisory, an opaque reader failure still blocks the buy
+  ---
+  duration_ms: 122.0079
+  type: 'test'
+  ...
+# Subtest: manual live BUY and stale low-liquidity Token-2022 SELL through HTTP: jupiter
+ok 40 - manual live BUY and stale low-liquidity Token-2022 SELL through HTTP: jupiter
+  ---
+  duration_ms: 844.7821
+  type: 'test'
+  ...
+# Subtest: manual live BUY and stale low-liquidity Token-2022 SELL through HTTP: pumpfun
+ok 41 - manual live BUY and stale low-liquidity Token-2022 SELL through HTTP: pumpfun
+  ---
+  duration_ms: 583.8064
+  type: 'test'
+  ...
+# Subtest: manual live BUY and stale low-liquidity Token-2022 SELL through HTTP: jupiter-partial
+ok 42 - manual live BUY and stale low-liquidity Token-2022 SELL through HTTP: jupiter-partial
+  ---
+  duration_ms: 817.8731
+  type: 'test'
+  ...
+# Subtest: CAP fields identifies overflow of finite positive intent inputs
+ok 43 - CAP fields identifies overflow of finite positive intent inputs
+  ---
+  duration_ms: 57.7511
+  type: 'test'
+  ...
+# Subtest: CAP size identifies division underflow before decimals are read
+ok 44 - CAP size identifies division underflow before decimals are read
+  ---
+  duration_ms: 57.7145
+  type: 'test'
+  ...
+# Subtest: CAP decimals floor identifies SIZE with sanitized numeric evidence
+ok 45 - CAP decimals floor identifies SIZE with sanitized numeric evidence
+  ---
+  duration_ms: 60.7713
+  type: 'test'
+  ...
+# Subtest: CAP balance identifies simulated spend overrun despite matching risk budget
+ok 46 - CAP balance identifies simulated spend overrun despite matching risk budget
+  ---
+  duration_ms: 69.3144
+  type: 'test'
+  ...
+# Subtest: jupiter thin pool reduces 20% overrun once after decimals=2 and fills
+ok 47 - jupiter thin pool reduces 20% overrun once after decimals=2 and fills
+  ---
+  duration_ms: 111.7791
+  type: 'test'
+  ...
+# Subtest: jupiter thin pool reduces 20% overrun once after decimals=6 and fills
+ok 48 - jupiter thin pool reduces 20% overrun once after decimals=6 and fills
+  ---
+  duration_ms: 132.6623
+  type: 'test'
+  ...
+# Subtest: pumpfun thin pool reduces 20% overrun once after decimals=2 and fills
+ok 49 - pumpfun thin pool reduces 20% overrun once after decimals=2 and fills
+  ---
+  duration_ms: 153.4317
+  type: 'test'
+  ...
+# Subtest: pumpfun thin pool reduces 20% overrun once after decimals=6 and fills
+ok 50 - pumpfun thin pool reduces 20% overrun once after decimals=6 and fills
+  ---
+  duration_ms: 152.0139
+  type: 'test'
+  ...
+# Subtest: impact 1.6x allowed, stuck=false: rejects with bounded simulations
+ok 51 - impact 1.6x allowed, stuck=false: rejects with bounded simulations
+  ---
+  duration_ms: 76.7975
+  type: 'test'
+  ...
+# Subtest: impact 1.2x allowed, stuck=true: rejects with bounded simulations
+ok 52 - impact 1.2x allowed, stuck=true: rejects with bounded simulations
+  ---
+  duration_ms: 91.3193
+  type: 'test'
+  ...
+# Subtest: pump cause reaches activity: BondingCurve.account-missing
+ok 53 - pump cause reaches activity: BondingCurve.account-missing
+  ---
+  duration_ms: 63.096
+  type: 'test'
+  ...
+# Subtest: pump cause reaches activity: BondingCurve.owner-mismatch
+ok 54 - pump cause reaches activity: BondingCurve.owner-mismatch
+  ---
+  duration_ms: 78.0216
+  type: 'test'
+  ...
+# Subtest: pump cause reaches activity: BondingCurve.complete
+ok 55 - pump cause reaches activity: BondingCurve.complete
+  ---
+  duration_ms: 76.8641
+  type: 'test'
+  ...
+# Subtest: commander journals fresh REAL_VOLUME BUY with five snapshots and an unpriced live holding: UNKNOWN
+ok 56 - commander journals fresh REAL_VOLUME BUY with five snapshots and an unpriced live holding: UNKNOWN
+  ---
+  duration_ms: 311.1915
+  type: 'test'
+  ...
+# Subtest: commander journals fresh REAL_VOLUME BUY with five snapshots and an unpriced live holding: RANGE
+ok 57 - commander journals fresh REAL_VOLUME BUY with five snapshots and an unpriced live holding: RANGE
+  ---
+  duration_ms: 295.1923
+  type: 'test'
+  ...
+# Subtest: 10-token burst fills in four concurrent waves, including intents older than 60 seconds
+ok 58 - 10-token burst fills in four concurrent waves, including intents older than 60 seconds
+  ---
+  duration_ms: 679.8864
+  type: 'test'
+  ...
+# Subtest: same-token BUY then SELL serialize while another token progresses
+ok 59 - same-token BUY then SELL serialize while another token progresses
+  ---
+  duration_ms: 197.7679
+  type: 'test'
+  ...
+# Subtest: three unresolved concurrent signatures persist and all reconcile after restart without resending
+ok 60 - three unresolved concurrent signatures persist and all reconcile after restart without resending
+  ---
+  duration_ms: 235.1912
+  type: 'test'
+  ...
+# Subtest: successful concurrent fills cannot clear another transaction awaiting reconciliation
+ok 61 - successful concurrent fills cannot clear another transaction awaiting reconciliation
+  ---
+  duration_ms: 280.7056
+  type: 'test'
+  ...
+# Subtest: STOP drains queued lanes without sending the burst tail
+ok 62 - STOP drains queued lanes without sending the burst tail
+  ---
+  duration_ms: 255.9893
+  type: 'test'
+  ...
+# Subtest: parallel BUY reservations preserve the shared SOL reserve
+ok 63 - parallel BUY reservations preserve the shared SOL reserve
+  ---
+  duration_ms: 247.8253
+  type: 'test'
+  ...
+# Subtest: live intent age boundary: 60001ms
+ok 64 - live intent age boundary: 60001ms
+  ---
+  duration_ms: 90.4037
+  type: 'test'
+  ...
+# Subtest: live intent age boundary: 179999ms
+ok 65 - live intent age boundary: 179999ms
+  ---
+  duration_ms: 108.8557
+  type: 'test'
+  ...
+# Subtest: live intent age boundary: 180000ms
+ok 66 - live intent age boundary: 180000ms
+  ---
+  duration_ms: 108.091
+  type: 'test'
+  ...
+# Subtest: live intent age boundary: 180001ms
+ok 67 - live intent age boundary: 180001ms
+  ---
+  duration_ms: 62.9926
+  type: 'test'
+  ...
+# Subtest: fresh BUY simulation failure cools both routes for ten minutes and survives restart
+ok 68 - fresh BUY simulation failure cools both routes for ten minutes and survives restart
+  ---
+  duration_ms: 219.1186
+  type: 'test'
+  ...
+# Subtest: simulation failure outside fresh window has no cooldown: 59999
+ok 69 - simulation failure outside fresh window has no cooldown: 59999
+  ---
+  duration_ms: 136.6035
+  type: 'test'
+  ...
+# Subtest: simulation failure outside fresh window has no cooldown: 1800001
+ok 70 - simulation failure outside fresh window has no cooldown: 1800001
+  ---
+  duration_ms: 141.7154
+  type: 'test'
+  ...
+# Subtest: simulation failure outside fresh window has no cooldown: 2678400000
+ok 71 - simulation failure outside fresh window has no cooldown: 2678400000
+  ---
+  duration_ms: 173.6724
+  type: 'test'
+  ...
+# Subtest: SELL simulation failure does not cool down the token
+ok 72 - SELL simulation failure does not cool down the token
+  ---
+  duration_ms: 202.2487
+  type: 'test'
+  ...
+# Subtest: RPC 429 and configured endpoint failure fall through to public RPC and arm
+ok 73 - RPC 429 and configured endpoint failure fall through to public RPC and arm
+  ---
+  duration_ms: 17.0356
+  type: 'test'
+  ...
+# Subtest: send fallback once with identical bytes and stop on success: rpc error
+ok 74 - send fallback once with identical bytes and stop on success: rpc error
+  ---
+  duration_ms: 102.8453
+  type: 'test'
+  ...
+# Subtest: send fallback once with identical bytes and stop on success: missing result
+ok 75 - send fallback once with identical bytes and stop on success: missing result
+  ---
+  duration_ms: 92.6178
+  type: 'test'
+  ...
+# Subtest: send fallback once with identical bytes and stop on success: null result
+ok 76 - send fallback once with identical bytes and stop on success: null result
+  ---
+  duration_ms: 93.1444
+  type: 'test'
+  ...
+# Subtest: send fallback once with identical bytes and stop on success: HTTP 500
+ok 77 - send fallback once with identical bytes and stop on success: HTTP 500
+  ---
+  duration_ms: 93.4102
+  type: 'test'
+  ...
+# Subtest: send fallback once with identical bytes and stop on success: timeout
+ok 78 - send fallback once with identical bytes and stop on success: timeout
+  ---
+  duration_ms: 93.6447
+  type: 'test'
+  ...
+# Subtest: send fallback once with identical bytes and stop on success: network
+ok 79 - send fallback once with identical bytes and stop on success: network
+  ---
+  duration_ms: 92.4263
+  type: 'test'
+  ...
+# Subtest: all RPC endpoints fail with LIVE_RPC_FAILED, including balance refresh
+ok 80 - all RPC endpoints fail with LIVE_RPC_FAILED, including balance refresh
+  ---
+  duration_ms: 16.4626
+  type: 'test'
+  ...
+# Subtest: duplicate endpoints are only attempted once
+ok 81 - duplicate endpoints are only attempted once
+  ---
+  duration_ms: 15.9008
+  type: 'test'
+  ...
+# Subtest: read RPCs fall back across BUY, SELL, simulation, fees and withdrawal
+ok 82 - read RPCs fall back across BUY, SELL, simulation, fees and withdrawal
+  ---
+  duration_ms: 218.7652
+  type: 'test'
+  ...
+# Subtest: pump bonding curve buy and sell after Jupiter no-route: true, TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+ok 83 - pump bonding curve buy and sell after Jupiter no-route: true, TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+  ---
+  duration_ms: 170.4035
+  type: 'test'
+  ...
+# Subtest: pump bonding curve buy and sell after Jupiter no-route: empty, TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+ok 84 - pump bonding curve buy and sell after Jupiter no-route: empty, TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+  ---
+  duration_ms: 173.5747
+  type: 'test'
+  ...
+# Subtest: pump bonding curve buy and sell after Jupiter no-route: code, TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+ok 85 - pump bonding curve buy and sell after Jupiter no-route: code, TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+  ---
+  duration_ms: 216.3872
+  type: 'test'
+  ...
+# Subtest: pump bonding curve buy and sell after Jupiter no-route: true, TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+ok 86 - pump bonding curve buy and sell after Jupiter no-route: true, TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+  ---
+  duration_ms: 183.531
+  type: 'test'
+  ...
+# Subtest: pump bonding curve buy and sell after Jupiter no-route: empty, TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+ok 87 - pump bonding curve buy and sell after Jupiter no-route: empty, TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+  ---
+  duration_ms: 187.9545
+  type: 'test'
+  ...
+# Subtest: pump bonding curve buy and sell after Jupiter no-route: code, TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+ok 88 - pump bonding curve buy and sell after Jupiter no-route: code, TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+  ---
+  duration_ms: 189.7676
+  type: 'test'
+  ...
+# Subtest: Jupiter 429 falls back to pump fill
+ok 89 - Jupiter 429 falls back to pump fill
+  ---
+  duration_ms: 1585.9173
+  type: 'test'
+  ...
+# Subtest: Jupiter 3s timeout falls back to pump fill
+ok 90 - Jupiter 3s timeout falls back to pump fill
+  ---
+  duration_ms: 7584.5251
+  type: 'test'
+  ...
+# Subtest: Jupiter 400 other error falls back to pump fill
+ok 91 - Jupiter 400 other error falls back to pump fill
+  ---
+  duration_ms: 105.3671
+  type: 'test'
+  ...
+# Subtest: Jupiter 422 minimum amount falls back to pump fill
+ok 92 - Jupiter 422 minimum amount falls back to pump fill
+  ---
+  duration_ms: 110.7297
+  type: 'test'
+  ...
+# Subtest: Jupiter swap 422 priority schema falls back to pump fill
+ok 93 - Jupiter swap 422 priority schema falls back to pump fill
+  ---
+  duration_ms: 108.9651
+  type: 'test'
+  ...
+# Subtest: Jupiter swap 422 no-route falls back to pump fill
+ok 94 - Jupiter swap 422 no-route falls back to pump fill
+  ---
+  duration_ms: 124.5611
+  type: 'test'
+  ...
+# Subtest: Jupiter 503 falls back to pump fill
+ok 95 - Jupiter 503 falls back to pump fill
+  ---
+  duration_ms: 115.2142
+  type: 'test'
+  ...
+# Subtest: Jupiter invalid JSON falls back to pump fill
+ok 96 - Jupiter invalid JSON falls back to pump fill
+  ---
+  duration_ms: 138.5404
+  type: 'test'
+  ...
+# Subtest: Jupiter swap 429 falls back to pump fill
+ok 97 - Jupiter swap 429 falls back to pump fill
+  ---
+  duration_ms: 124.726
+  type: 'test'
+  ...
+# Subtest: Jupiter swap 400 no-route falls back to pump fill
+ok 98 - Jupiter swap 400 no-route falls back to pump fill
+  ---
+  duration_ms: 138.0899
+  type: 'test'
+  ...
+# Subtest: Jupiter swap invalid JSON falls back to pump fill
+ok 99 - Jupiter swap invalid JSON falls back to pump fill
+  ---
+  duration_ms: 123.4446
+  type: 'test'
+  ...
+# Subtest: 429 retry recovers on Jupiter without pump or cooldown
+ok 100 - 429 retry recovers on Jupiter without pump or cooldown
+  ---
+  duration_ms: 1589.7037
+  type: 'test'
+  ...
+# Subtest: legacy transient cooldown does not block Jupiter after restart
+ok 101 - legacy transient cooldown does not block Jupiter after restart
+  ---
+  duration_ms: 119.3153
+  type: 'test'
+  ...
+# Subtest: Jupiter route wins even for a pump token
+ok 102 - Jupiter route wins even for a pump token
+  ---
+  duration_ms: 131.9154
+  type: 'test'
+  ...
+# Subtest: both routes fail safely and cool down: missing
+ok 103 - both routes fail safely and cool down: missing
+  ---
+  duration_ms: 128.766
+  type: 'test'
+  ...
+# Subtest: both routes fail safely and cool down: complete
+ok 104 - both routes fail safely and cool down: complete
+  ---
+  duration_ms: 139.481
+  type: 'test'
+  ...
+# Subtest: both routes fail safely and cool down: wrong-owner
+ok 105 - both routes fail safely and cool down: wrong-owner
+  ---
+  duration_ms: 140.3816
+  type: 'test'
+  ...
+# Subtest: SELL with no Jupiter route and missing Pump curve surfaces both errors without broadcasting
+ok 106 - SELL with no Jupiter route and missing Pump curve surfaces both errors without broadcasting
+  ---
+  duration_ms: 158.4208
+  type: 'test'
+  ...
+# Subtest: pump receipt below minimum remains pending for reconciliation
+ok 107 - pump receipt below minimum remains pending for reconciliation
+  ---
+  duration_ms: 108.6964
+  type: 'test'
+  ...
+# Subtest: pump sell receipt below minimum remains pending for reconciliation
+ok 108 - pump sell receipt below minimum remains pending for reconciliation
+  ---
+  duration_ms: 265.2402
+  type: 'test'
+  ...
+# Subtest: confirmed no-route cooldown skips only Jupiter and survives restart
+ok 109 - confirmed no-route cooldown skips only Jupiter and survives restart
+  ---
+  duration_ms: 199.8889
+  type: 'test'
+  ...
+# Subtest: cooldown expires at ten minutes and a successful quote plus fill clears persisted cooldown
+ok 110 - cooldown expires at ten minutes and a successful quote plus fill clears persisted cooldown
+  ---
+  duration_ms: 414.8065
+  type: 'test'
+  ...
+# Subtest: confirmation succeeds on third poll: confirmed
+ok 111 - confirmation succeeds on third poll: confirmed
+  ---
+  duration_ms: 144.1467
+  type: 'test'
+  ...
+# Subtest: confirmation succeeds on third poll: finalized
+ok 112 - confirmation succeeds on third poll: finalized
+  ---
+  duration_ms: 103.145
+  type: 'test'
+  ...
+# Subtest: confirmation exhaustion stays armed and pending: {"signatureStatus":null}
+ok 113 - confirmation exhaustion stays armed and pending: {"signatureStatus":null}
+  ---
+  duration_ms: 157.1766
+  type: 'test'
+  ...
+# Subtest: confirmation exhaustion stays armed and pending: {"signatureStatus":{"confirmationStatus":"processed","err":null}}
+ok 114 - confirmation exhaustion stays armed and pending: {"signatureStatus":{"confirmationStatus":"processed","err":null}}
+  ---
+  duration_ms: 122.1903
+  type: 'test'
+  ...
+# Subtest: confirmation exhaustion stays armed and pending: {"statusError":true}
+ok 115 - confirmation exhaustion stays armed and pending: {"statusError":true}
+  ---
+  duration_ms: 168.2087
+  type: 'test'
+  ...
+# Subtest: confirmation exhaustion stays armed and pending: {"statusSequence":[{}]}
+ok 116 - confirmation exhaustion stays armed and pending: {"statusSequence":[{}]}
+  ---
+  duration_ms: 187.5425
+  type: 'test'
+  ...
+# Subtest: transient confirmation transport error recovers without disarming
+ok 117 - transient confirmation transport error recovers without disarming
+  ---
+  duration_ms: 91.5957
+  type: 'test'
+  ...
+# Subtest: pending confirmation can reconcile while still armed: reconcile
+ok 118 - pending confirmation can reconcile while still armed: reconcile
+  ---
+  duration_ms: 161.9671
+  type: 'test'
+  ...
+# Subtest: pending confirmation can reconcile while still armed: arm
+ok 119 - pending confirmation can reconcile while still armed: arm
+  ---
+  duration_ms: 138.826
+  type: 'test'
+  ...
+# Subtest: application remains live and running after confirmation RPC exhaustion
+ok 120 - application remains live and running after confirmation RPC exhaustion
+  ---
+  duration_ms: 215.1733
+  type: 'test'
+  ...
+# Subtest: live RPC falls back to configured endpoint when environment endpoint is absent
+ok 121 - live RPC falls back to configured endpoint when environment endpoint is absent
+  ---
+  duration_ms: 121.4203
+  type: 'test'
+  ...
+# Subtest: on-chain transaction error records failure and clears pending without a position
+ok 122 - on-chain transaction error records failure and clears pending without a position
+  ---
+  duration_ms: 154.2503
+  type: 'test'
+  ...
+# Subtest: all live RPCs use environment endpoint unchanged: application=false
+ok 123 - all live RPCs use environment endpoint unchanged: application=false
+  ---
+  duration_ms: 109.6799
+  type: 'test'
+  ...
+# Subtest: all live RPCs use environment endpoint unchanged: application=true
+ok 124 - all live RPCs use environment endpoint unchanged: application=true
+  ---
+  duration_ms: 113.9334
+  type: 'test'
+  ...
+# Subtest: zero chain balance cannot arm
+ok 125 - zero chain balance cannot arm
+  ---
+  duration_ms: 10.8403
+  type: 'test'
+  ...
+# Subtest: armed application sweep reaches a live fill with fresh liquidity 0
+ok 126 - armed application sweep reaches a live fill with fresh liquidity 0
+  ---
+  duration_ms: 107.2047
+  type: 'test'
+  ...
+# Subtest: armed application sweep reaches a live fill with fresh liquidity 10
+ok 127 - armed application sweep reaches a live fill with fresh liquidity 10
+  ---
+  duration_ms: 123.066
+  type: 'test'
+  ...
+# Subtest: armed application sweep reaches a live fill with fresh liquidity 1000
+ok 128 - armed application sweep reaches a live fill with fresh liquidity 1000
+  ---
+  duration_ms: 94.3332
+  type: 'test'
+  ...
+# Subtest: live sweep waits for asynchronous safety before broadcasting
+ok 129 - live sweep waits for asynchronous safety before broadcasting
+  ---
+  duration_ms: 140.1677
+  type: 'test'
+  ...
+# Subtest: pending live safety cannot trade after reject
+ok 130 - pending live safety cannot trade after reject
+  ---
+  duration_ms: 45.6935
+  type: 'test'
+  ...
+# Subtest: pending live safety cannot trade after stop
+ok 131 - pending live safety cannot trade after stop
+  ---
+  duration_ms: 63.0199
+  type: 'test'
+  ...
+# Subtest: real SOL withdrawal signs a SystemProgram transfer, deducts chain balance, persists signature and projects history
+ok 132 - real SOL withdrawal signs a SystemProgram transfer, deducts chain balance, persists signature and projects history
+  ---
+  duration_ms: 48.1674
+  type: 'test'
+  ...
+# Subtest: withdraw rejects invalid destination, precision, overdraw and reserve without broadcast
+ok 133 - withdraw rejects invalid destination, precision, overdraw and reserve without broadcast
+  ---
+  duration_ms: 47.5517
+  type: 'test'
+  ...
+# Subtest: concurrent withdrawals serialize; ambiguous send locks and never resends
+ok 134 - concurrent withdrawals serialize; ambiguous send locks and never resends
+  ---
+  duration_ms: 83.3573
+  type: 'test'
+  ...
+# Subtest: withdrawal obeys kill switch and queued STOP without broadcasting
+ok 135 - withdrawal obeys kill switch and queued STOP without broadcasting
+  ---
+  duration_ms: 11.4674
+  type: 'test'
+  ...
+# Subtest: live fills reach dashboard positions, trade history and activity without source filtering
+ok 136 - live fills reach dashboard positions, trade history and activity without source filtering
+  ---
+  duration_ms: 224.2711
+  type: 'test'
+  ...
+# Subtest: application keeps legacy paper history without funding live overview or live positions
+ok 137 - application keeps legacy paper history without funding live overview or live positions
+  ---
+  duration_ms: 175.8202
+  type: 'test'
+  ...
+# Subtest: withdrawal HTTP validates requests and destination store persists independently per network
+ok 138 - withdrawal HTTP validates requests and destination store persists independently per network
+  ---
+  duration_ms: 89.4156
+  type: 'test'
+  ...
+# Subtest: live accepts order at or below $2 cap: $0.5
+ok 139 - live accepts order at or below $2 cap: $0.5
+  ---
+  duration_ms: 98.5452
+  type: 'test'
+  ...
+# Subtest: live accepts order at or below $2 cap: $1
+ok 140 - live accepts order at or below $2 cap: $1
+  ---
+  duration_ms: 77.12
+  type: 'test'
+  ...
+# Subtest: live accepts order at or below $2 cap: $2
+ok 141 - live accepts order at or below $2 cap: $2
+  ---
+  duration_ms: 77.7177
+  type: 'test'
+  ...
+# Subtest: keyed Jupiter uses authenticated API for quote and swap
+ok 142 - keyed Jupiter uses authenticated API for quote and swap
+  ---
+  duration_ms: 77.8591
+  type: 'test'
+  ...
+# Subtest: $2.4 request clamps to $2 with quantity derived at snapshot price
+ok 143 - $2.4 request clamps to $2 with quantity derived at snapshot price
+  ---
+  duration_ms: 78.1031
+  type: 'test'
+  ...
+# Subtest: 5% reference-price drift clamps to risk exposure
+ok 144 - 5% reference-price drift clamps to risk exposure
+  ---
+  duration_ms: 78.3488
+  type: 'test'
+  ...
+# Subtest: risk exposure below owner cap remains authoritative
+ok 145 - risk exposure below owner cap remains authoritative
+  ---
+  duration_ms: 80.4439
+  type: 'test'
+  ...
+# Subtest: falling quote price reduces sizing to risk quantity
+ok 146 - falling quote price reduces sizing to risk quantity
+  ---
+  duration_ms: 77.2924
+  type: 'test'
+  ...
+# Subtest: live quote quantity rounds down to token decimals
+ok 147 - live quote quantity rounds down to token decimals
+  ---
+  duration_ms: 92.7085
+  type: 'test'
+  ...
+# Subtest: exactly 10% reference-price drift remains allowed
+ok 148 - exactly 10% reference-price drift remains allowed
+  ---
+  duration_ms: 79.099
+  type: 'test'
+  ...
+# Subtest: $1.15 drifted budget clamps to risk exposure and owner cap (risk $1)
+ok 149 - $1.15 drifted budget clamps to risk exposure and owner cap (risk $1)
+  ---
+  duration_ms: 77.5564
+  type: 'test'
+  ...
+# Subtest: $1.4 drifted budget clamps to risk exposure and owner cap (risk $0.9)
+ok 150 - $1.4 drifted budget clamps to risk exposure and owner cap (risk $0.9)
+  ---
+  duration_ms: 89.8627
+  type: 'test'
+  ...
+# Subtest: same-token refresh storm waits for the first intent and rejects an already-open position
+ok 151 - same-token refresh storm waits for the first intent and rejects an already-open position
+  ---
+  duration_ms: 202.4174
+  type: 'test'
+  ...
+# Subtest: explicit position cap override is honored by mocked Jupiter
+ok 152 - explicit position cap override is honored by mocked Jupiter
+  ---
+  duration_ms: 93.516
+  type: 'test'
+  ...
+# Subtest: application LIVE routes BUY into live portfolio and DISARM stays safe
+ok 153 - application LIVE routes BUY into live portfolio and DISARM stays safe
+  ---
+  duration_ms: 101.3125
+  type: 'test'
+  ...
+# Subtest: wallet HTTP creates encrypted key, exposes only address, survives restart and enforces confirmation
+ok 154 - wallet HTTP creates encrypted key, exposes only address, survives restart and enforces confirmation
+  ---
+  duration_ms: 1140.536
+  type: 'test'
+  ...
+# Subtest: key removal and paper intents never reach a live swap
+ok 155 - key removal and paper intents never reach a live swap
+  ---
+  duration_ms: 88.7287
+  type: 'test'
+  ...
+# Subtest: LOCKED without key; valid key alone never arms or sends
+ok 156 - LOCKED without key; valid key alone never arms or sends
+  ---
+  duration_ms: 7.963
+  type: 'test'
+  ...
+# Subtest: invalid key is redacted and exact confirmation is required
+ok 157 - invalid key is redacted and exact confirmation is required
+  ---
+  duration_ms: 10.1471
+  type: 'test'
+  ...
+# Subtest: Jupiter SELL sums matching mint balances: Token-2022 only with transfer-fee extension
+ok 158 - Jupiter SELL sums matching mint balances: Token-2022 only with transfer-fee extension
+  ---
+  duration_ms: 198.237
+  type: 'test'
+  ...
+# Subtest: Jupiter SELL sums matching mint balances: split classic and Token-2022 accounts
+ok 159 - Jupiter SELL sums matching mint balances: split classic and Token-2022 accounts
+  ---
+  duration_ms: 171.4234
+  type: 'test'
+  ...
+# Subtest: SELL zero in both programs retains full-position rejection: {}
+ok 160 - SELL zero in both programs retains full-position rejection: {}
+  ---
+  duration_ms: 139.1331
+  type: 'test'
+  ...
+# Subtest: SELL zero in both programs retains full-position rejection: {"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA":["0"],"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb":["0"]}
+ok 161 - SELL zero in both programs retains full-position rejection: {"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA":["0"],"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb":["0"]}
+  ---
+  duration_ms: 123.1028
+  type: 'test'
+  ...
+# Subtest: SELL cannot use a partial balance when Token-2022 RPC fails
+ok 162 - SELL cannot use a partial balance when Token-2022 RPC fails
+  ---
+  duration_ms: 141.129
+  type: 'test'
+  ...
+# Subtest: mock Jupiter BUY signs once and publishes actual contract-valid live receipt; SELL closes full position
+ok 163 - mock Jupiter BUY signs once and publishes actual contract-valid live receipt; SELL closes full position
+  ---
+  duration_ms: 213.0634
+  type: 'test'
+  ...
+# Subtest: gas reserve rejects without broadcasting
+ok 164 - gas reserve rejects without broadcasting
+  ---
+  duration_ms: 64.7723
+  type: 'test'
+  ...
+# Subtest: simulation spend cap rejects without broadcasting
+ok 165 - simulation spend cap rejects without broadcasting
+  ---
+  duration_ms: 76.24
+  type: 'test'
+  ...
+# Subtest: safety veto rejects without broadcasting
+ok 166 - safety veto rejects without broadcasting
+  ---
+  duration_ms: 45.9133
+  type: 'test'
+  ...
+# Subtest: kill before signing rejects without broadcasting
+ok 167 - kill before signing rejects without broadcasting
+  ---
+  duration_ms: 62.3484
+  type: 'test'
+  ...
+# Subtest: STOP during quote rejects without broadcasting
+ok 168 - STOP during quote rejects without broadcasting
+  ---
+  duration_ms: 62.1619
+  type: 'test'
+  ...
+# Subtest: remote errors cannot leak keys rejects without broadcasting
+ok 169 - remote errors cannot leak keys rejects without broadcasting
+  ---
+  duration_ms: 62.3182
+  type: 'test'
+  ...
+# Subtest: kill file blocks arming
+ok 170 - kill file blocks arming
+  ---
+  duration_ms: 8.4831
+  type: 'test'
+  ...
+# Subtest: daily loss cap persists across engine restart and blocks new trades
+ok 171 - daily loss cap persists across engine restart and blocks new trades
+  ---
+  duration_ms: 211.2907
+  type: 'test'
+  ...
+# Subtest: ambiguous broadcast exhausts endpoints, persists signature, and never resends on restart
+ok 172 - ambiguous broadcast exhausts endpoints, persists signature, and never resends on restart
+  ---
+  duration_ms: 116.6278
+  type: 'test'
+  ...
+# Subtest: pending reconciliation arm: null
+ok 173 - pending reconciliation arm: null
+  ---
+  duration_ms: 20.186
+  type: 'test'
+  ...
+# Subtest: pending reconciliation arm: {"err":{"InstructionError":[0,"failed"]}}
+ok 174 - pending reconciliation arm: {"err":{"InstructionError":[0,"failed"]}}
+  ---
+  duration_ms: 21.9748
+  type: 'test'
+  ...
+# Subtest: pending reconciliation arm: {"confirmationStatus":"confirmed","err":null}
+ok 175 - pending reconciliation arm: {"confirmationStatus":"confirmed","err":null}
+  ---
+  duration_ms: 21.9266
+  type: 'test'
+  ...
+# Subtest: pending reconciliation arm: {"confirmationStatus":"finalized","err":null}
+ok 176 - pending reconciliation arm: {"confirmationStatus":"finalized","err":null}
+  ---
+  duration_ms: 20.0145
+  type: 'test'
+  ...
+# Subtest: pending reconciliation boot: null
+ok 177 - pending reconciliation boot: null
+  ---
+  duration_ms: 22.3379
+  type: 'test'
+  ...
+# Subtest: pending reconciliation boot: {"err":{"InstructionError":[0,"failed"]}}
+ok 178 - pending reconciliation boot: {"err":{"InstructionError":[0,"failed"]}}
+  ---
+  duration_ms: 24.8541
+  type: 'test'
+  ...
+# Subtest: pending reconciliation boot: {"confirmationStatus":"confirmed","err":null}
+ok 179 - pending reconciliation boot: {"confirmationStatus":"confirmed","err":null}
+  ---
+  duration_ms: 24.1479
+  type: 'test'
+  ...
+# Subtest: pending reconciliation boot: {"confirmationStatus":"finalized","err":null}
+ok 180 - pending reconciliation boot: {"confirmationStatus":"finalized","err":null}
+  ---
+  duration_ms: 22.0711
+  type: 'test'
+  ...
+# Subtest: unresolved pending stays locked: {"statusError":true}
+ok 181 - unresolved pending stays locked: {"statusError":true}
+  ---
+  duration_ms: 93.917
+  type: 'test'
+  ...
+# Subtest: unresolved pending stays locked: {"statusMalformed":true}
+ok 182 - unresolved pending stays locked: {"statusMalformed":true}
+  ---
+  duration_ms: 88.6462
+  type: 'test'
+  ...
+# Subtest: unresolved pending stays locked: {"signatureStatus":{"confirmationStatus":"processed","err":null}}
+ok 183 - unresolved pending stays locked: {"signatureStatus":{"confirmationStatus":"processed","err":null}}
+  ---
+  duration_ms: 99.2336
+  type: 'test'
+  ...
+# Subtest: boot and arm cannot reconcile a same-process swap actively awaiting broadcast
+ok 184 - boot and arm cannot reconcile a same-process swap actively awaiting broadcast
+  ---
+  duration_ms: 117.8362
+  type: 'test'
+  ...
+# Subtest: pre-arm backlog is ignored; paper cannot consume live intents even after STOP
+ok 185 - pre-arm backlog is ignored; paper cannot consume live intents even after STOP
+  ---
+  duration_ms: 126.2189
+  type: 'test'
+  ...
+# Subtest: application HTTP LIVE requires exact confirmation; STOP and restart remain safe
+ok 186 - application HTTP LIVE requires exact confirmation; STOP and restart remain safe
+  ---
+  duration_ms: 56.259
+  type: 'test'
+  ...
+# Subtest: dashboard requires typed LIVE and renders chain balance only while live/safe
+ok 187 - dashboard requires typed LIVE and renders chain balance only while live/safe
+  ---
+  duration_ms: 1.7582
+  type: 'test'
+  ...
+# Subtest: same-token refresh storm waits for the first intent and rejects an already-open position
+ok 188 - same-token refresh storm waits for the first intent and rejects an already-open position
+  ---
+  duration_ms: 252.7634
+  type: 'test'
+  ...
+# Subtest: explicit position cap override is honored by mocked Jupiter
+ok 189 - explicit position cap override is honored by mocked Jupiter
+  ---
+  duration_ms: 110.7662
+  type: 'test'
+  ...
+# Subtest: application LIVE routes BUY into live portfolio and DISARM stays safe
+ok 190 - application LIVE routes BUY into live portfolio and DISARM stays safe
+  ---
+  duration_ms: 149.4739
+  type: 'test'
+  ...
+# Subtest: wallet HTTP creates encrypted key, exposes only address, survives restart and enforces confirmation
+ok 191 - wallet HTTP creates encrypted key, exposes only address, survives restart and enforces confirmation
+  ---
+  duration_ms: 1094.9424
+  type: 'test'
+  ...
+# Subtest: key removal and paper intents never reach a live swap
+ok 192 - key removal and paper intents never reach a live swap
+  ---
+  duration_ms: 87.8269
+  type: 'test'
+  ...
+# Subtest: LOCKED without key; valid key alone never arms or sends
+ok 193 - LOCKED without key; valid key alone never arms or sends
+  ---
+  duration_ms: 9.2968
+  type: 'test'
+  ...
+# Subtest: invalid key is redacted and exact confirmation is required
+ok 194 - invalid key is redacted and exact confirmation is required
+  ---
+  duration_ms: 12.0599
+  type: 'test'
+  ...
+# Subtest: mock Jupiter BUY signs once and publishes actual contract-valid live receipt; SELL closes full position
+ok 195 - mock Jupiter BUY signs once and publishes actual contract-valid live receipt; SELL closes full position
+  ---
+  duration_ms: 182.7102
+  type: 'test'
+  ...
+# Subtest: gas reserve rejects without broadcasting
+ok 196 - gas reserve rejects without broadcasting
+  ---
+  duration_ms: 46.7567
+  type: 'test'
+  ...
+# Subtest: simulation spend cap rejects without broadcasting
+ok 197 - simulation spend cap rejects without broadcasting
+  ---
+  duration_ms: 62.029
+  type: 'test'
+  ...
+# Subtest: safety veto rejects without broadcasting
+ok 198 - safety veto rejects without broadcasting
+  ---
+  duration_ms: 44.901
+  type: 'test'
+  ...
+# Subtest: kill before signing rejects without broadcasting
+ok 199 - kill before signing rejects without broadcasting
+  ---
+  duration_ms: 61.8125
+  type: 'test'
+  ...
+# Subtest: STOP during quote rejects without broadcasting
+ok 200 - STOP during quote rejects without broadcasting
+  ---
+  duration_ms: 63.3633
+  type: 'test'
+  ...
+# Subtest: remote errors cannot leak keys rejects without broadcasting
+ok 201 - remote errors cannot leak keys rejects without broadcasting
+  ---
+  duration_ms: 64.6728
+  type: 'test'
+  ...
+# Subtest: kill file blocks arming
+ok 202 - kill file blocks arming
+  ---
+  duration_ms: 8.9077
+  type: 'test'
+  ...
+# Subtest: daily loss cap persists across engine restart and blocks new trades
+ok 203 - daily loss cap persists across engine restart and blocks new trades
+  ---
+  duration_ms: 207.7624
+  type: 'test'
+  ...
+# Subtest: ambiguous broadcast exhausts endpoints, persists signature, and never resends on restart
+ok 204 - ambiguous broadcast exhausts endpoints, persists signature, and never resends on restart
+  ---
+  duration_ms: 101.4755
+  type: 'test'
+  ...
+# Subtest: pending reconciliation arm: null
+ok 205 - pending reconciliation arm: null
+  ---
+  duration_ms: 19.1065
+  type: 'test'
+  ...
+# Subtest: pending reconciliation arm: {"err":{"InstructionError":[0,"failed"]}}
+ok 206 - pending reconciliation arm: {"err":{"InstructionError":[0,"failed"]}}
+  ---
+  duration_ms: 20.0462
+  type: 'test'
+  ...
+# Subtest: pending reconciliation arm: {"confirmationStatus":"confirmed","err":null}
+ok 207 - pending reconciliation arm: {"confirmationStatus":"confirmed","err":null}
+  ---
+  duration_ms: 20.497
+  type: 'test'
+  ...
+# Subtest: pending reconciliation arm: {"confirmationStatus":"finalized","err":null}
+ok 208 - pending reconciliation arm: {"confirmationStatus":"finalized","err":null}
+  ---
+  duration_ms: 22.3625
+  type: 'test'
+  ...
+# Subtest: pending reconciliation boot: null
+ok 209 - pending reconciliation boot: null
+  ---
+  duration_ms: 22.6902
+  type: 'test'
+  ...
+# Subtest: pending reconciliation boot: {"err":{"InstructionError":[0,"failed"]}}
+ok 210 - pending reconciliation boot: {"err":{"InstructionError":[0,"failed"]}}
+  ---
+  duration_ms: 23.2118
+  type: 'test'
+  ...
+# Subtest: pending reconciliation boot: {"confirmationStatus":"confirmed","err":null}
+ok 211 - pending reconciliation boot: {"confirmationStatus":"confirmed","err":null}
+  ---
+  duration_ms: 23.9182
+  type: 'test'
+  ...
+# Subtest: pending reconciliation boot: {"confirmationStatus":"finalized","err":null}
+ok 212 - pending reconciliation boot: {"confirmationStatus":"finalized","err":null}
+  ---
+  duration_ms: 22.9429
+  type: 'test'
+  ...
+# Subtest: unresolved pending stays locked: {"statusError":true}
+ok 213 - unresolved pending stays locked: {"statusError":true}
+  ---
+  duration_ms: 97.9969
+  type: 'test'
+  ...
+# Subtest: unresolved pending stays locked: {"statusMalformed":true}
+ok 214 - unresolved pending stays locked: {"statusMalformed":true}
+  ---
+  duration_ms: 96.7203
+  type: 'test'
+  ...
+# Subtest: unresolved pending stays locked: {"signatureStatus":{"confirmationStatus":"processed","err":null}}
+ok 215 - unresolved pending stays locked: {"signatureStatus":{"confirmationStatus":"processed","err":null}}
+  ---
+  duration_ms: 91.0196
+  type: 'test'
+  ...
+# Subtest: boot and arm cannot reconcile a same-process swap actively awaiting broadcast
+ok 216 - boot and arm cannot reconcile a same-process swap actively awaiting broadcast
+  ---
+  duration_ms: 88.7603
+  type: 'test'
+  ...
+# Subtest: pre-arm backlog is ignored; paper cannot consume live intents even after STOP
+ok 217 - pre-arm backlog is ignored; paper cannot consume live intents even after STOP
+  ---
+  duration_ms: 106.5848
+  type: 'test'
+  ...
+# Subtest: application HTTP LIVE requires exact confirmation; STOP and restart remain safe
+ok 218 - application HTTP LIVE requires exact confirmation; STOP and restart remain safe
+  ---
+  duration_ms: 39.4015
+  type: 'test'
+  ...
+# Subtest: dashboard requires typed LIVE and renders chain balance only while live/safe
+ok 219 - dashboard requires typed LIVE and renders chain balance only while live/safe
+  ---
+  duration_ms: 1.8735
+  type: 'test'
+  ...
+# Subtest: same-token refresh storm waits for the first intent and rejects an already-open position
+ok 220 - same-token refresh storm waits for the first intent and rejects an already-open position
+  ---
+  duration_ms: 194.1158
+  type: 'test'
+  ...
+# Subtest: explicit position cap override is honored by mocked Jupiter
+ok 221 - explicit position cap override is honored by mocked Jupiter
+  ---
+  duration_ms: 78.7436
+  type: 'test'
+  ...
+# Subtest: application LIVE routes BUY into live portfolio and DISARM stays safe
+ok 222 - application LIVE routes BUY into live portfolio and DISARM stays safe
+  ---
+  duration_ms: 90.0345
+  type: 'test'
+  ...
+# Subtest: wallet HTTP creates encrypted key, exposes only address, survives restart and enforces confirmation
+ok 223 - wallet HTTP creates encrypted key, exposes only address, survives restart and enforces confirmation
+  ---
+  duration_ms: 1079.6244
+  type: 'test'
+  ...
+# Subtest: key removal and paper intents never reach a live swap
+ok 224 - key removal and paper intents never reach a live swap
+  ---
+  duration_ms: 85.2576
+  type: 'test'
+  ...
+# Subtest: LOCKED without key; valid key alone never arms or sends
+ok 225 - LOCKED without key; valid key alone never arms or sends
+  ---
+  duration_ms: 6.3749
+  type: 'test'
+  ...
+# Subtest: invalid key is redacted and exact confirmation is required
+ok 226 - invalid key is redacted and exact confirmation is required
+  ---
+  duration_ms: 10.5753
+  type: 'test'
+  ...
+# Subtest: mock Jupiter BUY signs once and publishes actual contract-valid live receipt; SELL closes full position
+ok 227 - mock Jupiter BUY signs once and publishes actual contract-valid live receipt; SELL closes full position
+  ---
+  duration_ms: 170.376
+  type: 'test'
+  ...
+# Subtest: gas reserve rejects without broadcasting
+ok 228 - gas reserve rejects without broadcasting
+  ---
+  duration_ms: 47.2945
+  type: 'test'
+  ...
+# Subtest: simulation spend cap rejects without broadcasting
+ok 229 - simulation spend cap rejects without broadcasting
+  ---
+  duration_ms: 60.6936
+  type: 'test'
+  ...
+# Subtest: safety veto rejects without broadcasting
+ok 230 - safety veto rejects without broadcasting
+  ---
+  duration_ms: 46.3436
+  type: 'test'
+  ...
+# Subtest: kill before signing rejects without broadcasting
+ok 231 - kill before signing rejects without broadcasting
+  ---
+  duration_ms: 63.9475
+  type: 'test'
+  ...
+# Subtest: STOP during quote rejects without broadcasting
+ok 232 - STOP during quote rejects without broadcasting
+  ---
+  duration_ms: 71.78
+  type: 'test'
+  ...
+# Subtest: remote errors cannot leak keys rejects without broadcasting
+ok 233 - remote errors cannot leak keys rejects without broadcasting
+  ---
+  duration_ms: 70.0876
+  type: 'test'
+  ...
+# Subtest: kill file blocks arming
+ok 234 - kill file blocks arming
+  ---
+  duration_ms: 10.0385
+  type: 'test'
+  ...
+# Subtest: daily loss cap persists across engine restart and blocks new trades
+ok 235 - daily loss cap persists across engine restart and blocks new trades
+  ---
+  duration_ms: 192.7971
+  type: 'test'
+  ...
+# Subtest: ambiguous broadcast exhausts endpoints, persists signature, and never resends on restart
+ok 236 - ambiguous broadcast exhausts endpoints, persists signature, and never resends on restart
+  ---
+  duration_ms: 105.1969
+  type: 'test'
+  ...
+# Subtest: pending reconciliation arm: null
+ok 237 - pending reconciliation arm: null
+  ---
+  duration_ms: 21.0803
+  type: 'test'
+  ...
+# Subtest: pending reconciliation arm: {"err":{"InstructionError":[0,"failed"]}}
+ok 238 - pending reconciliation arm: {"err":{"InstructionError":[0,"failed"]}}
+  ---
+  duration_ms: 18.1153
+  type: 'test'
+  ...
+# Subtest: pending reconciliation arm: {"confirmationStatus":"confirmed","err":null}
+ok 239 - pending reconciliation arm: {"confirmationStatus":"confirmed","err":null}
+  ---
+  duration_ms: 18.9754
+  type: 'test'
+  ...
+# Subtest: pending reconciliation arm: {"confirmationStatus":"finalized","err":null}
+ok 240 - pending reconciliation arm: {"confirmationStatus":"finalized","err":null}
+  ---
+  duration_ms: 18.8001
+  type: 'test'
+  ...
+# Subtest: pending reconciliation boot: null
+ok 241 - pending reconciliation boot: null
+  ---
+  duration_ms: 25.9877
+  type: 'test'
+  ...
+# Subtest: pending reconciliation boot: {"err":{"InstructionError":[0,"failed"]}}
+ok 242 - pending reconciliation boot: {"err":{"InstructionError":[0,"failed"]}}
+  ---
+  duration_ms: 24.3592
+  type: 'test'
+  ...
+# Subtest: pending reconciliation boot: {"confirmationStatus":"confirmed","err":null}
+ok 243 - pending reconciliation boot: {"confirmationStatus":"confirmed","err":null}
+  ---
+  duration_ms: 24.5017
+  type: 'test'
+  ...
+# Subtest: pending reconciliation boot: {"confirmationStatus":"finalized","err":null}
+ok 244 - pending reconciliation boot: {"confirmationStatus":"finalized","err":null}
+  ---
+  duration_ms: 20.9643
+  type: 'test'
+  ...
+# Subtest: unresolved pending stays locked: {"statusError":true}
+ok 245 - unresolved pending stays locked: {"statusError":true}
+  ---
+  duration_ms: 97.7203
+  type: 'test'
+  ...
+# Subtest: unresolved pending stays locked: {"statusMalformed":true}
+ok 246 - unresolved pending stays locked: {"statusMalformed":true}
+  ---
+  duration_ms: 94.7115
+  type: 'test'
+  ...
+# Subtest: unresolved pending stays locked: {"signatureStatus":{"confirmationStatus":"processed","err":null}}
+ok 247 - unresolved pending stays locked: {"signatureStatus":{"confirmationStatus":"processed","err":null}}
+  ---
+  duration_ms: 93.5131
+  type: 'test'
+  ...
+# Subtest: boot and arm cannot reconcile a same-process swap actively awaiting broadcast
+ok 248 - boot and arm cannot reconcile a same-process swap actively awaiting broadcast
+  ---
+  duration_ms: 90.9761
+  type: 'test'
+  ...
+# Subtest: pre-arm backlog is ignored; paper cannot consume live intents even after STOP
+ok 249 - pre-arm backlog is ignored; paper cannot consume live intents even after STOP
+  ---
+  duration_ms: 92.4295
+  type: 'test'
+  ...
+# Subtest: application HTTP LIVE requires exact confirmation; STOP and restart remain safe
+ok 250 - application HTTP LIVE requires exact confirmation; STOP and restart remain safe
+  ---
+  duration_ms: 42.6662
+  type: 'test'
+  ...
+# Subtest: dashboard requires typed LIVE and renders chain balance only while live/safe
+ok 251 - dashboard requires typed LIVE and renders chain balance only while live/safe
+  ---
+  duration_ms: 1.8518
+  type: 'test'
+  ...
+# Subtest: old volume spike returns through autonomous chain: approved
+ok 252 - old volume spike returns through autonomous chain: approved
+  ---
+  duration_ms: 135.5321
+  type: 'test'
+  ...
+# Subtest: old volume spike returns through autonomous chain: Jev
+ok 253 - old volume spike returns through autonomous chain: Jev
+  ---
+  duration_ms: 105.6607
+  type: 'test'
+  ...
+# Subtest: old volume spike returns through autonomous chain: safety
+ok 254 - old volume spike returns through autonomous chain: safety
+  ---
+  duration_ms: 106.3691
+  type: 'test'
+  ...
+# Subtest: entry policy: newborn
+ok 255 - entry policy: newborn
+  ---
+  duration_ms: 31.3293
+  type: 'test'
+  ...
+# Subtest: entry policy: 59 seconds
+ok 256 - entry policy: 59 seconds
+  ---
+  duration_ms: 31.2083
+  type: 'test'
+  ...
+# Subtest: entry policy: 1 minute
+ok 257 - entry policy: 1 minute
+  ---
+  duration_ms: 31.7459
+  type: 'test'
+  ...
+# Subtest: entry policy: 5 minutes
+ok 258 - entry policy: 5 minutes
+  ---
+  duration_ms: 48.8696
+  type: 'test'
+  ...
+# Subtest: entry policy: 6 minutes
+ok 259 - entry policy: 6 minutes
+  ---
+  duration_ms: 43.1768
+  type: 'test'
+  ...
+# Subtest: entry policy: 30 minutes
+ok 260 - entry policy: 30 minutes
+  ---
+  duration_ms: 30.9008
+  type: 'test'
+  ...
+# Subtest: entry policy: 31 minutes
+ok 261 - entry policy: 31 minutes
+  ---
+  duration_ms: 30.3971
+  type: 'test'
+  ...
+# Subtest: entry policy: 2 hours
+ok 262 - entry policy: 2 hours
+  ---
+  duration_ms: 30.6928
+  type: 'test'
+  ...
+# Subtest: entry policy: 15 days
+ok 263 - entry policy: 15 days
+  ---
+  duration_ms: 31.5031
+  type: 'test'
+  ...
+# Subtest: entry policy: 30 days
+ok 264 - entry policy: 30 days
+  ---
+  duration_ms: 29.6984
+  type: 'test'
+  ...
+# Subtest: entry policy: 45 days
+ok 265 - entry policy: 45 days
+  ---
+  duration_ms: 29.9844
+  type: 'test'
+  ...
+# Subtest: entry policy: volume 200 rejected
+ok 266 - entry policy: volume 200 rejected
+  ---
+  duration_ms: 31.1645
+  type: 'test'
+  ...
+# Subtest: entry policy: volume 999 rejected
+ok 267 - entry policy: volume 999 rejected
+  ---
+  duration_ms: 38.449
+  type: 'test'
+  ...
+# Subtest: entry policy: volume 1000 boundary
+ok 268 - entry policy: volume 1000 boundary
+  ---
+  duration_ms: 30.7641
+  type: 'test'
+  ...
+# Subtest: entry policy: volume 2001 has no upper limit
+ok 269 - entry policy: volume 2001 has no upper limit
+  ---
+  duration_ms: 30.4621
+  type: 'test'
+  ...
+# Subtest: entry policy: recent volume 999 overrides real volume
+ok 270 - entry policy: recent volume 999 overrides real volume
+  ---
+  duration_ms: 29.4142
+  type: 'test'
+  ...
+# Subtest: entry policy: recent volume 1000 boundary
+ok 271 - entry policy: recent volume 1000 boundary
+  ---
+  duration_ms: 31.2846
+  type: 'test'
+  ...
+# Subtest: entry policy: headline fallback
+ok 272 - entry policy: headline fallback
+  ---
+  duration_ms: 30.6282
+  type: 'test'
+  ...
+# Subtest: entry policy: headline below floor
+ok 273 - entry policy: headline below floor
+  ---
+  duration_ms: 29.8893
+  type: 'test'
+  ...
+# Subtest: entry policy: cap 3000 rejected
+ok 274 - entry policy: cap 3000 rejected
+  ---
+  duration_ms: 30.491
+  type: 'test'
+  ...
+# Subtest: entry policy: cap 8000 rejected
+ok 275 - entry policy: cap 8000 rejected
+  ---
+  duration_ms: 30.2836
+  type: 'test'
+  ...
+# Subtest: entry policy: cap 9999 rejected
+ok 276 - entry policy: cap 9999 rejected
+  ---
+  duration_ms: 30.9068
+  type: 'test'
+  ...
+# Subtest: entry policy: cap 10000 boundary
+ok 277 - entry policy: cap 10000 boundary
+  ---
+  duration_ms: 31.5551
+  type: 'test'
+  ...
+# Subtest: entry policy: cap 20000 boundary
+ok 278 - entry policy: cap 20000 boundary
+  ---
+  duration_ms: 30.4176
+  type: 'test'
+  ...
+# Subtest: entry policy: cap 20001 rejected
+ok 279 - entry policy: cap 20001 rejected
+  ---
+  duration_ms: 31.4616
+  type: 'test'
+  ...
+# Subtest: entry policy: cap 25000 rejected
+ok 280 - entry policy: cap 25000 rejected
+  ---
+  duration_ms: 30.5236
+  type: 'test'
+  ...
+# Subtest: entry policy: cap 30000 rejected
+ok 281 - entry policy: cap 30000 rejected
+  ---
+  duration_ms: 29.1589
+  type: 'test'
+  ...
+# Subtest: entry policy: cap 50M rejected
+ok 282 - entry policy: cap 50M rejected
+  ---
+  duration_ms: 30.1897
+  type: 'test'
+  ...
+# Subtest: entry policy: cap 1B rejected
+ok 283 - entry policy: cap 1B rejected
+  ---
+  duration_ms: 29.7953
+  type: 'test'
+  ...
+# Subtest: entry policy: cap 30001 rejected
+ok 284 - entry policy: cap 30001 rejected
+  ---
+  duration_ms: 31.3135
+  type: 'test'
+  ...
+# Subtest: entry policy: cap 10M rejected
+ok 285 - entry policy: cap 10M rejected
+  ---
+  duration_ms: 31.7293
+  type: 'test'
+  ...
+# Subtest: entry policy: cap 10M plus one rejected
+ok 286 - entry policy: cap 10M plus one rejected
+  ---
+  duration_ms: 31.1539
+  type: 'test'
+  ...
+# Subtest: entry policy: old cap 10k boundary
+ok 287 - entry policy: old cap 10k boundary
+  ---
+  duration_ms: 30.3004
+  type: 'test'
+  ...
+# Subtest: entry policy: old recent volume below floor
+ok 288 - entry policy: old recent volume below floor
+  ---
+  duration_ms: 29.7588
+  type: 'test'
+  ...
+# Subtest: manual entry rejects an invalid body without touching the journal
+ok 289 - manual entry rejects an invalid body without touching the journal
+  ---
+  duration_ms: 1.285
+  type: 'test'
+  ...
+# Subtest: manual entry requires quote and regime evidence for the token
+ok 290 - manual entry requires quote and regime evidence for the token
+  ---
+  duration_ms: 0.9054
+  type: 'test'
+  ...
+# Subtest: manual entry buys a banded meme after safety passes (FILLED, position OPEN)
+ok 291 - manual entry buys a banded meme after safety passes (FILLED, position OPEN)
+  ---
+  duration_ms: 30.0145
+  type: 'test'
+  ...
+# Subtest: manual settlement retries async safety on the newest admissible quote after another fill
+ok 292 - manual settlement retries async safety on the newest admissible quote after another fill
+  ---
+  duration_ms: 93.0568
+  type: 'test'
+  ...
+# Subtest: timed out manual BUY stays cancelled after late safety, quotes and consumer replay
+ok 293 - timed out manual BUY stays cancelled after late safety, quotes and consumer replay
+  ---
+  duration_ms: 46.6693
+  type: 'test'
+  ...
+# Subtest: manual BUY preserves the original candidate Jev veto
+ok 294 - manual BUY preserves the original candidate Jev veto
+  ---
+  duration_ms: 28.9701
+  type: 'test'
+  ...
+# Subtest: fresh thin-pool sizing: zero depth
+ok 295 - fresh thin-pool sizing: zero depth
+  ---
+  duration_ms: 66.6442
+  type: 'test'
+  ...
+# Subtest: fresh thin-pool sizing: rounded dust
+ok 296 - fresh thin-pool sizing: rounded dust
+  ---
+  duration_ms: 43.3314
+  type: 'test'
+  ...
+# Subtest: fresh thin-pool sizing: viability dust
+ok 297 - fresh thin-pool sizing: viability dust
+  ---
+  duration_ms: 46.334
+  type: 'test'
+  ...
+# Subtest: fresh thin-pool sizing: inclusive lower age
+ok 298 - fresh thin-pool sizing: inclusive lower age
+  ---
+  duration_ms: 47.0205
+  type: 'test'
+  ...
+# Subtest: fresh thin-pool sizing: inclusive upper age
+ok 299 - fresh thin-pool sizing: inclusive upper age
+  ---
+  duration_ms: 45.8147
+  type: 'test'
+  ...
+# Subtest: fresh thin-pool sizing: old entry shares sizing
+ok 300 - fresh thin-pool sizing: old entry shares sizing
+  ---
+  duration_ms: 45.7369
+  type: 'test'
+  ...
+# Subtest: fresh thin-pool sizing: cash bounded
+ok 301 - fresh thin-pool sizing: cash bounded
+  ---
+  duration_ms: 29.9323
+  type: 'test'
+  ...
+# Subtest: fresh thin-pool sizing: exposure bounded
+ok 302 - fresh thin-pool sizing: exposure bounded
+  ---
+  duration_ms: 30.8068
+  type: 'test'
+  ...
+# Subtest: fresh thin-pool sizing: concentration bounded
+ok 303 - fresh thin-pool sizing: concentration bounded
+  ---
+  duration_ms: 31.4225
+  type: 'test'
+  ...
+# Subtest: fresh thin-pool sizing: equity bounded
+ok 304 - fresh thin-pool sizing: equity bounded
+  ---
+  duration_ms: 46.1368
+  type: 'test'
+  ...
+# Subtest: fresh thin-pool sizing: execution cap bounded
+ok 305 - fresh thin-pool sizing: execution cap bounded
+  ---
+  duration_ms: 33.4479
+  type: 'test'
+  ...
+# Subtest: fresh thin-pool sizing: tunable floor capped
+ok 306 - fresh thin-pool sizing: tunable floor capped
+  ---
+  duration_ms: 44.3704
+  type: 'test'
+  ...
+# Subtest: fresh thin-pool sizing: 8.5% equity sizing
+ok 307 - fresh thin-pool sizing: 8.5% equity sizing
+  ---
+  duration_ms: 46.103
+  type: 'test'
+  ...
+# Subtest: fresh thin-pool sizing: equity growth scales sizing
+ok 308 - fresh thin-pool sizing: equity growth scales sizing
+  ---
+  duration_ms: 30.2959
+  type: 'test'
+  ...
+# Subtest: fresh thin-pool sizing: no cash
+ok 309 - fresh thin-pool sizing: no cash
+  ---
+  duration_ms: 30.604
+  type: 'test'
+  ...
+# Subtest: fresh thin-pool sizing: exposure exhausted
+ok 310 - fresh thin-pool sizing: exposure exhausted
+  ---
+  duration_ms: 31.5455
+  type: 'test'
+  ...
+# Subtest: fresh thin-pool sizing: unrepresentable floor
+ok 311 - fresh thin-pool sizing: unrepresentable floor
+  ---
+  duration_ms: 44.7482
+  type: 'test'
+  ...
+# Subtest: fresh thin-pool sizing: costs still too high
+ok 312 - fresh thin-pool sizing: costs still too high
+  ---
+  duration_ms: 31.1277
+  type: 'test'
+  ...
+# Subtest: non-meme zero depth retains its sizing veto
+ok 313 - non-meme zero depth retains its sizing veto
+  ---
+  duration_ms: 38.5431
+  type: 'test'
+  ...
+# Subtest: independent meme risk boundary: age 0, volume 1000
+ok 314 - independent meme risk boundary: age 0, volume 1000
+  ---
+  duration_ms: 31.0417
+  type: 'test'
+  ...
+# Subtest: independent meme risk boundary: age 59000, volume 1000
+ok 315 - independent meme risk boundary: age 59000, volume 1000
+  ---
+  duration_ms: 30.2318
+  type: 'test'
+  ...
+# Subtest: independent meme risk boundary: age 60000, volume 1000
+ok 316 - independent meme risk boundary: age 60000, volume 1000
+  ---
+  duration_ms: 45.4241
+  type: 'test'
+  ...
+# Subtest: independent meme risk boundary: age 300000, volume 1000
+ok 317 - independent meme risk boundary: age 300000, volume 1000
+  ---
+  duration_ms: 30.4982
+  type: 'test'
+  ...
+# Subtest: independent meme risk boundary: age 301000, volume 1000
+ok 318 - independent meme risk boundary: age 301000, volume 1000
+  ---
+  duration_ms: 30.3666
+  type: 'test'
+  ...
+# Subtest: independent meme risk boundary: age 360000, volume 1000
+ok 319 - independent meme risk boundary: age 360000, volume 1000
+  ---
+  duration_ms: 31.3993
+  type: 'test'
+  ...
+# Subtest: independent meme risk boundary: age 1740000, volume 1000
+ok 320 - independent meme risk boundary: age 1740000, volume 1000
+  ---
+  duration_ms: 29.2192
+  type: 'test'
+  ...
+# Subtest: independent meme risk boundary: age 1800000, volume 1000
+ok 321 - independent meme risk boundary: age 1800000, volume 1000
+  ---
+  duration_ms: 30.6306
+  type: 'test'
+  ...
+# Subtest: independent meme risk boundary: age 1860000, volume 1000
+ok 322 - independent meme risk boundary: age 1860000, volume 1000
+  ---
+  duration_ms: 30.8154
+  type: 'test'
+  ...
+# Subtest: independent meme risk boundary: age 180000, volume 199
+ok 323 - independent meme risk boundary: age 180000, volume 199
+  ---
+  duration_ms: 31.3293
+  type: 'test'
+  ...
+# Subtest: independent meme risk boundary: age 180000, volume 999
+ok 324 - independent meme risk boundary: age 180000, volume 999
+  ---
+  duration_ms: 30.9886
+  type: 'test'
+  ...
+# Subtest: independent meme risk boundary: age 180000, volume 1000
+ok 325 - independent meme risk boundary: age 180000, volume 1000
+  ---
+  duration_ms: 30.7745
+  type: 'test'
+  ...
+# Subtest: independent meme risk boundary: age 180000, volume 2000
+ok 326 - independent meme risk boundary: age 180000, volume 2000
+  ---
+  duration_ms: 30.4014
+  type: 'test'
+  ...
+# Subtest: independent meme risk boundary: age 180000, volume 2001
+ok 327 - independent meme risk boundary: age 180000, volume 2001
+  ---
+  duration_ms: 44.3466
+  type: 'test'
+  ...
+# Subtest: EZzimpx9 liquidity 50: shared entry exemption at age 60000
+ok 328 - EZzimpx9 liquidity 50: shared entry exemption at age 60000
+  ---
+  duration_ms: 29.6054
+  type: 'test'
+  ...
+# Subtest: EZzimpx9 liquidity 50: shared entry exemption at age 180000
+ok 329 - EZzimpx9 liquidity 50: shared entry exemption at age 180000
+  ---
+  duration_ms: 31.2211
+  type: 'test'
+  ...
+# Subtest: EZzimpx9 liquidity 50: shared entry exemption at age 300000
+ok 330 - EZzimpx9 liquidity 50: shared entry exemption at age 300000
+  ---
+  duration_ms: 31.9886
+  type: 'test'
+  ...
+# Subtest: EZzimpx9 liquidity 50: shared entry exemption at age 2592000000
+ok 331 - EZzimpx9 liquidity 50: shared entry exemption at age 2592000000
+  ---
+  duration_ms: 46.6397
+  type: 'test'
+  ...
+# Subtest: independent meme risk cap boundary: 9999
+ok 332 - independent meme risk cap boundary: 9999
+  ---
+  duration_ms: 29.4358
+  type: 'test'
+  ...
+# Subtest: independent meme risk cap boundary: 10000
+ok 333 - independent meme risk cap boundary: 10000
+  ---
+  duration_ms: 31.3996
+  type: 'test'
+  ...
+# Subtest: independent meme risk cap boundary: 20000
+ok 334 - independent meme risk cap boundary: 20000
+  ---
+  duration_ms: 30.8345
+  type: 'test'
+  ...
+# Subtest: independent meme risk cap boundary: 20001
+ok 335 - independent meme risk cap boundary: 20001
+  ---
+  duration_ms: 30.7381
+  type: 'test'
+  ...
+# Subtest: independent meme risk cap boundary: 25000
+ok 336 - independent meme risk cap boundary: 25000
+  ---
+  duration_ms: 30.6902
+  type: 'test'
+  ...
+# Subtest: independent meme risk cap boundary: 30000
+ok 337 - independent meme risk cap boundary: 30000
+  ---
+  duration_ms: 30.8929
+  type: 'test'
+  ...
+# Subtest: independent meme risk cap boundary: 10000000
+ok 338 - independent meme risk cap boundary: 10000000
+  ---
+  duration_ms: 31.0179
+  type: 'test'
+  ...
+# Subtest: independent meme risk cap boundary: 10000001
+ok 339 - independent meme risk cap boundary: 10000001
+  ---
+  duration_ms: 30.346
+  type: 'test'
+  ...
+# Subtest: independent meme risk cap boundary: 50000000
+ok 340 - independent meme risk cap boundary: 50000000
+  ---
+  duration_ms: 31.7113
+  type: 'test'
+  ...
+# Subtest: independent meme risk cap boundary: 1000000000
+ok 341 - independent meme risk cap boundary: 1000000000
+  ---
+  duration_ms: 30.549
+  type: 'test'
+  ...
+# Subtest: non-band risk retains separate absolute ceiling: 25000
+ok 342 - non-band risk retains separate absolute ceiling: 25000
+  ---
+  duration_ms: 31.6917
+  type: 'test'
+  ...
+# Subtest: non-band risk retains separate absolute ceiling: 10000000
+ok 343 - non-band risk retains separate absolute ceiling: 10000000
+  ---
+  duration_ms: 29.8005
+  type: 'test'
+  ...
+# Subtest: independent risk rejects oversized BUY even outside meme strategy: 10000001
+ok 344 - independent risk rejects oversized BUY even outside meme strategy: 10000001
+  ---
+  duration_ms: 31.3022
+  type: 'test'
+  ...
+# Subtest: independent risk rejects oversized BUY even outside meme strategy: 50000000
+ok 345 - independent risk rejects oversized BUY even outside meme strategy: 50000000
+  ---
+  duration_ms: 30.0186
+  type: 'test'
+  ...
+# Subtest: independent risk rejects oversized BUY even outside meme strategy: 1000000000
+ok 346 - independent risk rejects oversized BUY even outside meme strategy: 1000000000
+  ---
+  duration_ms: 30.3328
+  type: 'test'
+  ...
+# Subtest: risk independently approves bounded paper evaluation size and preserves trace
+ok 347 - risk independently approves bounded paper evaluation size and preserves trace
+  ---
+  duration_ms: 30.5943
+  type: 'test'
+  ...
+# Subtest: risk vetoes stale uncertain adverse unsupported and losing research despite commander BUY
+ok 348 - risk vetoes stale uncertain adverse unsupported and losing research despite commander BUY
+  ---
+  duration_ms: 277.6209
+  type: 'test'
+  ...
+# Subtest: risk liquidity floor: 150 USD
+ok 349 - risk liquidity floor: 150 USD
+  ---
+  duration_ms: 30.4361
+  type: 'test'
+  ...
+# Subtest: risk liquidity floor: 200 USD
+ok 350 - risk liquidity floor: 200 USD
+  ---
+  duration_ms: 31.4026
+  type: 'test'
+  ...
+# Subtest: risk liquidity floor: 300 USD
+ok 351 - risk liquidity floor: 300 USD
+  ---
+  duration_ms: 30.4439
+  type: 'test'
+  ...
+# Subtest: risk queued approvals reserve global capital and concentration without duplicate grants
+ok 352 - risk queued approvals reserve global capital and concentration without duplicate grants
+  ---
+  duration_ms: 46.4332
+  type: 'test'
+  ...
+# Subtest: risk skips HOLD and NO_ACTION and refuses nonexistent exit positions
+ok 353 - risk skips HOLD and NO_ACTION and refuses nonexistent exit positions
+  ---
+  duration_ms: 30.2514
+  type: 'test'
+  ...
+# Subtest: risk allows a position-reducing exit despite low regime confidence and reserves its quantity
+ok 354 - risk allows a position-reducing exit despite low regime confidence and reserves its quantity
+  ---
+  duration_ms: 61.8685
+  type: 'test'
+  ...
+# Subtest: risk policy rejects unbounded nonfinite or unknown configuration
+ok 355 - risk policy rejects unbounded nonfinite or unknown configuration
+  ---
+  duration_ms: 1.072
+  type: 'test'
+  ...
+# Subtest: risk cash sizing reserves fee and slippage rather than spending the whole balance
+ok 356 - risk cash sizing reserves fee and slippage rather than spending the whole balance
+  ---
+  duration_ms: 30.3439
+  type: 'test'
+  ...
+# Subtest: risk approves after five realized losses even with compatibility cooldown policy
+ok 357 - risk approves after five realized losses even with compatibility cooldown policy
+  ---
+  duration_ms: 345.7242
+  type: 'test'
+  ...
+# Subtest: risk cannot reuse old supported critique after newer rejection
+ok 358 - risk cannot reuse old supported critique after newer rejection
+  ---
+  duration_ms: 41.4043
+  type: 'test'
+  ...
+# Subtest: risk releases only canonical evidenced terminal paper failure, not an unrelated failed activity
+ok 359 - risk releases only canonical evidenced terminal paper failure, not an unrelated failed activity
+  ---
+  duration_ms: 121.7526
+  type: 'test'
+  ...
+# Subtest: risk releases expired-epoch approvals when returning to the same network
+ok 360 - risk releases expired-epoch approvals when returning to the same network
+  ---
+  duration_ms: 59.871
+  type: 'test'
+  ...
+# Subtest: risk releases canonical strategy pre-intent failure but not an unrelated failed activity
+ok 361 - risk releases canonical strategy pre-intent failure but not an unrelated failed activity
+  ---
+  duration_ms: 123.3743
+  type: 'test'
+  ...
+# Subtest: a strategy failure cannot cancel capital already handed to execution
+ok 362 - a strategy failure cannot cancel capital already handed to execution
+  ---
+  duration_ms: 91.4015
+  type: 'test'
+  ...
+# Subtest: runtime contracts validate all nineteen explicit types and four independent network identities
+ok 363 - runtime contracts validate all nineteen explicit types and four independent network identities
+  ---
+  duration_ms: 16.9245
+  type: 'test'
+  ...
+# Subtest: runtime contracts reject extra missing nested or unrecognized envelope and payload fields
+ok 364 - runtime contracts reject extra missing nested or unrecognized envelope and payload fields
+  ---
+  duration_ms: 1.8957
+  type: 'test'
+  ...
+# Subtest: runtime contracts prohibit producer role escalation and activity impersonation
+ok 365 - runtime contracts prohibit producer role escalation and activity impersonation
+  ---
+  duration_ms: 1.0045
+  type: 'test'
+  ...
+# Subtest: runtime contracts bound finite confidence epochs strings and arrays without coercion
+ok 366 - runtime contracts bound finite confidence epochs strings and arrays without coercion
+  ---
+  duration_ms: 2.6688
+  type: 'test'
+  ...
+# Subtest: runtime contracts enforce execution modes, producer identity, prices, quantities, fees and trade state
+ok 367 - runtime contracts enforce execution modes, producer identity, prices, quantities, fees and trade state
+  ---
+  duration_ms: 2.708
+  type: 'test'
+  ...
+# Subtest: runtime contracts retain risk veto and permit explicit uncertainty and NO_ACTION
+ok 368 - runtime contracts retain risk veto and permit explicit uncertainty and NO_ACTION
+  ---
+  duration_ms: 0.9967
+  type: 'test'
+  ...
+# Subtest: runtime contracts reject malformed future and reversed observation timestamps
+ok 369 - runtime contracts reject malformed future and reversed observation timestamps
+  ---
+  duration_ms: 0.9409
+  type: 'test'
+  ...
+# Subtest: runtime contracts reject credential fields and serialized secrets without echoing values
+ok 370 - runtime contracts reject credential fields and serialized secrets without echoing values
+  ---
+  duration_ms: 0.8259
+  type: 'test'
+  ...
+# Subtest: runtime contracts preserve unknown dashboard metrics without inventing zeros
+ok 371 - runtime contracts preserve unknown dashboard metrics without inventing zeros
+  ---
+  duration_ms: 0.6702
+  type: 'test'
+  ...
+# Subtest: runtime contracts reject quant promotion and unfounded or contradictory execution authority
+ok 372 - runtime contracts reject quant promotion and unfounded or contradictory execution authority
+  ---
+  duration_ms: 1.8971
+  type: 'test'
+  ...
+# Subtest: paper capital persists deposits/withdrawals, rejects invalid values and serializes overdraws
+ok 373 - paper capital persists deposits/withdrawals, rejects invalid values and serializes overdraws
+  ---
+  duration_ms: 286.1644
+  type: 'test'
+  ...
+# Subtest: capital ledger HTTP endpoints expose Settings projection and return 400 on invalid requests
+ok 374 - capital ledger HTTP endpoints expose Settings projection and return 400 on invalid requests
+  ---
+  duration_ms: 200.2375
+  type: 'test'
+  ...
+# Subtest: live withdraw exposes balance hints and quick buttons within the native submit form
+ok 375 - live withdraw exposes balance hints and quick buttons within the native submit form
+  ---
+  duration_ms: 2.2988
+  type: 'test'
+  ...
+# Subtest: empty state has no invented prices, trades, activity, progress or budget
+ok 376 - empty state has no invented prices, trades, activity, progress or budget
+  ---
+  duration_ms: 17.0499
+  type: 'test'
+  ...
+# Subtest: JEV shows a plain completed count and running sweep progress; duplicates cannot advance it
+ok 377 - JEV shows a plain completed count and running sweep progress; duplicates cannot advance it
+  ---
+  duration_ms: 8.114
+  type: 'test'
+  ...
+# Subtest: scan errors count processed work and completion reports error instead of fake success
+ok 378 - scan errors count processed work and completion reports error instead of fake success
+  ---
+  duration_ms: 1.4397
+  type: 'test'
+  ...
+# Subtest: scanner adapter waits for actual work completion and logs a real file-read failure
+ok 379 - scanner adapter waits for actual work completion and logs a real file-read failure
+  ---
+  duration_ms: 8.3858
+  type: 'test'
+  ...
+# Subtest: AI shows completed work without quota progress and Forensic Analyst cannot become execution
+ok 380 - AI shows completed work without quota progress and Forensic Analyst cannot become execution
+  ---
+  duration_ms: 1.9252
+  type: 'test'
+  ...
+# Subtest: Activity retains producer identity; quotes do not invent an AI action
+ok 381 - Activity retains producer identity; quotes do not invent an AI action
+  ---
+  duration_ms: 1.4264
+  type: 'test'
+  ...
+# Subtest: BUY, market marks, partial SELL and full SELL reconcile fees across every projection
+ok 382 - BUY, market marks, partial SELL and full SELL reconcile fees across every projection
+  ---
+  duration_ms: 4.2749
+  type: 'test'
+  ...
+# Subtest: multiple BUY fills use weighted cost and do not create phantom fractional positions
+ok 383 - multiple BUY fills use weighted cost and do not create phantom fractional positions
+  ---
+  duration_ms: 3.2482
+  type: 'test'
+  ...
+# Subtest: no price means unknown unrealized PnL; a fill never fabricates chart candles
+ok 384 - no price means unknown unrealized PnL; a fill never fabricates chart candles
+  ---
+  duration_ms: 1.3278
+  type: 'test'
+  ...
+# Subtest: idempotency prevents duplicate fills across different event IDs; collisions reject atomically
+ok 385 - idempotency prevents duplicate fills across different event IDs; collisions reject atomically
+  ---
+  duration_ms: 2.9734
+  type: 'test'
+  ...
+# Subtest: oversell, conflicting token, late fill, execution source and real money are rejected
+ok 386 - oversell, conflicting token, late fill, execution source and real money are rejected
+  ---
+  duration_ms: 2.5182
+  type: 'test'
+  ...
+# Subtest: market candles use event time, aggregate OHLCV and reject late prices
+ok 387 - market candles use event time, aggregate OHLCV and reject late prices
+  ---
+  duration_ms: 2.2524
+  type: 'test'
+  ...
+# Subtest: today metrics roll over in Vietnam timezone while positions remain open
+ok 388 - today metrics roll over in Vietnam timezone while positions remain open
+  ---
+  duration_ms: 2.1323
+  type: 'test'
+  ...
+# Subtest: journal replay restores state and duplicate protection after restart
+ok 389 - journal replay restores state and duplicate protection after restart
+  ---
+  duration_ms: 11.454
+  type: 'test'
+  ...
+# Subtest: corrupt/truncated journal fails loudly without changing or deleting it
+ok 390 - corrupt/truncated journal fails loudly without changing or deleting it
+  ---
+  duration_ms: 3.1997
+  type: 'test'
+  ...
+# Subtest: unknown fields, NaN, future timestamps and prototype identities cannot mutate state
+ok 391 - unknown fields, NaN, future timestamps and prototype identities cannot mutate state
+  ---
+  duration_ms: 1.3545
+  type: 'test'
+  ...
+# Subtest: subscriber receives one atomic complete snapshot; caller cannot mutate stored state
+ok 392 - subscriber receives one atomic complete snapshot; caller cannot mutate stored state
+  ---
+  duration_ms: 1.0222
+  type: 'test'
+  ...
+# Subtest: real HTTP/SSE transport, duplicate replay, isolation and durable server restart
+ok 393 - real HTTP/SSE transport, duplicate replay, isolation and durable server restart
+  ---
+  duration_ms: 116.0429
+  type: 'test'
+  ...
+# Subtest: strategy approved eligible risk yields exactly bounded paper intent and survives reattachment
+ok 394 - strategy approved eligible risk yields exactly bounded paper intent and survives reattachment
+  ---
+  duration_ms: 49.9978
+  type: 'test'
+  ...
+# Subtest: strategy veto emits no execution intent and cannot bypass zero approved quantity
+ok 395 - strategy veto emits no execution intent and cannot bypass zero approved quantity
+  ---
+  duration_ms: 8.3688
+  type: 'test'
+  ...
+# Subtest: strategy stale approval fails with risk task reference
+ok 396 - strategy stale approval fails with risk task reference
+  ---
+  duration_ms: 34.6782
+  type: 'test'
+  ...
+# Subtest: strategy disabled version cannot open but can exit old positions
+ok 397 - strategy disabled version cannot open but can exit old positions
+  ---
+  duration_ms: 46.0405
+  type: 'test'
+  ...
+# Subtest: strategy derives next observation features only for an existing same-network candidate
+ok 398 - strategy derives next observation features only for an existing same-network candidate
+  ---
+  duration_ms: 33.2397
+  type: 'test'
+  ...
+# Subtest: strategy stop cancels queued handling and durable restart processes outstanding approval once
+ok 399 - strategy stop cancels queued handling and durable restart processes outstanding approval once
+  ---
+  duration_ms: 44.015
+  type: 'test'
+  ...
+# Subtest: paper executor and quant service defaults agree on declared slippage and fee costs
+ok 400 - paper executor and quant service defaults agree on declared slippage and fee costs
+  ---
+  duration_ms: 3.823
+  type: 'test'
+  ...
+# Subtest: strategy invalid clock cannot authorize an intent
+ok 401 - strategy invalid clock cannot authorize an intent
+  ---
+  duration_ms: 5.299
+  type: 'test'
+  ...
+# Subtest: Metaplex decoder rejects wrong owner, mint and truncated strings
+ok 402 - Metaplex decoder rejects wrong owner, mint and truncated strings
+  ---
+  duration_ms: 3.3348
+  type: 'test'
+  ...
+# Subtest: fresh unindexed pump identity is cached and renders in positions, history and discoveries
+ok 403 - fresh unindexed pump identity is cached and renders in positions, history and discoveries
+  ---
+  duration_ms: 96.2428
+  type: 'test'
+  ...
+# Subtest: pump API works without Metaplex; Dex identity fills missing fields and failed lookup retries
+ok 404 - pump API works without Metaplex; Dex identity fills missing fields and failed lookup retries
+  ---
+  duration_ms: 3.793
+  type: 'test'
+  ...
+# Subtest: paper deposits adjust wallet-funded sizing and overview without changing wallet evidence
+ok 405 - paper deposits adjust wallet-funded sizing and overview without changing wallet evidence
+  ---
+  duration_ms: 24.31
+  type: 'test'
+  ...
+# Subtest: paper SOL withdrawal HTTP: atomic debit, history, activity, counter, validation and restart
+ok 406 - paper SOL withdrawal HTTP: atomic debit, history, activity, counter, validation and restart
+  ---
+  duration_ms: 514.9826
+  type: 'test'
+  ...
+# Subtest: paper withdrawal write failure leaves balance and ledger intact; tolerance cannot repeatedly drain an empty wallet
+ok 407 - paper withdrawal write failure leaves balance and ledger intact; tolerance cannot repeatedly drain an empty wallet
+  ---
+  duration_ms: 15.9496
+  type: 'test'
+  ...
+# Subtest: wallet-funded portfolio and dashboard use $20, never the default $10000, and reject stale capital
+ok 408 - wallet-funded portfolio and dashboard use $20, never the default $10000, and reject stale capital
+  ---
+  duration_ms: 9.6407
+  type: 'test'
+  ...
+# Subtest: wallet funding cannot leak across network epochs or rejected account sessions
+ok 409 - wallet funding cannot leak across network epochs or rejected account sessions
+  ---
+  duration_ms: 2.4843
+  type: 'test'
+  ...
+# Subtest: valuation multiplies verified native quantity by fresh USD price and rejects stale or unavailable quotes
+ok 410 - valuation multiplies verified native quantity by fresh USD price and rejects stale or unavailable quotes
+  ---
+  duration_ms: 3.8094
+  type: 'test'
+  ...
+# Subtest: production scanner starts despite unavailable valuation without inventing trading capital
+ok 411 - production scanner starts despite unavailable valuation without inventing trading capital
+  ---
+  duration_ms: 15162.5491
+  type: 'test'
+  ...
+1..411
+# tests 411
+# suites 0
+# pass 411
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 37815.1507
+
+
+Final UI and identity verification after avatar name tooltips and the application persistence regression:
+node --test --test-reporter=tap tests/token-identity.test.cjs tests/dashboard-adapter.test.cjs
+Exit 0. 24 passed, 0 failed, 0 skipped, 0 cancelled.
+
+TAP version 13
+# Subtest: live overview ignores paper fills while history retains both modes and capital uses live cash
+ok 1 - live overview ignores paper fills while history retains both modes and capital uses live cash
+  ---
+  duration_ms: 22.5849
+  type: 'test'
+  ...
+# Subtest: served UI has no obsolete labels or wallet connection entry points
+ok 2 - served UI has no obsolete labels or wallet connection entry points
+  ---
+  duration_ms: 3.1461
+  type: 'test'
+  ...
+# Subtest: real withdrawal UI validates base58, reserve, quick amounts, confirmation and duplicate submits
+ok 3 - real withdrawal UI validates base58, reserve, quick amounts, confirmation and duplicate submits
+  ---
+  duration_ms: 2.2097
+  type: 'test'
+  ...
+# Subtest: dashboard renders one live SOL wallet and converts capital and PnL to SOL
+ok 4 - dashboard renders one live SOL wallet and converts capital and PnL to SOL
+  ---
+  duration_ms: 2.782
+  type: 'test'
+  ...
+# Subtest: paper SOL settlement uses funding and reference prices without changing USD capital
+ok 5 - paper SOL settlement uses funding and reference prices without changing USD capital
+  ---
+  duration_ms: 6.5184
+  type: 'test'
+  ...
+# Subtest: empty runtime projects frozen UI shape without pretend scan progress or win rate
+ok 6 - empty runtime projects frozen UI shape without pretend scan progress or win rate
+  ---
+  duration_ms: 1.0346
+  type: 'test'
+  ...
+# Subtest: real runtime Hunter activity and observed prices reach one subscribed dashboard projection
+ok 7 - real runtime Hunter activity and observed prices reach one subscribed dashboard projection
+  ---
+  duration_ms: 69.1576
+  type: 'test'
+  ...
+# Subtest: network switch clears old chart and agent state; snapshot and refresh use actual epoch
+ok 8 - network switch clears old chart and agent state; snapshot and refresh use actual epoch
+  ---
+  duration_ms: 2.6021
+  type: 'test'
+  ...
+# Subtest: stale weak and future observed prices never masquerade as current chart data
+ok 9 - stale weak and future observed prices never masquerade as current chart data
+  ---
+  duration_ms: 1.3876
+  type: 'test'
+  ...
+# Subtest: failing SSE listener is isolated and adapter close detaches without closing runtime
+ok 10 - failing SSE listener is isolated and adapter close detaches without closing runtime
+  ---
+  duration_ms: 1.5056
+  type: 'test'
+  ...
+# Subtest: JEV progress uses recorded discovery progress with original MARKET_DATA attribution
+ok 11 - JEV progress uses recorded discovery progress with original MARKET_DATA attribution
+  ---
+  duration_ms: 0.9061
+  type: 'test'
+  ...
+# Subtest: scan metrics are plain counts with percentages only while running
+ok 12 - scan metrics are plain counts with percentages only while running
+  ---
+  duration_ms: 1.8407
+  type: 'test'
+  ...
+# Subtest: price wave points preserve observed timestamps and prices rather than candle bucket times
+ok 13 - price wave points preserve observed timestamps and prices rather than candle bucket times
+  ---
+  duration_ms: 2.1341
+  type: 'test'
+  ...
+# Subtest: SOL reference feed keeps the chart alive and observations never steal focus
+ok 14 - SOL reference feed keeps the chart alive and observations never steal focus
+  ---
+  duration_ms: 1.3638
+  type: 'test'
+  ...
+# Subtest: structured scanner counts reach dashboard without parsing activity prose
+ok 15 - structured scanner counts reach dashboard without parsing activity prose
+  ---
+  duration_ms: 1.0352
+  type: 'test'
+  ...
+# Subtest: JEV card follows scan lifecycle instead of retaining an older Hunter result
+ok 16 - JEV card follows scan lifecycle instead of retaining an older Hunter result
+  ---
+  duration_ms: 3.842
+  type: 'test'
+  ...
+# Subtest: AI completed-task counts deduplicate updates and exclude waiting or failed tasks
+ok 17 - AI completed-task counts deduplicate updates and exclude waiting or failed tasks
+  ---
+  duration_ms: 2.1966
+  type: 'test'
+  ...
+# Subtest: safety and Jev projections show the latest verdict per candidate only
+ok 18 - safety and Jev projections show the latest verdict per candidate only
+  ---
+  duration_ms: 3.6624
+  type: 'test'
+  ...
+# Subtest: protection projection exposes real stop, take-profit and high-water for an open position
+ok 19 - protection projection exposes real stop, take-profit and high-water for an open position
+  ---
+  duration_ms: 213.4685
+  type: 'test'
+  ...
+# Subtest: chart and trades stay on selected network; same-network BUY takes focus
+ok 20 - chart and trades stay on selected network; same-network BUY takes focus
+  ---
+  duration_ms: 1.277
+  type: 'test'
+  ...
+# Subtest: Metaplex decoder rejects wrong owner, mint and truncated strings
+ok 21 - Metaplex decoder rejects wrong owner, mint and truncated strings
+  ---
+  duration_ms: 3.7643
+  type: 'test'
+  ...
+# Subtest: fresh unindexed pump identity is cached and renders in positions, history and discoveries
+ok 22 - fresh unindexed pump identity is cached and renders in positions, history and discoveries
+  ---
+  duration_ms: 58.1461
+  type: 'test'
+  ...
+# Subtest: pump API works without Metaplex; Dex identity fills missing fields and failed lookup retries
+ok 23 - pump API works without Metaplex; Dex identity fills missing fields and failed lookup retries
+  ---
+  duration_ms: 1.9444
+  type: 'test'
+  ...
+# Subtest: application persists fallback quote identity independently of dashboard reads
+ok 24 - application persists fallback quote identity independently of dashboard reads
+  ---
+  duration_ms: 62.7613
+  type: 'test'
+  ...
+1..24
+# tests 24
+# suites 0
+# pass 24
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 443.133
+
+
+Additional provider/proxy regression run:
+node --test tests/token-identity.test.cjs tests/dexscreener-fallback.test.cjs
+Exit 0. 49 passed, 0 failed, 0 skipped, 0 cancelled; duration 48267.0286 ms.
+Includes both new image proxy hosts, exact-host rejection, no redirects, Dex fallback identity persistence, Gecko precedence, fallback quote batching and discovery recovery.
+
+Acceptance coverage:
+(a) Fresh unindexed identity resolves via Metaplex + Pump API, survives cache reload and renders symbol/name/avatar in actual positions HTML, history and discovery projections.
+(b) HTTP SELL 50% sells 0.5 from 1; the next 50% sells 0.25 from 0.5; SELL 100% then sells the current 0.25 while the original BUY record remains quantity 1.
+(c) SELL after Jupiter HTTP 400 attempts Pump; missing curve reports the Jupiter diagnostic and BondingCurve.account-missing without broadcasting.
+(d) All six requested suites passed in the expanded regression run.
+
+Operational constraints: no running server restarted or killed; no dependencies added; all source/test/report edits used apply_patch. data/runtime.jsonl and rpc.env were not edited.
+Identity enrichment does not fabricate market quotes: MC/LQ/VOL remain unknown when no market source supplies them.
+Metaplex layout checked against: https://raw.githubusercontent.com/metaplex-foundation/mpl-token-metadata/main/clients/js/src/generated/accounts/metadata.ts
+

@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "origin": "http://127.0.0.1:7880",
+  "stateVersion": 0,
+  "agents": [
+    {
+      "name": "JEV",
+      "role": "Meme Hunter",
+      "status": "waiting",
+      "progress": null
+    },
+    {
+      "name": "CODEX 1",
+      "role": "Commander",
+      "status": "waiting",
+      "progress": null
+    },
+    {
+      "name": "CODEX 2",
+      "role": "Quant Learner",
+      "status": "waiting",
+      "progress": null
+    },
+    {
+      "name": "CODEX 3",
+      "role": "Forensic Analyst",
+      "status": "waiting",
+      "progress": null
+    }
+  ],
+  "journalBytes": 0,
+  "testEventsInProduction": 0
+}

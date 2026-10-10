@@ -1,0 +1,97 @@
+{
+  "id": "54dbdbc8-1185-4874-839e-f538e361bc8d",
+  "timestamp": "2026-09-24T06:24:50.392Z",
+  "kind": "METADATA_CORRECTION_NOT_ACCEPTANCE",
+  "beforeSha256": "11cb5a1f077eec1cb657b833f5479d11b465c7c45fade9197ea7421527629cbf",
+  "afterSha256": "4efbea335c7512d730db6b046337b4a9b10e9c93921b0105e907b55cfc8f47a0",
+  "rows": [
+    {
+      "file": "src/paper-engine.mjs",
+      "before": {
+        "file": "src/paper-engine.mjs",
+        "purpose": "Risk, execution, exits, ledger, performance",
+        "currentDependencies": [
+          "node:crypto",
+          "./ledger.mjs",
+          "./paper-policy.mjs",
+          "./paper-policy.mjs"
+        ],
+        "quality": "Existing implementation unsuitable for target",
+        "decision": "REWRITE",
+        "destination": "core/strategy; core/execution; core/trades; core/performance",
+        "reason": "Useful risk/atomic rollback/quote checks must be separated; old class mixes at least five responsibilities and fixed exits. Keep strategy evaluation, independent risk approval, intent creation and paper fills separate; all actions require approved immutable evidence and network identity.",
+        "risks": "Partial exit trusts reason string; lifecycle and complete lineage absent",
+        "sha256": "4c599a4909dfc6663363221e939bbce2cce5746483ce0d422c0373d7bae857b3",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__paper-engine.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      },
+      "after": {
+        "file": "src/paper-engine.mjs",
+        "purpose": "Risk, execution, exits, ledger, performance",
+        "currentDependencies": [
+          "node:crypto",
+          "./ledger.mjs",
+          "./paper-policy.mjs",
+          "./paper-policy.mjs"
+        ],
+        "quality": "Existing implementation unsuitable for target",
+        "decision": "REWRITE",
+        "destination": "core/strategy; core/risk; core/execution; core/trades; core/performance",
+        "reason": "Useful risk/atomic rollback/quote checks must be separated; old class mixes at least five responsibilities and fixed exits. Keep strategy evaluation, independent risk approval, intent creation and paper fills separate; all actions require approved immutable evidence and network identity.",
+        "risks": "Partial exit trusts reason string; lifecycle and complete lineage absent",
+        "sha256": "4c599a4909dfc6663363221e939bbce2cce5746483ce0d422c0373d7bae857b3",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__paper-engine.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      }
+    },
+    {
+      "file": "src/paper-policy.mjs",
+      "before": {
+        "file": "src/paper-policy.mjs",
+        "purpose": "Limits and holder/verifier gates",
+        "currentDependencies": [],
+        "quality": "Useful bounded logic; adaptation and new verification required",
+        "decision": "PORT",
+        "destination": "core/strategy/risk; core/market-data/validation",
+        "reason": "Port conservative integer holder bounds and probability validation; remove unproven legacy boolean shortcut and hardcoded strategy. Implement the retained invariants behind an independent Risk Engine with unconditional veto, exposure/sizing/liquidity/concentration/drawdown/cooldown limits. Regime and uncertainty constrain risk.",
+        "risks": "Counterexample proves holder PASS without coverage evidence",
+        "sha256": "d6a8acd5826e7111324a4479ed996a8c3c8e8cdc8acf5a3440deab0b053dae86",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__paper-policy.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      },
+      "after": {
+        "file": "src/paper-policy.mjs",
+        "purpose": "Limits and holder/verifier gates",
+        "currentDependencies": [],
+        "quality": "Useful bounded logic; adaptation and new verification required",
+        "decision": "PORT",
+        "destination": "core/risk; core/market-data/validation",
+        "reason": "Port conservative integer holder bounds and probability validation; remove unproven legacy boolean shortcut and hardcoded strategy. Implement the retained invariants behind an independent Risk Engine with unconditional veto, exposure/sizing/liquidity/concentration/drawdown/cooldown limits. Regime and uncertainty constrain risk.",
+        "risks": "Counterexample proves holder PASS without coverage evidence",
+        "sha256": "d6a8acd5826e7111324a4479ed996a8c3c8e8cdc8acf5a3440deab0b053dae86",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__paper-policy.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      }
+    }
+  ],
+  "addedRequirements": [
+    "Autonomous commander with durable world state, uncertainty, planning, NO_ACTION, decision journal and failure recovery",
+    "Independent Risk Engine veto and regime-sensitive sizing/exposure/cooldown",
+    "Confidence, evidence_quality, missing_evidence and uncertainty in typed AI results",
+    "Proactive degradation, missed-opportunity, abstention and performance-attribution feedback",
+    "Network-switch cancellation, stale-event rejection, network-qualified history and capability gates"
+  ],
+  "authority": "Owner autonomy requirements and independent implementation review; pending JEV migration acceptance"
+}

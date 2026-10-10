@@ -1,0 +1,27 @@
+{
+  "file": "research-evidence.mjs",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1710,
+      "output_tokens": 87
+    },
+    "answers": {
+      "blocker": {
+        "type": "choice",
+        "choice": "OMITTED_BUG",
+        "confidence": 0.31,
+        "probabilities": {
+          "MISSING_DEPENDENCY": 0.2,
+          "RUNTIME_REQUIRED": 0.08,
+          "OTHER_UNVERIFIED": 0.19,
+          "OMITTED_BUG": 0.41,
+          "MISCLASSIFIED": 0.09,
+          "VAGUE_PORT": 0.03
+        }
+      }
+    },
+    "helper": {}
+  }
+}

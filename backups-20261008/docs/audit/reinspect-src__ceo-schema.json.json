@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-24T05:48:12.547Z",
+  "file": "src/ceo-schema.json",
+  "sha256": "ebe912d609b2c9f4c27deac77d028810f31dd7e76fd92c7d09d63120eca3c093",
+  "recommendation": "REWRITE",
+  "scope": "STATIC_MIGRATION_RECOMMENDATION_ONLY",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1472,
+      "output_tokens": 41
+    },
+    "answers": {
+      "audit": {
+        "type": "choice",
+        "choice": "PASS",
+        "confidence": 0.14,
+        "probabilities": {
+          "UNVERIFIED": 0.35,
+          "PASS": 0.43,
+          "FAIL": 0.22
+        }
+      }
+    },
+    "helper": {}
+  }
+}

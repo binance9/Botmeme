@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-24T05:48:22.736Z",
+  "file": "src/store.mjs",
+  "sha256": "d204d15aae033eb39c5e522b3fd1b345354df9674e0bc58ae62799c705decfbb",
+  "recommendation": "PORT",
+  "scope": "STATIC_MIGRATION_RECOMMENDATION_ONLY",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1776,
+      "output_tokens": 41
+    },
+    "answers": {
+      "audit": {
+        "type": "choice",
+        "choice": "PASS",
+        "confidence": 0.26,
+        "probabilities": {
+          "UNVERIFIED": 0.31,
+          "PASS": 0.51,
+          "FAIL": 0.18
+        }
+      }
+    },
+    "helper": {}
+  }
+}

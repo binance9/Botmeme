@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-24T05:48:16.802Z",
+  "file": "src/paper-policy.mjs",
+  "sha256": "d6a8acd5826e7111324a4479ed996a8c3c8e8cdc8acf5a3440deab0b053dae86",
+  "recommendation": "PORT",
+  "scope": "STATIC_MIGRATION_RECOMMENDATION_ONLY",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 3148,
+      "output_tokens": 41
+    },
+    "answers": {
+      "audit": {
+        "type": "choice",
+        "choice": "PASS",
+        "confidence": 0.2,
+        "probabilities": {
+          "UNVERIFIED": 0.15,
+          "FAIL": 0.38,
+          "PASS": 0.47000000000000003
+        }
+      }
+    },
+    "helper": {}
+  }
+}

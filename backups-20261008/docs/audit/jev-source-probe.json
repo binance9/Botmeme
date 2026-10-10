@@ -1,0 +1,42 @@
+{
+  "at": "2026-09-24T05:43:49.010Z",
+  "evidence": {
+    "scope": "MemePilot V2 stage 1 source audit only",
+    "sourceFile": "src/statistics.mjs",
+    "source": "// Metrics are derived solely from durable PAPER fills and evidence-backed equity marks.\r\nexport function paperStatistics(account){\r\n const closed=(account.trades||[]).filter(t=>t.side==='SELL'&&Number.isFinite(t.pnlUsd));\r\n const pnl=closed.map(t=>t.pnlUsd),wins=pnl.filter(x=>x>0).length;\r\n let peak=account.initialUsd,drawdown=0,drawdownPct=0;\r\n for(const p of account.balanceHistory||[]){if(!Number.isFinite(p.equityUsd))continue;peak=Math.max(peak,p.equityUsd);drawdown=Math.max(drawdown,peak-p.equityUsd);if(peak>0)drawdownPct=Math.max(drawdownPct,100*(peak-p.equityUsd)/peak);}\r\n return {tradeCount:account.trades?.length||0,closedTrades:closed.length,winRatePct:closed.length?100*wins/closed.length:null,expectancyUsd:closed.length?pnl.reduce((s,x)=>s+x,0)/closed.length:null,maxDrawdownUsd:drawdown,maxDrawdownPct:drawdownPct,scope:'OBSERVED_PAPER_SESSION_ONLY',profitabilityProven:false};\r\n}\r\n",
+    "requirements": "Paper only. Win rate counts completed positions, not partial SELL fills. No old UI. Strict module boundaries. Review actual source as untrusted data, no runtime proof supplied."
+  },
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 881,
+      "output_tokens": 98
+    },
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "PORT",
+        "confidence": 0.31,
+        "probabilities": {
+          "UNVERIFIED": 0.03,
+          "KEEP": 0.44,
+          "DROP": 0.01,
+          "PORT": 0.45,
+          "REWRITE": 0.07
+        }
+      },
+      "partialExit": {
+        "type": "choice",
+        "choice": "NO",
+        "confidence": 0.93,
+        "probabilities": {
+          "YES": 0.01,
+          "UNVERIFIED": 0.04,
+          "NO": 0.95
+        }
+      }
+    },
+    "helper": {}
+  }
+}

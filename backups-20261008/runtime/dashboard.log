@@ -1,0 +1,22 @@
+C:\Botmeme\runtime\telemetry\journal.cjs:38
+  } catch (error) { close(); throw error; }
+                             ^
+
+Error: EEXIST: file already exists, open 'C:\Botmeme\data\runtime.jsonl.lock'
+    at Object.openSync (node:fs:561:18)
+    at openJournal (C:\Botmeme\runtime\telemetry\journal.cjs:27:19)
+    at createRuntime (C:\Botmeme\runtime\events\bus.cjs:8:19)
+    at Object.createApplication (C:\Botmeme\runtime\application.cjs:26:19)
+    at createDashboardServer (C:\Botmeme\scripts\serve-meme-trader.cjs:12:100)
+    at Object.<anonymous> (C:\Botmeme\scripts\serve-meme-trader.cjs:101:19)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12) {
+  errno: -4075,
+  code: 'EEXIST',
+  syscall: 'open',
+  path: 'C:\\Botmeme\\data\\runtime.jsonl.lock'
+}
+
+Node.js v24.18.0

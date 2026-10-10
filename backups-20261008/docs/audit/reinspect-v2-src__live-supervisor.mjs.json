@@ -1,0 +1,42 @@
+{
+  "at": "2026-09-24T05:49:46.805Z",
+  "file": "src/live-supervisor.mjs",
+  "sha256": "97ae7c036f1616d3235a46a1b0fad0a71afdac966d456ad631724618890752bf",
+  "recommendation": {
+    "file": "src/live-supervisor.mjs",
+    "purpose": "Parallel read-only trading supervisor",
+    "currentDependencies": [
+      "node:crypto",
+      "./robinhood-intelligence.mjs",
+      "./codex-trader.mjs"
+    ],
+    "quality": "Excluded from target, not a general quality assertion",
+    "decision": "DROP",
+    "destination": "none",
+    "reason": "server.mjs imports RobinhoodAutopilot, not this class. This old supervisor has no production caller found; do not transfer the module. Event dedupe will be implemented in the authoritative runtime.",
+    "risks": "Separate state and timer create second source of truth. Fingerprint is consumed even on failed brain call, preventing retry of unchanged evidence",
+    "sha256": "97ae7c036f1616d3235a46a1b0fad0a71afdac966d456ad631724618890752bf"
+  },
+  "scope": "STATIC_MIGRATION_RECOMMENDATION_ONLY",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 4817,
+      "output_tokens": 41
+    },
+    "answers": {
+      "audit": {
+        "type": "choice",
+        "choice": "PASS",
+        "confidence": 0.39,
+        "probabilities": {
+          "PASS": 0.6,
+          "FAIL": 0.33,
+          "UNVERIFIED": 0.07
+        }
+      }
+    },
+    "helper": {}
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "base": "C:/Botmeme",
+  "staged": "C:\\Users\\BAOAN\\Documents\\Codex\\2026-10-09\\https-www-facebook-com-share-v\\work\\botmeme-fix",
+  "backup": "C:\\Users\\BAOAN\\Documents\\Codex\\2026-10-09\\https-www-facebook-com-share-v\\work\\originals-before-install",
+  "files": [
+    {
+      "file": "core/risk/exit-manager.cjs",
+      "originalSha256": "a395b8cfaa7158eaed970fdadbc4c7addb389105eacff6810d06efd06331d651",
+      "patchedSha256": "dbcd6ccd7f46b2a813b3484341e9025971382aa7eb17fb3bc9de2b0acb856a35"
+    },
+    {
+      "file": "runtime/work-meter.cjs",
+      "originalSha256": "8e1fc1c879dbeca2fca785e31285bf290bf9b894b2ebf1eec09f11cc1a82ba48",
+      "patchedSha256": "cf12be23b5a4154216019edab95119576b9f90ea79be80fe15447c300f54bdd5"
+    },
+    {
+      "file": "dashboard/adapter/index.cjs",
+      "originalSha256": "e7ff4e8b4fb281e52149866bed44c8d331924a177b1c323ddd932c1478a9b3a4",
+      "patchedSha256": "cc6869bb108e1dade2b39fcbee12a2efe0dcf009c6d824eac1cb654055a2854c"
+    },
+    {
+      "file": "dashboard/held-feed.cjs",
+      "originalSha256": "4ef70427547a9fecb2efc703e8512f1fe6c3b1366db0f4b695d7d731ccf04b47",
+      "patchedSha256": "09ea4c48ca6b854b3d95f2c74f9c43071610ed28e2d172df381dfe63d3b3d0ba"
+    },
+    {
+      "file": "services/ga-signal/scanner/scanner.mjs",
+      "originalSha256": "465a61afef4b417759da7491bbbe37702a83954a5b6572161a358234446013bc",
+      "patchedSha256": "317f91173b684b7d44a9942c27eca0855367f73d77945d7beb0e76bbfdf17ad2"
+    },
+    {
+      "file": "services/ga-signal/lib/journal.mjs",
+      "originalSha256": "7a73ab4a120a4f94118c7e4ca9eb4be9baba4aa5fabec6cff413db324a87bccc",
+      "patchedSha256": "38e001148b33972a4fb5666a8fc2b2559e133933aac2fb2a9430e1105c46ae18"
+    },
+    {
+      "file": "services/ga-signal/level-engine.mjs",
+      "originalSha256": "c7fe95cb8f8fb47a19e9a0fb89486b7817219a4394c072f25dd4f54916a01a92",
+      "patchedSha256": "7a18794be059c57a1dd0f7f489f9982cc5a8f3442b40eec4e7ac8935af04bf42"
+    },
+    {
+      "file": "services/ga-signal/service.mjs",
+      "originalSha256": "7576735907f89910a18bbfa326e326a8cfb46260c44ea548cc562c44b272b95e",
+      "patchedSha256": "d5650a5d3e90eb9d61d5e6e9108535c26a2b6a89236d69fff0b1d6814987ca66"
+    },
+    {
+      "file": "tests/exit-manager.test.cjs",
+      "originalSha256": "a679520457622bcc6f7d393974d755e0228c6bfbda999d9e3b1342e35d972d33",
+      "patchedSha256": "2aef77480f534dac47349e291c59280078c9ffb3b3adfc9e0bc689b9484eb4bd"
+    },
+    {
+      "file": "tests/work-meter.test.cjs",
+      "originalSha256": "0cc2da8dfc958f680e6936d28d182ea6315fe6e1e02da2d62cf4156c3bf883d9",
+      "patchedSha256": "0a81695b2c62a6073f8e1c9538d9644359e4c6128606d3d87c0eeff6a3e754e6"
+    },
+    {
+      "file": "tests/dashboard-batch-regression.test.cjs",
+      "originalSha256": null,
+      "patchedSha256": "b449c907665ced90f16d37a47032538b34b52df3f6f728db5d7f6ec6e13e4cdf"
+    },
+    {
+      "file": "tests/work-meter-window-regression.test.cjs",
+      "originalSha256": null,
+      "patchedSha256": "de7711a24238c1f37b5bc0d3380b557107d870f3a0842ac0df9638bdcc36da52"
+    },
+    {
+      "file": "tests/ga-signal-observation-regression.test.mjs",
+      "originalSha256": null,
+      "patchedSha256": "d9107650443611b7036a41f21a6259397ac228dc0cd4a178df279e1961dd1157"
+    }
+  ]
+}

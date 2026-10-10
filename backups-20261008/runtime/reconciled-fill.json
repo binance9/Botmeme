@@ -1,0 +1,51 @@
+{
+ "fill": {
+  "id": "live.fill/01df0d33d03662a86ada3867287b5f5824fb5dad9be32abb06197fe2c931790d",
+  "type": "TradeResult",
+  "producer": "LIVE_EXECUTION",
+  "timestamp": "2026-10-06T22:53:37.500Z",
+  "source": "live.jupiter",
+  "evidence": [
+   "STRATEGY_ENGINE:ExecutionIntent:ac100549404a8622b0a1369da9031d3babe85e2acb4a5c31b3b5a3c6c44226aa",
+   "risk/d97b6588bd0745f4274f2955deabeb5bd371f0c594fd1ab668d11ab0d5566de7",
+   "EHtFbTjPv6N1F4odFA1qN9J12tX9Lgu6y7fqhbXc4tM6k51qdtC2hKkETSJfxBkUndb9xo9HsgTxUeb4Mns4UzT",
+   "sol-lamports/4711833",
+   "token-raw/-178055312561",
+   "fee-lamports/205000"
+  ],
+  "status": "COMPLETED",
+  "correlationId": "manual-live/47f4922d-c59d-47dd-993a-465c6d076b8d",
+  "network": "SOLANA",
+  "epoch": 1,
+  "confidence": 1,
+  "evidence_quality": 1,
+  "uncertainty": 0,
+  "missing_evidence": [],
+  "payload": {
+   "mode": "live",
+   "intentId": "STRATEGY_ENGINE:ExecutionIntent:ac100549404a8622b0a1369da9031d3babe85e2acb4a5c31b3b5a3c6c44226aa",
+   "token": "2FCeMSSB4MrsTrbHc1pNcHzi3JXoPXQps5dudhB7paid",
+   "candidateId": "jev.candidate/55a7e97b9c6e9d562fe433f5b770fe3bddb91ce8c8c42a2eb955e27a9da88f58",
+   "snapshotId": "scan:eadf5702-caa8-4ddd-9db3-9abb867166df:price-45",
+   "signalIds": [],
+   "strategyVersion": "meme-flow-v1",
+   "decisionId": "manual-live/47f4922d-c59d-47dd-993a-465c6d076b8d",
+   "riskDecisionId": "risk/d97b6588bd0745f4274f2955deabeb5bd371f0c594fd1ab668d11ab0d5566de7",
+   "side": "SELL",
+   "quantity": 178055.312561,
+   "entryPrice": 0.000004619935166035464,
+   "exitPrice": 0.0000033388179744781953,
+   "realizedPnl": -0.25289627197,
+   "fees": 0.024786549999999997,
+   "slippageBps": 100,
+   "state": "CLOSED"
+  }
+ },
+ "computed": {
+  "usd": 120.91,
+  "fees": 0.024786549999999997,
+  "value": 0.59449427803,
+  "exitPrice": 0.0000033388179744781953,
+  "realizedPnl": -0.25289627197
+ }
+}

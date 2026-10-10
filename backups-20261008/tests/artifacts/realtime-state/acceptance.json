@@ -1,0 +1,624 @@
+{
+  "checks": [
+    "PASS UI stylesheet unchanged",
+    "PASS UI artwork unchanged",
+    "Light theme default",
+    "Four AI cards retain one desktop row",
+    "Reference sidebar and header unchanged",
+    "Reference lower panel geometry unchanged",
+    "CODEX 3 is Forensic Analyst",
+    "Initial state has no fabricated progress, price, activity or trades",
+    "No producer means no autonomous market, progress or ledger changes",
+    "Starting scan alone is 0 percent",
+    "One completed item of four is 25 percent",
+    "AI progress derives from received work counts",
+    "Producer activity is rendered as text, never executable markup",
+    "BUY synchronizes trade, overview, chart identity and activity",
+    "BUY capital includes fees",
+    "Retried fill does not create another trade",
+    "Partial SELL keeps one position and realizes exactly 7.10 USD",
+    "Full SELL closes position and reconciles net realized PnL",
+    "Both dashboards receive the same atomic state",
+    "Dark theme remains functional",
+    "Reload restores authoritative state and theme",
+    "Chart interval control remains functional",
+    "Activity expands in existing panel",
+    "Disconnected browser preserves last state but marks it offline",
+    "Reconnect and server restart restore state without double-counting",
+    "No horizontal overflow at 1366",
+    "Chart canvas renders at 1366",
+    "Information order unchanged at 1366",
+    "No horizontal overflow at 1024",
+    "Chart canvas renders at 1024",
+    "Information order unchanged at 1024",
+    "No horizontal overflow at 768",
+    "Chart canvas renders at 768",
+    "Information order unchanged at 768",
+    "No horizontal overflow at 390",
+    "Chart canvas renders at 390",
+    "Information order unchanged at 390",
+    "No horizontal overflow at 320",
+    "Chart canvas renders at 320",
+    "Information order unchanged at 320",
+    "No renderer JavaScript errors",
+    "No external API or wallet calls"
+  ],
+  "errors": [],
+  "requests": [
+    "http://127.0.0.1:57006/meme-trader/",
+    "http://127.0.0.1:57006/meme-trader/styles.css",
+    "http://127.0.0.1:57006/meme-trader/app.js",
+    "http://127.0.0.1:57006/meme-trader/wallet.css",
+    "http://127.0.0.1:57006/meme-trader/wallet-sdk.js",
+    "http://127.0.0.1:57006/meme-trader/wallet.js",
+    "http://127.0.0.1:57006/meme-trader/reference.png",
+    "http://127.0.0.1:57006/api/events",
+    "http://127.0.0.1:57006/api/control",
+    "http://127.0.0.1:57006/api/events",
+    "http://127.0.0.1:57006/meme-trader/",
+    "http://127.0.0.1:57006/meme-trader/styles.css",
+    "http://127.0.0.1:57006/meme-trader/app.js",
+    "http://127.0.0.1:57006/meme-trader/wallet.css",
+    "http://127.0.0.1:57006/meme-trader/wallet-sdk.js",
+    "http://127.0.0.1:57006/meme-trader/wallet.js",
+    "http://127.0.0.1:57006/meme-trader/reference.png",
+    "http://127.0.0.1:57006/api/events",
+    "http://127.0.0.1:57006/api/control",
+    "http://127.0.0.1:57006/api/events",
+    "http://127.0.0.1:57006/meme-trader/",
+    "http://127.0.0.1:57006/meme-trader/styles.css",
+    "http://127.0.0.1:57006/meme-trader/app.js",
+    "http://127.0.0.1:57006/meme-trader/wallet.css",
+    "http://127.0.0.1:57006/meme-trader/wallet-sdk.js",
+    "http://127.0.0.1:57006/meme-trader/wallet.js",
+    "http://127.0.0.1:57006/meme-trader/reference.png",
+    "http://127.0.0.1:57006/api/events",
+    "http://127.0.0.1:57006/api/control",
+    "http://127.0.0.1:57006/api/events",
+    "http://127.0.0.1:57006/api/events",
+    "http://127.0.0.1:57006/api/events",
+    "http://127.0.0.1:57006/api/events",
+    "http://127.0.0.1:57006/api/events"
+  ],
+  "journalPath": "C:\\Users\\BAOAN\\AppData\\Local\\Temp\\botmeme-realtime-ui-Z8MNJa\\events.jsonl",
+  "initial": {
+    "theme": "light",
+    "version": 0,
+    "progress": [
+      "—",
+      "—",
+      "—",
+      "—"
+    ],
+    "chart": "<div tabindex=\"1\" style=\"position: relative; width: 100%; outline: none; border-style: none; cursor: crosshair; box-sizing: border-box; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"width: 100%; margin: 0px; padding: 0px; position: relative; overflow: hidden; box-sizing: border-box; height: 256px;\"><div style=\"margin: 0px; padding: 0px; position: absolute; top: 0px; overflow: hidden; box-sizing: border-box; z-index: 1; cursor: crosshair; left: 0px; width: 653px; height: 256px;\"><canvas width=\"653\" height=\"256\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 653px; height: 256px;\"></canvas><canvas width=\"653\" height=\"256\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 653px; height: 256px;\"></canvas></div><div style=\"margin: 0px; padding: 0px; position: absolute; top: 0px; overflow: hidden; box-sizing: border-box; z-index: 1; cursor: ns-resize; left: 653px; width: 39px; height: 256px;\"><canvas width=\"39\" height=\"256\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 39px; height: 256px;\"></canvas><canvas width=\"39\" height=\"256\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 39px; height: 256px;\"></canvas></div></div><div style=\"width: 100%; margin: 0px; padding: 0px; position: relative; overflow: hidden; box-sizing: border-box; height: 24px;\"><div style=\"margin: 0px; padding: 0px; position: absolute; top: 0px; overflow: hidden; box-sizing: border-box; z-index: 1; cursor: ew-resize; left: 0px; width: 653px; height: 24px;\"><canvas width=\"653\" height=\"24\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 653px; height: 24px;\"></canvas><canvas width=\"653\" height=\"24\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 653px; height: 24px;\"></canvas></div></div></div>",
+    "chartAria": "Chờ dữ liệu giá, nến 1 phút",
+    "events": "Chờ event từ nguồn dữ liệu",
+    "trades": "Chưa có giao dịch được ghi nhận",
+    "pnl": "$0.00",
+    "total": 0,
+    "open": 0,
+    "bodyWidth": 1519,
+    "viewport": 1536,
+    "agents": [
+      {
+        "x": 240,
+        "y": 75,
+        "width": 304.75,
+        "height": 298
+      },
+      {
+        "x": 559.75,
+        "y": 75,
+        "width": 304.75,
+        "height": 298
+      },
+      {
+        "x": 879.5,
+        "y": 75,
+        "width": 304.75,
+        "height": 298
+      },
+      {
+        "x": 1199.25,
+        "y": 75,
+        "width": 304.75,
+        "height": 298
+      }
+    ],
+    "rects": {
+      "sidebar": {
+        "x": 0,
+        "y": 0,
+        "width": 222,
+        "height": 1024
+      },
+      "header": {
+        "x": 222,
+        "y": 0,
+        "width": 1297,
+        "height": 60
+      },
+      "chart": {
+        "x": 240,
+        "y": 388,
+        "width": 726.390625,
+        "height": 360
+      },
+      "trades": {
+        "x": 240,
+        "y": 763,
+        "width": 726.390625,
+        "height": 323
+      },
+      "overview": {
+        "x": 981.390625,
+        "y": 388,
+        "width": 522.609375,
+        "height": 269
+      },
+      "activity": {
+        "x": 981.390625,
+        "y": 876.5,
+        "width": 522.609375,
+        "height": 363
+      }
+    },
+    "colors": {
+      "page": "rgb(249, 250, 252)",
+      "text": "rgb(13, 20, 34)"
+    }
+  },
+  "viewports": [
+    {
+      "width": 1366,
+      "state": {
+        "theme": "light",
+        "version": 13,
+        "progress": [
+          "25%",
+          "25%",
+          "50%",
+          "75%"
+        ],
+        "chart": "<div tabindex=\"1\" style=\"position: relative; width: 100%; outline: none; border-style: none; cursor: crosshair; box-sizing: border-box; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"width: 100%; margin: 0px; padding: 0px; position: relative; overflow: hidden; box-sizing: border-box; height: 256px;\"><div style=\"margin: 0px; padding: 0px; position: absolute; top: 0px; overflow: hidden; box-sizing: border-box; z-index: 1; cursor: crosshair; left: 0px; width: 567px; height: 256px;\"><canvas width=\"567\" height=\"256\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 567px; height: 256px;\"></canvas><canvas width=\"567\" height=\"256\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 567px; height: 256px;\"></canvas></div><div style=\"margin: 0px; padding: 0px; position: absolute; top: 0px; overflow: hidden; box-sizing: border-box; z-index: 1; cursor: ns-resize; left: 567px; width: 39px; height: 256px;\"><canvas width=\"39\" height=\"256\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 39px; height: 256px;\"></canvas><canvas width=\"39\" height=\"256\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 39px; height: 256px;\"></canvas></div></div><div style=\"width: 100%; margin: 0px; padding: 0px; position: relative; overflow: hidden; box-sizing: border-box; height: 24px;\"><div style=\"margin: 0px; padding: 0px; position: absolute; top: 0px; overflow: hidden; box-sizing: border-box; z-index: 1; cursor: ew-resize; left: 0px; width: 567px; height: 24px;\"><canvas width=\"567\" height=\"24\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 567px; height: 24px;\"></canvas><canvas width=\"567\" height=\"24\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 567px; height: 24px;\"></canvas></div></div></div>",
+        "chartAria": "TEST, nến 5 phút, giá 12 USD",
+        "events": "20:52:27\n↔ PAPER\n\nSELL TEST • 6 @ $11 (paper)\n\n20:52:27\n↔ PAPER\n\nSELL TEST • 4 @ $12 (paper)\n\n20:52:27\n↔ PAPER\n\nBUY TEST • 10 @ $10 (paper)\n\n20:52:27\n⚙ CODEX 3\n\n<img src=x onerror=\"window.__injected=true\">\n\n20:52:27\n⚙ CODEX 3\n\nĐiều tra phí giao dịch (3/4)\n\n20:52:27\n◈ CODEX 2\n\nXử lý tác vụ được giao (2/4)\n\n20:52:27\n◎ CODEX 1\n\nXử lý tác vụ được giao (1/4)\n\n20:52:27\n↔ RUNTIME\n\nĐã quét 1/4 • TEST",
+        "trades": "20:52:27\tTEST\tSell\t10.1\t11.3\t+11.9%\tĐã đóng",
+        "pnl": "+$12.00",
+        "total": 3,
+        "open": 0,
+        "bodyWidth": 1349,
+        "viewport": 1366,
+        "agents": [
+          {
+            "x": 218,
+            "y": 75,
+            "width": 267.75,
+            "height": 299
+          },
+          {
+            "x": 500.75,
+            "y": 75,
+            "width": 267.75,
+            "height": 299
+          },
+          {
+            "x": 783.5,
+            "y": 75,
+            "width": 267.75,
+            "height": 299
+          },
+          {
+            "x": 1066.25,
+            "y": 75,
+            "width": 267.75,
+            "height": 299
+          }
+        ],
+        "rects": {
+          "sidebar": {
+            "x": 0,
+            "y": 0,
+            "width": 200,
+            "height": 1024
+          },
+          "header": {
+            "x": 200,
+            "y": 0,
+            "width": 1149,
+            "height": 60
+          },
+          "chart": {
+            "x": 218,
+            "y": 389,
+            "width": 640.328125,
+            "height": 399
+          },
+          "trades": {
+            "x": 218,
+            "y": 803,
+            "width": 640.328125,
+            "height": 323
+          },
+          "overview": {
+            "x": 873.328125,
+            "y": 389,
+            "width": 460.671875,
+            "height": 269
+          },
+          "activity": {
+            "x": 873.328125,
+            "y": 875.5,
+            "width": 460.671875,
+            "height": 363
+          }
+        },
+        "colors": {
+          "page": "rgb(249, 250, 252)",
+          "text": "rgb(13, 20, 34)"
+        }
+      }
+    },
+    {
+      "width": 1024,
+      "state": {
+        "theme": "light",
+        "version": 13,
+        "progress": [
+          "25%",
+          "25%",
+          "50%",
+          "75%"
+        ],
+        "chart": "<div tabindex=\"1\" style=\"position: relative; width: 100%; outline: none; border-style: none; cursor: crosshair; box-sizing: border-box; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"width: 100%; margin: 0px; padding: 0px; position: relative; overflow: hidden; box-sizing: border-box; height: 256px;\"><div style=\"margin: 0px; padding: 0px; position: absolute; top: 0px; overflow: hidden; box-sizing: border-box; z-index: 1; cursor: crosshair; left: 0px; width: 726px; height: 256px;\"><canvas width=\"726\" height=\"256\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 726px; height: 256px;\"></canvas><canvas width=\"726\" height=\"256\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 726px; height: 256px;\"></canvas></div><div style=\"margin: 0px; padding: 0px; position: absolute; top: 0px; overflow: hidden; box-sizing: border-box; z-index: 1; cursor: ns-resize; left: 726px; width: 39px; height: 256px;\"><canvas width=\"39\" height=\"256\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 39px; height: 256px;\"></canvas><canvas width=\"39\" height=\"256\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 39px; height: 256px;\"></canvas></div></div><div style=\"width: 100%; margin: 0px; padding: 0px; position: relative; overflow: hidden; box-sizing: border-box; height: 24px;\"><div style=\"margin: 0px; padding: 0px; position: absolute; top: 0px; overflow: hidden; box-sizing: border-box; z-index: 1; cursor: ew-resize; left: 0px; width: 726px; height: 24px;\"><canvas width=\"726\" height=\"24\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 726px; height: 24px;\"></canvas><canvas width=\"726\" height=\"24\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 726px; height: 24px;\"></canvas></div></div></div>",
+        "chartAria": "TEST, nến 5 phút, giá 12 USD",
+        "events": "20:52:27\n↔ PAPER\n\nSELL TEST • 6 @ $11 (paper)\n\n20:52:27\n↔ PAPER\n\nSELL TEST • 4 @ $12 (paper)\n\n20:52:27\n↔ PAPER\n\nBUY TEST • 10 @ $10 (paper)\n\n20:52:27\n⚙ CODEX 3\n\n<img src=x onerror=\"window.__injected=true\">\n\n20:52:27\n⚙ CODEX 3\n\nĐiều tra phí giao dịch (3/4)\n\n20:52:27\n◈ CODEX 2\n\nXử lý tác vụ được giao (2/4)\n\n20:52:27\n◎ CODEX 1\n\nXử lý tác vụ được giao (1/4)\n\n20:52:27\n↔ RUNTIME\n\nĐã quét 1/4 • TEST",
+        "trades": "20:52:27\tTEST\tSell\t10.1\t11.3\t+11.9%\tĐã đóng",
+        "pnl": "+$12.00",
+        "total": 3,
+        "open": 0,
+        "bodyWidth": 1007,
+        "viewport": 1024,
+        "agents": [
+          {
+            "x": 193,
+            "y": 75,
+            "width": 392,
+            "height": 297
+          },
+          {
+            "x": 600,
+            "y": 75,
+            "width": 392,
+            "height": 297
+          },
+          {
+            "x": 193,
+            "y": 387,
+            "width": 392,
+            "height": 271
+          },
+          {
+            "x": 600,
+            "y": 387,
+            "width": 392,
+            "height": 271
+          }
+        ],
+        "rects": {
+          "sidebar": {
+            "x": 0,
+            "y": 0,
+            "width": 175,
+            "height": 1024
+          },
+          "header": {
+            "x": 175,
+            "y": 0,
+            "width": 832,
+            "height": 60
+          },
+          "chart": {
+            "x": 193,
+            "y": 673,
+            "width": 799,
+            "height": 360
+          },
+          "trades": {
+            "x": 193,
+            "y": 1048,
+            "width": 799,
+            "height": 323
+          },
+          "overview": {
+            "x": 193,
+            "y": 1386,
+            "width": 799,
+            "height": 269
+          },
+          "activity": {
+            "x": 193,
+            "y": 1874.5,
+            "width": 799,
+            "height": 363
+          }
+        },
+        "colors": {
+          "page": "rgb(249, 250, 252)",
+          "text": "rgb(13, 20, 34)"
+        }
+      }
+    },
+    {
+      "width": 768,
+      "state": {
+        "theme": "light",
+        "version": 13,
+        "progress": [
+          "25%",
+          "25%",
+          "50%",
+          "75%"
+        ],
+        "chart": "<div tabindex=\"1\" style=\"position: relative; width: 100%; outline: none; border-style: none; cursor: crosshair; box-sizing: border-box; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"width: 100%; margin: 0px; padding: 0px; position: relative; overflow: hidden; box-sizing: border-box; height: 256px;\"><div style=\"margin: 0px; padding: 0px; position: absolute; top: 0px; overflow: hidden; box-sizing: border-box; z-index: 1; cursor: crosshair; left: 0px; width: 470px; height: 256px;\"><canvas width=\"470\" height=\"256\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 470px; height: 256px;\"></canvas><canvas width=\"470\" height=\"256\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 470px; height: 256px;\"></canvas></div><div style=\"margin: 0px; padding: 0px; position: absolute; top: 0px; overflow: hidden; box-sizing: border-box; z-index: 1; cursor: ns-resize; left: 470px; width: 39px; height: 256px;\"><canvas width=\"39\" height=\"256\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 39px; height: 256px;\"></canvas><canvas width=\"39\" height=\"256\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 39px; height: 256px;\"></canvas></div></div><div style=\"width: 100%; margin: 0px; padding: 0px; position: relative; overflow: hidden; box-sizing: border-box; height: 24px;\"><div style=\"margin: 0px; padding: 0px; position: absolute; top: 0px; overflow: hidden; box-sizing: border-box; z-index: 1; cursor: ew-resize; left: 0px; width: 470px; height: 24px;\"><canvas width=\"470\" height=\"24\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 470px; height: 24px;\"></canvas><canvas width=\"470\" height=\"24\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 470px; height: 24px;\"></canvas></div></div></div>",
+        "chartAria": "TEST, nến 5 phút, giá 12 USD",
+        "events": "20:52:27\n↔ PAPER\n\nSELL TEST • 6 @ $11 (paper)\n\n20:52:27\n↔ PAPER\n\nSELL TEST • 4 @ $12 (paper)\n\n20:52:27\n↔ PAPER\n\nBUY TEST • 10 @ $10 (paper)\n\n20:52:27\n⚙ CODEX 3\n\n<img src=x onerror=\"window.__injected=true\">\n\n20:52:27\n⚙ CODEX 3\n\nĐiều tra phí giao dịch (3/4)\n\n20:52:27\n◈ CODEX 2\n\nXử lý tác vụ được giao (2/4)\n\n20:52:27\n◎ CODEX 1\n\nXử lý tác vụ được giao (1/4)\n\n20:52:27\n↔ RUNTIME\n\nĐã quét 1/4 • TEST",
+        "trades": "20:52:27\tTEST\tSell\t10.1\t11.3\t+11.9%\tĐã đóng",
+        "pnl": "+$12.00",
+        "total": 3,
+        "open": 0,
+        "bodyWidth": 751,
+        "viewport": 768,
+        "agents": [
+          {
+            "x": 193,
+            "y": 75,
+            "width": 264,
+            "height": 338
+          },
+          {
+            "x": 472,
+            "y": 75,
+            "width": 264,
+            "height": 338
+          },
+          {
+            "x": 193,
+            "y": 428,
+            "width": 264,
+            "height": 312
+          },
+          {
+            "x": 472,
+            "y": 428,
+            "width": 264,
+            "height": 312
+          }
+        ],
+        "rects": {
+          "sidebar": {
+            "x": 0,
+            "y": 0,
+            "width": 175,
+            "height": 1024
+          },
+          "header": {
+            "x": 175,
+            "y": 0,
+            "width": 576,
+            "height": 60
+          },
+          "chart": {
+            "x": 193,
+            "y": 755,
+            "width": 543,
+            "height": 399
+          },
+          "trades": {
+            "x": 193,
+            "y": 1169,
+            "width": 543,
+            "height": 323
+          },
+          "overview": {
+            "x": 193,
+            "y": 1507,
+            "width": 543,
+            "height": 269
+          },
+          "activity": {
+            "x": 193,
+            "y": 1995.5,
+            "width": 543,
+            "height": 363
+          }
+        },
+        "colors": {
+          "page": "rgb(249, 250, 252)",
+          "text": "rgb(13, 20, 34)"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "state": {
+        "theme": "light",
+        "version": 13,
+        "progress": [
+          "25%",
+          "25%",
+          "50%",
+          "75%"
+        ],
+        "chart": "<div tabindex=\"1\" style=\"position: relative; width: 100%; outline: none; border-style: none; cursor: crosshair; box-sizing: border-box; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"width: 100%; margin: 0px; padding: 0px; position: relative; overflow: hidden; box-sizing: border-box; height: 167px;\"><div style=\"margin: 0px; padding: 0px; position: absolute; top: 0px; overflow: hidden; box-sizing: border-box; z-index: 1; cursor: crosshair; left: 0px; width: 230px; height: 167px;\"><canvas width=\"230\" height=\"167\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 230px; height: 167px;\"></canvas><canvas width=\"230\" height=\"167\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 230px; height: 167px;\"></canvas></div><div style=\"margin: 0px; padding: 0px; position: absolute; top: 0px; overflow: hidden; box-sizing: border-box; z-index: 1; cursor: ns-resize; left: 230px; width: 39px; height: 167px;\"><canvas width=\"39\" height=\"167\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 39px; height: 167px;\"></canvas><canvas width=\"39\" height=\"167\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 39px; height: 167px;\"></canvas></div></div><div style=\"width: 100%; margin: 0px; padding: 0px; position: relative; overflow: hidden; box-sizing: border-box; height: 24px;\"><div style=\"margin: 0px; padding: 0px; position: absolute; top: 0px; overflow: hidden; box-sizing: border-box; z-index: 1; cursor: ew-resize; left: 0px; width: 230px; height: 24px;\"><canvas width=\"230\" height=\"24\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 230px; height: 24px;\"></canvas><canvas width=\"230\" height=\"24\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 230px; height: 24px;\"></canvas></div></div></div>",
+        "chartAria": "TEST, nến 5 phút, giá 12 USD",
+        "events": "20:52:27\n↔ PAPER\n\nSELL TEST • 6 @ $11 (paper)\n\n20:52:27\n↔ PAPER\n\nSELL TEST • 4 @ $12 (paper)\n\n20:52:27\n↔ PAPER\n\nBUY TEST • 10 @ $10 (paper)\n\n20:52:27\n⚙ CODEX 3\n\n<img src=x onerror=\"window.__injected=true\">\n\n20:52:27\n⚙ CODEX 3\n\nĐiều tra phí giao dịch (3/4)\n\n20:52:27\n◈ CODEX 2\n\nXử lý tác vụ được giao (2/4)\n\n20:52:27\n◎ CODEX 1\n\nXử lý tác vụ được giao (1/4)\n\n20:52:27\n↔ RUNTIME\n\nĐã quét 1/4 • TEST",
+        "trades": "20:52:27\tTEST\tSell\t10.1\t11.3\t+11.9%\tĐã đóng",
+        "pnl": "+$12.00",
+        "total": 3,
+        "open": 0,
+        "bodyWidth": 373,
+        "viewport": 390,
+        "agents": [
+          {
+            "x": 72,
+            "y": 72,
+            "width": 291,
+            "height": 297
+          },
+          {
+            "x": 72,
+            "y": 381,
+            "width": 291,
+            "height": 286
+          },
+          {
+            "x": 72,
+            "y": 679,
+            "width": 291,
+            "height": 286
+          },
+          {
+            "x": 72,
+            "y": 977,
+            "width": 291,
+            "height": 312
+          }
+        ],
+        "rects": {
+          "sidebar": {
+            "x": 0,
+            "y": 0,
+            "width": 62,
+            "height": 1024
+          },
+          "header": {
+            "x": 62,
+            "y": 0,
+            "width": 311,
+            "height": 60
+          },
+          "chart": {
+            "x": 72,
+            "y": 1304,
+            "width": 291,
+            "height": 360
+          },
+          "trades": {
+            "x": 72,
+            "y": 1676,
+            "width": 291,
+            "height": 323
+          },
+          "overview": {
+            "x": 72,
+            "y": 2011,
+            "width": 291,
+            "height": 334
+          },
+          "activity": {
+            "x": 72,
+            "y": 2656.5,
+            "width": 291,
+            "height": 604
+          }
+        },
+        "colors": {
+          "page": "rgb(249, 250, 252)",
+          "text": "rgb(13, 20, 34)"
+        }
+      }
+    },
+    {
+      "width": 320,
+      "state": {
+        "theme": "light",
+        "version": 13,
+        "progress": [
+          "25%",
+          "25%",
+          "50%",
+          "75%"
+        ],
+        "chart": "<div tabindex=\"1\" style=\"position: relative; width: 100%; outline: none; border-style: none; cursor: crosshair; box-sizing: border-box; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"width: 100%; margin: 0px; padding: 0px; position: relative; overflow: hidden; box-sizing: border-box; height: 167px;\"><div style=\"margin: 0px; padding: 0px; position: absolute; top: 0px; overflow: hidden; box-sizing: border-box; z-index: 1; cursor: crosshair; left: 0px; width: 160px; height: 167px;\"><canvas width=\"160\" height=\"167\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 160px; height: 167px;\"></canvas><canvas width=\"160\" height=\"167\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 160px; height: 167px;\"></canvas></div><div style=\"margin: 0px; padding: 0px; position: absolute; top: 0px; overflow: hidden; box-sizing: border-box; z-index: 1; cursor: ns-resize; left: 160px; width: 39px; height: 167px;\"><canvas width=\"39\" height=\"167\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 39px; height: 167px;\"></canvas><canvas width=\"39\" height=\"167\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 39px; height: 167px;\"></canvas></div></div><div style=\"width: 100%; margin: 0px; padding: 0px; position: relative; overflow: hidden; box-sizing: border-box; height: 24px;\"><div style=\"margin: 0px; padding: 0px; position: absolute; top: 0px; overflow: hidden; box-sizing: border-box; z-index: 1; cursor: ew-resize; left: 0px; width: 160px; height: 24px;\"><canvas width=\"160\" height=\"24\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 160px; height: 24px;\"></canvas><canvas width=\"160\" height=\"24\" style=\"position: absolute; top: 0px; left: 0px; z-index: 2; box-sizing: border-box; width: 160px; height: 24px;\"></canvas></div></div></div>",
+        "chartAria": "TEST, nến 5 phút, giá 12 USD",
+        "events": "20:52:27\n↔ PAPER\n\nSELL TEST • 6 @ $11 (paper)\n\n20:52:27\n↔ PAPER\n\nSELL TEST • 4 @ $12 (paper)\n\n20:52:27\n↔ PAPER\n\nBUY TEST • 10 @ $10 (paper)\n\n20:52:27\n⚙ CODEX 3\n\n<img src=x onerror=\"window.__injected=true\">\n\n20:52:27\n⚙ CODEX 3\n\nĐiều tra phí giao dịch (3/4)\n\n20:52:27\n◈ CODEX 2\n\nXử lý tác vụ được giao (2/4)\n\n20:52:27\n◎ CODEX 1\n\nXử lý tác vụ được giao (1/4)\n\n20:52:27\n↔ RUNTIME\n\nĐã quét 1/4 • TEST",
+        "trades": "20:52:27\tTEST\tSell\t10.1\t11.3\t+11.9%\tĐã đóng",
+        "pnl": "+$12.00",
+        "total": 3,
+        "open": 0,
+        "bodyWidth": 303,
+        "viewport": 320,
+        "agents": [
+          {
+            "x": 72,
+            "y": 72,
+            "width": 231.03125,
+            "height": 299
+          },
+          {
+            "x": 72,
+            "y": 383,
+            "width": 231.03125,
+            "height": 296
+          },
+          {
+            "x": 72,
+            "y": 691,
+            "width": 231.03125,
+            "height": 296
+          },
+          {
+            "x": 72,
+            "y": 999,
+            "width": 231.03125,
+            "height": 322
+          }
+        ],
+        "rects": {
+          "sidebar": {
+            "x": 0,
+            "y": 0,
+            "width": 62,
+            "height": 1024
+          },
+          "header": {
+            "x": 62,
+            "y": 0,
+            "width": 241,
+            "height": 60
+          },
+          "chart": {
+            "x": 72,
+            "y": 1336,
+            "width": 221,
+            "height": 360
+          },
+          "trades": {
+            "x": 72,
+            "y": 1708,
+            "width": 221,
+            "height": 323
+          },
+          "overview": {
+            "x": 72,
+            "y": 2043,
+            "width": 221,
+            "height": 334
+          },
+          "activity": {
+            "x": 72,
+            "y": 2688.5,
+            "width": 221,
+            "height": 604
+          }
+        },
+        "colors": {
+          "page": "rgb(249, 250, 252)",
+          "text": "rgb(13, 20, 34)"
+        }
+      }
+    }
+  ],
+  "status": "PASS"
+}

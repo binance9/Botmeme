@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-24T05:48:18.594Z",
+  "file": "src/robinhood-intelligence.mjs",
+  "sha256": "bd9e9d71c276bad9378fe629c98162a3406c59c0aa1b6be72728821a4444468f",
+  "recommendation": "REWRITE",
+  "scope": "STATIC_MIGRATION_RECOMMENDATION_ONLY",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 4384,
+      "output_tokens": 41
+    },
+    "answers": {
+      "audit": {
+        "type": "choice",
+        "choice": "PASS",
+        "confidence": 0.83,
+        "probabilities": {
+          "FAIL": 0.06,
+          "UNVERIFIED": 0.05,
+          "PASS": 0.89
+        }
+      }
+    },
+    "helper": {}
+  }
+}

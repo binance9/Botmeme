@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "model": "jev-1.13.0",
+  "usage": {
+    "input_tokens": 679,
+    "output_tokens": 98
+  },
+  "answers": {
+    "color_claim": {
+      "type": "choice",
+      "choice": "no",
+      "confidence": 1,
+      "probabilities": {
+        "no": 1,
+        "yes": 0
+      }
+    },
+    "verification": {
+      "type": "choice",
+      "choice": "pixel_samples_plus_render",
+      "confidence": 0.99,
+      "probabilities": {
+        "pixel_samples_plus_render": 1,
+        "css_only": 0
+      }
+    },
+    "dark": {
+      "type": "choice",
+      "choice": "functional_only",
+      "confidence": 1,
+      "probabilities": {
+        "functional_only": 1,
+        "exact_match": 0
+      }
+    }
+  },
+  "helper": {}
+}

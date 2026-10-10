@@ -1,0 +1,27 @@
+{
+  "file": "solana-source.mjs",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 15958,
+      "output_tokens": 86
+    },
+    "answers": {
+      "blocker": {
+        "type": "choice",
+        "choice": "VAGUE_PORT",
+        "confidence": 0.16,
+        "probabilities": {
+          "OMITTED_BUG": 0.28,
+          "VAGUE_PORT": 0.3,
+          "MISSING_DEPENDENCY": 0.05,
+          "MISCLASSIFIED": 0.03,
+          "OTHER_UNVERIFIED": 0.08,
+          "RUNTIME_REQUIRED": 0.26
+        }
+      }
+    },
+    "helper": {}
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-24T05:48:15.781Z",
+  "file": "src/live-trade.mjs",
+  "sha256": "d7c83e7b376e71554e7b57fba45a03ab8d485f750ef00159d71e1978548fca64",
+  "recommendation": "DROP",
+  "scope": "STATIC_MIGRATION_RECOMMENDATION_ONLY",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 3293,
+      "output_tokens": 41
+    },
+    "answers": {
+      "audit": {
+        "type": "choice",
+        "choice": "PASS",
+        "confidence": 0.74,
+        "probabilities": {
+          "UNVERIFIED": 0.08,
+          "PASS": 0.83,
+          "FAIL": 0.09
+        }
+      }
+    },
+    "helper": {}
+  }
+}

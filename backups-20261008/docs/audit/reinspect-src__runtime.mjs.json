@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-24T05:48:19.859Z",
+  "file": "src/runtime.mjs",
+  "sha256": "91c1a65293c164daa61ffcd0eebf865131dfa878a53208fd07fa313e0f6ba20f",
+  "recommendation": "REWRITE",
+  "scope": "STATIC_MIGRATION_RECOMMENDATION_ONLY",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 12688,
+      "output_tokens": 41
+    },
+    "answers": {
+      "audit": {
+        "type": "choice",
+        "choice": "PASS",
+        "confidence": 0.65,
+        "probabilities": {
+          "PASS": 0.77,
+          "UNVERIFIED": 0.13,
+          "FAIL": 0.1
+        }
+      }
+    },
+    "helper": {}
+  }
+}

@@ -1,0 +1,21 @@
+.chart-panel{position:relative}
+.chart-panel .market-tabs{flex-shrink:0;max-width:100%;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+.chart-panel .market-tabs::-webkit-scrollbar{display:none}
+.chart-panel .market-tabs button{flex-shrink:0}
+.chart-panel.copy-mode>:not(.market-tabs):not(.copy-pane){visibility:hidden;pointer-events:none}
+.chart-panel .copy-pane{position:absolute;inset:43px 10px 10px;overflow:auto;z-index:3;font-size:12px;background:var(--panel,#182430);color:inherit}
+.chart-panel .copy-pane[hidden]{display:none}
+.copy-pane h3{font-size:13px;margin:5px 0 9px}
+.copy-pane p{margin:8px 0;line-height:1.5}
+.copy-pane form{display:flex;flex-wrap:wrap;align-items:end;gap:8px;margin:12px 0}
+.copy-pane label{display:flex;flex-direction:column;gap:4px;max-width:100%}
+.copy-pane input,.copy-pane select,.copy-pane button{font:inherit;color:inherit;background:transparent;border:1px solid #526577;border-radius:4px;padding:5px;max-width:100%}
+.copy-pane input{width:150px}.copy-pane input[name=wallet]{width:330px}
+.copy-pane button{cursor:pointer}.copy-pane button:hover{border-color:#12bcea}
+.copy-pane .copy-table-wrap{overflow:auto;max-width:100%}
+.copy-pane table{width:100%;border-collapse:collapse;white-space:nowrap}
+.copy-pane th,.copy-pane td{text-align:left;padding:7px 5px;border-bottom:1px solid #52657755}
+.copy-pane .copy-muted{opacity:.75}.copy-pane .copy-error{color:#ec815f}
+.copy-pane svg{width:100%;height:240px;min-height:160px;display:block}
+.copy-pane .copy-address{overflow-wrap:anywhere;white-space:normal}
+.copy-pane .copy-buy{color:#19c88a}.copy-pane .copy-sell{color:#ef7781}

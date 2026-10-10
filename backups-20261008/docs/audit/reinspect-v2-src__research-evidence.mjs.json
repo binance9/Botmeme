@@ -1,0 +1,40 @@
+{
+  "at": "2026-09-24T05:49:47.494Z",
+  "file": "src/research-evidence.mjs",
+  "sha256": "ecfe668f40a36054a813a66ac269fa0e46e226dec9d81493d51e4d58401ba46c",
+  "recommendation": {
+    "file": "src/research-evidence.mjs",
+    "purpose": "Compact source/quote evidence",
+    "currentDependencies": [
+      "./paper-policy.mjs"
+    ],
+    "quality": "Useful bounded logic; adaptation and new verification required",
+    "decision": "PORT",
+    "destination": "runtime/telemetry/evidence",
+    "reason": "Port only selected field allowlists and integer round-trip arithmetic after strict input validation. Rewrite incomplete-pair branch to an explicit unavailable result. Always bind typed immutable evidence references.",
+    "risks": "quoteEvidence returns arbitrary input unchanged when either quote is missing, bypassing allowlist. optionalSourceStatus defaults absent reads to READ. coverageMeaning trusts legacy boolean. Cannot treat modeled quote as observed fill",
+    "sha256": "ecfe668f40a36054a813a66ac269fa0e46e226dec9d81493d51e4d58401ba46c"
+  },
+  "scope": "STATIC_MIGRATION_RECOMMENDATION_ONLY",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 3528,
+      "output_tokens": 41
+    },
+    "answers": {
+      "audit": {
+        "type": "choice",
+        "choice": "PASS",
+        "confidence": 0.42,
+        "probabilities": {
+          "UNVERIFIED": 0.07,
+          "FAIL": 0.31,
+          "PASS": 0.62
+        }
+      }
+    },
+    "helper": {}
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "receipt_id": "514b8557-6607-4908-92e9-84797e824e2d",
+  "observedAt": "2026-09-24T06:09:11.299Z",
+  "command": [
+    "node",
+    "--test",
+    "tests/auditor.test.cjs"
+  ],
+  "resultBeforeFix": {
+    "tests": 22,
+    "passed": 19,
+    "failed": 3,
+    "exitCode": 1
+  },
+  "finding": "Unquoted credential input and output bypassed screening despite 8B PASS. Independently reproduced by reviewer and main agent before correction.",
+  "affectedFiles": [
+    "services/jev/auditor/contract.cjs",
+    "services/jev/auditor/service.cjs"
+  ],
+  "correctedBy": "Shared recursive secrets.cjs screening on packet and result",
+  "resultAfterFix": {
+    "tests": 38,
+    "passed": 38,
+    "failed": 0,
+    "exitCode": 0
+  },
+  "scope": "JEV Auditor/packet-result-validation"
+}

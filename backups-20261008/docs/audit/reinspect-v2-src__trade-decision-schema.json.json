@@ -1,0 +1,38 @@
+{
+  "at": "2026-09-24T05:49:49.391Z",
+  "file": "src/trade-decision-schema.json",
+  "sha256": "06baa4a70f5f512f6b068b3628348c178667477ab0837f341b127cbeda3abe3a",
+  "recommendation": {
+    "file": "src/trade-decision-schema.json",
+    "purpose": "Direct live trading decision schema",
+    "currentDependencies": [],
+    "quality": "Excluded from target, not a general quality assertion",
+    "decision": "DROP",
+    "destination": "none",
+    "reason": "DROP this exact old artifact, not the general idea of JSON validation. New StrategyDecision/ExecutionIntent must be distinct typed contracts. Its only source caller is the excluded codex-trader.mjs.",
+    "risks": "Schema itself does not sign; its caller directly chooses BUY/SELL without required strategy version, signal, evidence or lifecycle identity",
+    "sha256": "06baa4a70f5f512f6b068b3628348c178667477ab0837f341b127cbeda3abe3a"
+  },
+  "scope": "STATIC_MIGRATION_RECOMMENDATION_ONLY",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 2397,
+      "output_tokens": 41
+    },
+    "answers": {
+      "audit": {
+        "type": "choice",
+        "choice": "PASS",
+        "confidence": 0.35,
+        "probabilities": {
+          "FAIL": 0.36,
+          "UNVERIFIED": 0.07,
+          "PASS": 0.57
+        }
+      }
+    },
+    "helper": {}
+  }
+}

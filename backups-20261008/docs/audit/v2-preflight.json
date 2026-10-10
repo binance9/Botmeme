@@ -1,0 +1,48 @@
+{
+  "status": "INTERNAL_AUDITOR_BOOTSTRAP",
+  "stage": "1 - Audit MemePilot",
+  "uiFrozen": true,
+  "uiBaseline": [
+    {
+      "file": "public/meme-trader/index.html",
+      "sha256": "BA25FE848E88EBCE80B278C4E7357664304FA28120249E3ABCD7819B8205E02C"
+    },
+    {
+      "file": "public/meme-trader/styles.css",
+      "sha256": "86AD05F4ACFC0445E455DCAE5FC4D412DA22C75EA5E87862E5EA514CD5EF7291"
+    },
+    {
+      "file": "public/meme-trader/app.js",
+      "sha256": "73D8C49FFF0064FD1F365E7C5AB05178E71B3A0384B95FA3AE0151B2432FFC40"
+    },
+    {
+      "file": "public/meme-trader/reference.png",
+      "sha256": "F28E2B8FBAF8B7AF90C72FFD5C75B739AB812FC798EA0545BEC4A955DB195FF1"
+    }
+  ],
+  "approvedUiException": "Compact collapsed wallet control at bottom-left; network and QR nested inside Wallet. Agent titles are JEV, GROK, GROK, CLAUDE.",
+  "legacySource": {
+    "path": "C:/botcode 1/MemePilot",
+    "status": "FOUND_READ_ONLY",
+    "inventory": "memepilot-inventory.json",
+    "sourceFilesRead": 85,
+    "sourceFilesSentToJev": 85,
+    "legacyHashChanges": 0
+  },
+  "jev": {
+    "status": "INTERNAL_AGENT_IMPLEMENTED_RUNTIME_VALIDATION_IN_PROGRESS",
+    "service": "services/jev/auditor/service.cjs",
+    "provider": "ollama-local",
+    "model": "qwen3:14b",
+    "classifierRole": "auxiliary only; historical TypeSafe verdicts are not acceptance",
+    "protocol": "evidence-first/2"
+  },
+  "decisions": [],
+  "nextRequired": [
+    "Verify all eight internal JEV Auditor scopes with real review and deterministic runtime evidence",
+    "Reconcile the existing 85 migration decisions against existing evidence; do not restart the legacy audit"
+  ],
+  "implementationStarted": true,
+  "checkedAt": "2026-09-24T07:39:36.966Z",
+  "implementationScope": "Auditor bootstrap only, explicitly requested before stage 1 resumes"
+}

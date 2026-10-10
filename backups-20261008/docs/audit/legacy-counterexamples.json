@@ -1,0 +1,49 @@
+{
+  "at": "2026-09-24T05:46:50.486Z",
+  "kind": "DIRECT_CALL_COUNTEREXAMPLES_NOT_LIVE_TRADING_OR_ACCEPTANCE",
+  "legacyWrites": false,
+  "results": [
+    {
+      "module": "statistics",
+      "inputMeaning": "One position; partial exit +10, final exit -5. Net +5. One closed winning position.",
+      "expected": {
+        "closedPositions": 1,
+        "positionWinRatePct": 100
+      },
+      "actual": {
+        "tradeCount": 3,
+        "closedTrades": 2,
+        "winRatePct": 50,
+        "expectancyUsd": 2.5,
+        "maxDrawdownUsd": 0,
+        "maxDrawdownPct": 0,
+        "scope": "OBSERVED_PAPER_SESSION_ONLY",
+        "profitabilityProven": false
+      }
+    },
+    {
+      "module": "holderCheck",
+      "inputMeaning": "Legacy boolean true, no supply/coverage/hash/slot evidence",
+      "expected": "UNVERIFIED under V2 evidence rule",
+      "actual": {
+        "status": "PASS",
+        "basis": "COMPLETE_DISTRIBUTION"
+      }
+    },
+    {
+      "module": "WalletPerformance",
+      "inputMeaning": "Two observed sells with no observed opening cost",
+      "expected": "Unknown PnL; cannot rank as proven profit",
+      "actual": [
+        {
+          "wallet": "0x1111111111111111111111111111111111111111",
+          "tradesToday": 2,
+          "realizedPnlEth": 2,
+          "wins": 2,
+          "losses": 0,
+          "lastAt": 1790228810486
+        }
+      ]
+    }
+  ]
+}

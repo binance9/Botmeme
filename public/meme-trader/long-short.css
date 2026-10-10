@@ -1,0 +1,239 @@
+/* UI-MERGE — Long/Short view inside Meme Trader (:7883).
+   Everything is scoped under #long-short-view (or .bots-widget) so the GA golden
+   palette never leaks into the Meme Trader shell. The terminal is intentionally
+   always-dark (golden contract), independent of the shell theme. */
+
+/* ---------- view frame ---------- */
+body.mode-long-short{overflow:hidden}
+body.mode-long-short main{padding:0;max-width:none}
+body.mode-long-short .content-grid{display:none}
+body.mode-long-short .agents{display:none}
+#long-short-view{display:flex;flex-direction:column;height:calc(100vh - 60px);min-height:520px;background:#0b111e;color:#dbe4f0;font-family:-apple-system,BlinkMacSystemFont,Inter,"Segoe UI",sans-serif;font-size:12px}
+#long-short-view[hidden]{display:none}
+#long-short-view button{font:inherit;border:0;background:transparent;color:#dbe4f0;cursor:pointer;border-radius:4px;white-space:nowrap}
+#long-short-view button:hover{background:#182742}
+#long-short-view button:focus-visible,#long-short-view input:focus-visible,#long-short-view select:focus-visible{outline:2px solid #2962ff;outline-offset:1px}
+#long-short-view button.active{color:#5d8bff;background:#132441}
+#long-short-view button:disabled{cursor:default;color:#6b7f9e;opacity:.45}
+.pos{color:#0ecb81}.neg{color:#f6465d}
+
+/* ---------- topbar (GA controls, no brand) ---------- */
+#ls-topbar{height:46px;min-height:46px;display:flex;align-items:center;border-bottom:1px solid #1c2940;gap:12px;padding:0 14px;background:#0d1526;overflow-x:auto;scrollbar-width:none}
+#ls-topbar .symbol-form{display:flex;align-items:center;gap:7px;padding:0 11px;height:30px;border:1px solid #1c2940;border-radius:6px;background:#0b111e}
+#ls-topbar .symbol-form>span{color:#6b7f9e;font-size:14px}
+#ls-topbar .symbol-form input{width:110px;border:0;background:transparent;color:#dbe4f0;font-weight:600;height:26px;text-transform:uppercase}
+#ls-topbar .symbol-form input::placeholder{color:#6b7f9e;font-weight:450}
+#ls-topbar .symbol-form:focus-within{border-color:#2962ff}
+#ls-topbar .timeframes{display:flex;gap:2px;align-items:center}
+#ls-topbar .timeframes button{height:24px;min-width:30px;padding:0 8px;font-weight:550;font-size:11.5px;border-radius:4px;color:#6b7f9e}
+#ls-topbar .timeframes button.active{color:#dbe4f0;background:#132441;box-shadow:inset 0 0 0 1px rgba(93,139,255,.45)}
+#ls-topbar .controls{display:flex;gap:10px;align-items:center;border-left:1px solid #1c2940;padding-left:12px}
+#ls-topbar .switch{display:flex;align-items:center;gap:7px;padding:2px 4px;border-radius:6px}
+#ls-topbar .switch .track{display:inline-flex;align-items:center;width:26px;height:15px;border-radius:8px;background:#2a3a55;transition:background .15s;flex:none}
+#ls-topbar .switch .knob{width:11px;height:11px;border-radius:50%;background:#8ea3c2;margin-left:2px;transition:all .15s}
+#ls-topbar .switch.on .track{background:#2962ff}
+#ls-topbar .switch.on .knob{background:#fff;margin-left:13px}
+#ls-topbar .switch .label{font-size:11.5px;font-weight:550}
+#ls-topbar .mode-seg{display:flex;border:1px solid #1c2940;border-radius:5px;overflow:hidden}
+#ls-topbar .mode-seg button{font-size:9.5px;font-weight:700;letter-spacing:.5px;padding:3px 7px;color:#6b7f9e;border-radius:0}
+#ls-topbar .mode-seg button.active{color:#fff;background:#2962ff}
+#ls-topbar .control-btn{display:flex;align-items:center;gap:6px;height:28px;padding:0 9px;font-size:11.5px;font-weight:550;border-radius:5px}
+#ls-topbar .control-btn svg{opacity:.75}
+#ls-topbar .top-actions{margin-left:auto;display:flex;gap:2px;align-items:center;padding-left:8px}
+#ls-topbar .top-actions button{width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;font-size:15px;border-radius:6px}
+
+/* ---------- workspace ---------- */
+.ls-main{display:flex;flex:1;min-height:0}
+#ls-left-toolbar{width:42px;min-width:42px;border-right:1px solid #1c2940;padding:8px 3px;display:flex;flex-direction:column;gap:8px;align-items:center;background:#0d1526}
+#ls-left-toolbar button{width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;border-radius:6px;color:#dbe4f0}
+#ls-left-toolbar button.active{color:#5d8bff;background:#132441}
+#ls-left-toolbar button:disabled{color:#6b7f9e;opacity:.5}
+#ls-left-toolbar .toolbar-spacer{flex:1}
+#ls-chart-container{position:relative;flex:1;height:100%;min-width:0;overflow:hidden;background:#0b111e}
+#ls-chart-container:fullscreen{width:100vw;height:100vh}
+#ls-chart-container .chart-canvas{position:absolute;inset:0}
+#ls-chart-container .chart-legend{position:absolute;left:14px;top:10px;right:96px;pointer-events:none;z-index:2}
+#ls-chart-container .instrument{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+#ls-chart-container .instrument strong{font-size:13px;font-weight:650;letter-spacing:.2px;color:#dbe4f0}
+#ls-chart-container .instrument>span{font-size:9.5px;color:#6b7f9e;letter-spacing:.8px}
+#ls-chart-container .ohlc{display:flex;gap:10px;margin-top:5px;flex-wrap:wrap;font-size:11px;font-variant-numeric:tabular-nums}
+#ls-chart-container .ohlc b{font-weight:400;color:#6b7f9e;margin-right:3px}
+#ls-chart-container .positive{color:#0ecb81}
+#ls-chart-container .negative{color:#f6465d}
+#ls-connection-status{position:absolute;left:56px;bottom:30px;z-index:2;font-size:10px;color:#6b7f9e;background:#0b111e;padding:3px 5px;border-radius:3px;pointer-events:none}
+#ls-connection-status[data-kind=live]{color:#0ecb81}
+#ls-connection-status[data-kind=warning]{color:#d89d39}
+#ls-chart-container .volume-caption{position:absolute;top:81%;left:14px;color:#6b7f9e;font-size:10.5px;pointer-events:none}
+#ls-loading{position:absolute;left:50%;top:45%;transform:translate(-50%,-50%);padding:14px 18px;background:#101a2c;border:1px solid #1c2940;border-radius:8px;box-shadow:0 8px 30px #000a;display:flex;gap:12px;align-items:center;z-index:3;color:#dbe4f0}
+#ls-loading[hidden]{display:none}
+#ls-loading .spinner{width:14px;height:14px;border:2px solid #1c2940;border-top-color:#2962ff;border-radius:50%;animation:ls-spin .8s linear infinite}
+@keyframes ls-spin{to{transform:rotate(360deg)}}
+
+/* ---------- right sidebar ---------- */
+#ls-sidebar{width:318px;min-width:318px;border-left:1px solid #1c2940;display:flex;flex-direction:column;overflow:hidden;background:#101a2c}
+#ls-sidebar .panel{border-bottom:1px solid #1c2940;display:flex;flex-direction:column;overflow:hidden;min-height:0}
+#ls-sidebar .panel-head{height:36px;min-height:36px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;font-size:12.5px;flex:none}
+#ls-sidebar .panel-head strong{font-weight:650;font-size:12.5px}
+#ls-sidebar .head-actions{display:flex;gap:2px}
+#ls-sidebar .icon-btn{width:22px;height:22px;font-size:13px;color:#6b7f9e;display:inline-flex;align-items:center;justify-content:center;border-radius:4px}
+#ls-sidebar .panel-toggle{width:22px;height:22px;font-size:11px;color:#6b7f9e;border-radius:4px}
+#ls-bot-status.collapsed{flex:0 0 auto}
+#ls-bot-status.collapsed .bot-state,#ls-bot-status.collapsed .bot-fields,#ls-bot-status.collapsed .positions{display:none}
+#ls-watchlist{flex:0 0 auto}
+#ls-watchlist .watchlist-columns{display:grid;grid-template-columns:1fr 76px 58px;padding:2px 12px 6px;color:#6b7f9e;font-size:10px}
+#ls-watchlist .watchlist-columns span:not(:first-child){text-align:right}
+#ls-watchlist .watchlist-rows{display:flex;flex-direction:column}
+#ls-watchlist .quote{width:100%;height:44px;display:grid;grid-template-columns:1fr 76px 58px;align-items:center;text-align:right;padding:0 12px;border-radius:0;font-size:11.5px;font-variant-numeric:tabular-nums;border:1px solid transparent;border-right:0}
+#ls-watchlist .quote:hover{background:#182742}
+#ls-watchlist .quote.selected{background:#132441;border-color:rgba(93,139,255,.65);border-right:0;border-radius:6px 0 0 6px}
+#ls-watchlist .symbol-name{display:flex;align-items:center;text-align:left;gap:8px;font-size:12px;font-weight:650;color:#dbe4f0}
+#ls-watchlist .coin{display:flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:#f7931a;color:#fff;font-style:normal;font-size:10.5px;flex:none}
+#ls-watchlist .coin.ETHUSDT{background:#627eea}
+#ls-watchlist .coin.SOLUSDT{background:#6b45ac}
+#ls-watchlist .change{font-variant-numeric:tabular-nums;font-weight:550}
+#ls-watchlist .watchlist-note{margin:6px 12px 8px;font-size:9.5px;color:#6b7f9e}
+#ls-watchlist .watchlist-note.stale{color:#d89d39}
+
+/* bot status */
+#ls-bot-status{flex:0 0 auto}
+#ls-bot-status .bot-state{display:flex;align-items:center;gap:9px;padding:2px 12px 8px}
+#ls-bot-status .bot-switch{display:inline-flex;align-items:center;width:30px;height:16px;border-radius:9px;background:#2a3a55;flex:none}
+#ls-bot-status .bot-switch .knob{width:12px;height:12px;border-radius:50%;background:#8ea3c2;margin-left:2px}
+#ls-bot-status .bot-switch.on{background:#0ecb81}
+#ls-bot-status .bot-switch.on .knob{background:#fff;margin-left:16px}
+#ls-bot-status .bot-state-label{font-size:12px;font-weight:650}
+#ls-bot-status .badge{display:inline-flex;align-items:center;gap:5px;margin-left:auto;height:22px;padding:0 10px;border:1px solid #1c2940;border-radius:11px;font-size:10.5px;font-weight:600;background:#0b111e}
+#ls-bot-status .badge.dry{color:#c9971c;border-color:rgba(212,167,44,.45)}
+#ls-bot-status .badge.offline{color:#f6465d;border-color:rgba(246,70,93,.45)}
+#ls-bot-status .bot-fields{display:grid;grid-template-columns:auto 1fr;row-gap:7px;column-gap:12px;padding:4px 12px 10px;margin:0}
+#ls-bot-status .bot-fields dt{color:#6b7f9e;font-size:11.5px}
+#ls-bot-status .bot-fields dd{margin:0;text-align:right;font-size:11.5px;font-weight:600;font-variant-numeric:tabular-nums}
+#ls-bot-status .bot-fields dd small{font-weight:550;margin-left:5px}
+#ls-bot-status .caret-row{display:grid;grid-template-columns:subgrid;grid-column:1/-1;align-items:center}
+#ls-bot-status .caret-btn{display:inline-flex;align-items:center;gap:5px;color:#6b7f9e;font-size:11.5px;padding:0;border-radius:3px}
+#ls-bot-status .caret-btn .chev{font-size:9px;opacity:.7;transition:transform .15s}
+#ls-bot-status .caret-row.open .caret-btn .chev{transform:rotate(180deg)}
+#ls-bot-status .caret-detail{grid-column:1/-1;display:flex;gap:14px;padding:3px 0 1px 2px;font-size:10px;color:#6b7f9e;flex-wrap:wrap}
+#ls-bot-status .positions{border-top:1px solid #16223a}
+#ls-bot-status .positions-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;padding:7px 12px;border-radius:0}
+#ls-bot-status .positions-toggle strong{font-size:11.5px;font-weight:650}
+#ls-bot-status .chev{color:#6b7f9e;font-size:10px}
+#ls-bot-status .positions-empty{margin:2px 12px 10px;font-size:11px;color:#6b7f9e}
+#ls-bot-status .position{display:block;width:calc(100% - 16px);margin:0 8px 8px;text-align:left;border:1px solid #1c2940;border-left:2px solid #0ecb81;border-radius:6px;background:#0d1526;padding:7px 10px}
+#ls-bot-status .position.short{border-left-color:#f6465d}
+#ls-bot-status .pos-top{display:flex;align-items:center;gap:7px;font-size:11.5px}
+#ls-bot-status .pos-symbol{font-weight:700}
+#ls-bot-status .pos-side{font-size:9.5px;font-weight:700;letter-spacing:.4px;padding:1px 6px;border-radius:3px;background:rgba(14,203,129,.14);color:#0ecb81}
+#ls-bot-status .position.short .pos-side{background:rgba(246,70,93,.14);color:#f6465d}
+#ls-bot-status .pos-amount{margin-left:auto;color:#6b7f9e;font-variant-numeric:tabular-nums;font-size:11px}
+#ls-bot-status .pos-grid{display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:6px;margin-top:6px;font-size:11px;font-variant-numeric:tabular-nums}
+#ls-bot-status .pos-grid small{display:block;color:#6b7f9e;font-size:9.5px;margin-bottom:1px}
+#ls-bot-status .pos-grid span:nth-child(3){text-align:right}
+
+/* bot activity */
+#ls-bot-activity{flex:1;min-height:120px;border-bottom:0}
+#ls-bot-activity .activity-filter{height:22px;font-size:10.5px;padding:0 6px;background:#0b111e;color:#dbe4f0;border:1px solid #1c2940;border-radius:4px}
+#ls-bot-activity .activity-columns{display:grid;grid-template-columns:58px 106px 1fr;gap:6px;padding:2px 12px 5px;color:#6b7f9e;font-size:10px}
+#ls-bot-activity .activity-list{list-style:none;margin:0;padding:0 6px 8px;overflow-y:auto;flex:1;scrollbar-width:thin}
+#ls-bot-activity .activity-list li{display:grid;grid-template-columns:58px 106px 1fr;gap:6px;align-items:center;padding:4px 6px;font-size:10.5px;border-radius:4px}
+#ls-bot-activity .activity-list li:hover{background:#182742}
+#ls-bot-activity .activity-list time{color:#6b7f9e;font-variant-numeric:tabular-nums;font-size:10px}
+#ls-bot-activity .event-pill{font-size:9px;font-weight:700;letter-spacing:.3px;padding:2px 6px;border-radius:3px;width:fit-content}
+#ls-bot-activity .event-pill.wait{color:#9fb0cc;background:rgba(100,116,139,.16)}
+#ls-bot-activity .event-pill.signal_candidate{color:#c4b5fd;background:rgba(139,92,246,.18)}
+#ls-bot-activity .event-pill.paper_entry{color:#5eead4;background:rgba(20,184,166,.16)}
+#ls-bot-activity .event-pill.paper_exit{color:#34d399;background:rgba(14,203,129,.14)}
+#ls-bot-activity .event-pill.stop{color:#fda4af;background:rgba(246,70,93,.16)}
+#ls-bot-activity .event-pill.target{color:#6ee7b7;background:rgba(14,203,129,.14)}
+#ls-bot-activity .event-pill.rejected{color:#fda4af;background:rgba(246,70,93,.1);box-shadow:inset 0 0 0 1px rgba(246,70,93,.4)}
+#ls-bot-activity .activity-details{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#dbe4f0;min-width:0}
+#ls-bot-activity .activity-empty{color:#6b7f9e;font-size:10.5px}
+
+/* ---------- bottom bar ---------- */
+#ls-bottom-bar{height:32px;min-height:32px;border-top:1px solid #1c2940;display:flex;align-items:center;gap:16px;padding:0 14px;background:#0d1526;font-size:11px;white-space:nowrap;overflow:hidden}
+#ls-bottom-bar .conn-group,#ls-bottom-bar .server-group{display:flex;align-items:center;gap:8px}
+#ls-bottom-bar .conn{display:inline-flex;align-items:center;gap:6px;font-weight:550;font-size:10.5px;color:#9fb0cc}
+#ls-bottom-bar .conn i{width:6px;height:6px;border-radius:50%;background:#6b7f9e;flex:none}
+#ls-bottom-bar .conn.ok i{background:#0ecb81}
+#ls-bottom-bar .conn.bad{color:#f6465d}
+#ls-bottom-bar .conn.bad i{background:#f6465d}
+#ls-bottom-bar .conn-sep{border-left:1px solid #1c2940;height:12px}
+#ls-bottom-bar .market-strip{flex:1;display:flex;align-items:center;justify-content:center;gap:22px;overflow:hidden}
+#ls-bottom-bar .strip-item{display:inline-flex;gap:7px;align-items:baseline;font-variant-numeric:tabular-nums}
+#ls-bottom-bar .strip-item b{font-weight:700;font-size:10.5px;letter-spacing:.2px}
+#ls-bottom-bar .strip-price{font-weight:550}
+#ls-bottom-bar .strip-chg{font-weight:600;font-size:10.5px}
+#ls-bottom-bar .server-group{justify-content:flex-end}
+#ls-bottom-bar .server-group time{color:#6b7f9e;font-variant-numeric:tabular-nums;font-size:10.5px}
+
+/* ---------- settings dialog (scoped instance) ---------- */
+#ls-settings-dialog{width:min(440px,90vw);padding:22px;color:#dbe4f0;background:#101a2c;border:1px solid #1c2940;border-radius:10px;box-shadow:0 24px 80px #000a;max-height:90vh;overflow-y:auto}
+#ls-settings-dialog::backdrop{background:#0008}
+#ls-settings-dialog .dialog-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+#ls-settings-dialog .dialog-title h2{font-size:17px;margin:0}
+#ls-settings-dialog .dialog-title button{padding:7px}
+#ls-settings-dialog label{display:flex;align-items:center;justify-content:space-between;margin:16px 0;gap:15px}
+#ls-settings-dialog select{background:#0b111e;color:#dbe4f0;border:1px solid #1c2940;padding:7px;border-radius:4px}
+#ls-settings-dialog p{color:#6b7f9e;font-size:12px;line-height:1.7}
+#ls-settings-dialog fieldset{border:1px solid #1c2940;border-radius:6px;margin:16px 0;padding:8px 14px}
+#ls-settings-dialog legend{font-weight:600;padding:0 6px}
+#ls-settings-dialog input[type=number]{width:70px;background:#0b111e;color:#dbe4f0;border:1px solid #1c2940;padding:7px}
+#ls-settings-dialog input[type=checkbox]{accent-color:#2962ff}
+#ls-settings-dialog .fib-levels{display:flex;flex-wrap:wrap;gap:12px}
+#ls-settings-dialog .fib-levels label{margin:8px 0;gap:4px}
+#ls-settings-dialog .smc-mode-row{display:flex;gap:6px;margin:14px 0}
+#ls-settings-dialog .smc-mode-row button{padding:5px 14px;border:1px solid #1c2940;border-radius:5px;font-weight:650;font-size:11px}
+#ls-settings-dialog .smc-mode-row button.active{background:#2962ff;border-color:#2962ff;color:#fff}
+
+/* ---------- trades mode switch (both tabs share it) ---------- */
+.trades-mode-bar{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.trades-mode-seg{display:flex;background:#0d1526;border:1px solid #1c2940;border-radius:8px;overflow:hidden}
+.trades-mode-seg button{display:inline-flex;align-items:center;gap:7px;height:32px;padding:0 16px;font-size:12px;font-weight:650;color:#8ea3c2;border-radius:0}
+.trades-mode-seg button[aria-selected="true"]{color:#fff;background:#2962ff}
+.trades-mode-status{margin-left:auto;display:flex;align-items:center;gap:10px;font-size:11px}
+.hub-bot-toggle{display:inline-flex;align-items:center;gap:8px;height:26px;padding:0 11px;border:1px solid #1c2940;border-radius:13px;background:#0b111e;font-size:11px;font-weight:650;color:#8ea3c2}
+.hub-bot-toggle i{width:7px;height:7px;border-radius:50%;background:#526079}
+.hub-bot-toggle.on{color:#b9f6d9;border-color:rgba(14,203,129,.5)}
+.hub-bot-toggle.on i{background:#0ecb81;box-shadow:0 0 8px #0ecb8166}
+.hub-bot-toggle.off{color:#fda4af;border-color:rgba(246,70,93,.4)}
+.hub-bot-toggle.off i{background:#f6465d}
+.hub-badge{display:inline-flex;align-items:center;gap:5px;height:26px;padding:0 11px;border:1px solid rgba(212,167,44,.45);border-radius:13px;background:#0b111e;font-size:11px;font-weight:600;color:#c9971c}
+.hub-conn{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;color:#8ea3c2}
+.hub-conn i{width:7px;height:7px;border-radius:50%;background:#0ecb81;flex:none}
+.hub-conn.bad{color:#fda4af}
+.hub-conn.bad i{background:#f6465d}
+
+/* meme trades panel gets the same bar in a light-shell skin */
+.trades-heading .trades-mode-bar{gap:10px}
+.trades-heading .trades-mode-seg{background:#eef1f6;border-color:#dfe4ec}
+html[data-theme=dark] .trades-heading .trades-mode-seg{background:#0d1526;border-color:#1c2940}
+.trades-heading .trades-mode-seg button{color:#526079;height:28px;padding:0 12px;font-size:11px}
+html[data-theme=dark] .trades-heading .trades-mode-seg button{color:#8ea3c2}
+.trades-heading .trades-mode-seg button[aria-selected="true"]{color:#fff;background:#2962ff}
+.trades-heading .trades-mode-status{display:none}
+
+/* ---------- sidebar BOTS widget ---------- */
+.bots-widget{margin-top:14px;padding:10px 2px 12px;border-top:1px solid #212e3a}
+.bots-widget h2{font-size:10px;letter-spacing:1.2px;color:#7d92a9;font-weight:700;padding-left:17px;margin-bottom:6px}
+.bots-widget .bot-row{display:flex;width:100%;align-items:center;justify-content:space-between;gap:10px;padding:7px 17px;font-size:14px;color:#ccdaea;border-radius:8px;border-left:2px solid transparent}
+.bots-widget .bot-row:hover{background:#202e3a}
+.bots-widget .bot-state{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:700;color:#8ea3c2}
+.bots-widget .bot-state i{width:9px;height:9px;border-radius:50%;background:#526079;flex:none}
+.bots-widget .bot-state.on{color:#4ade80}
+.bots-widget .bot-state.on i{background:#0ecb81;box-shadow:0 0 8px #0ecb8166}
+.bots-widget .bot-state.off{color:#8ea3c2}
+.bots-widget .bot-state.off i{background:#526079}
+.bots-widget .bot-state.error{color:#fda4af}
+.bots-widget .bot-state.error i{background:#f6465d}
+.bots-widget .bot-state.starting{color:#fbbf24}
+.bots-widget .bot-state.starting i{background:#fbbf24}
+
+@media(max-width:1500px){#ls-sidebar{width:300px;min-width:300px}}
+@media(max-width:1366px){#ls-sidebar{width:284px;min-width:284px}#ls-topbar .mode-seg{display:none}#ls-bottom-bar .market-strip{gap:12px}}
+@media(max-width:1200px){#ls-topbar .control-btn span{display:none}}
+@media(prefers-reduced-motion:reduce){#ls-loading .spinner{animation:none}}
+
+/* trades header */
+#ls-trades-header{height:44px;min-height:44px;display:flex;align-items:center;padding:0 14px;background:#0d1526;border-bottom:1px solid #1c2940}
+.trades-mode-title{font-size:15px;font-weight:700;color:inherit}
+.trades-heading{display:flex;align-items:center;gap:12px;flex-wrap:wrap}

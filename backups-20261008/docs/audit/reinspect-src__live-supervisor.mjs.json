@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-24T05:48:15.351Z",
+  "file": "src/live-supervisor.mjs",
+  "sha256": "97ae7c036f1616d3235a46a1b0fad0a71afdac966d456ad631724618890752bf",
+  "recommendation": "DROP",
+  "scope": "STATIC_MIGRATION_RECOMMENDATION_ONLY",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1997,
+      "output_tokens": 44
+    },
+    "answers": {
+      "audit": {
+        "type": "choice",
+        "choice": "UNVERIFIED",
+        "confidence": 0.19,
+        "probabilities": {
+          "PASS": 0.41,
+          "FAIL": 0.13,
+          "UNVERIFIED": 0.46
+        }
+      }
+    },
+    "helper": {}
+  }
+}

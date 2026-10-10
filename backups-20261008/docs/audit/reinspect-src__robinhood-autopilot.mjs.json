@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-24T05:48:18.048Z",
+  "file": "src/robinhood-autopilot.mjs",
+  "sha256": "96541f24900ddffaa7109e72334d474824df4e2af8d8cb9a6d15a335684688b6",
+  "recommendation": "DROP",
+  "scope": "STATIC_MIGRATION_RECOMMENDATION_ONLY",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 5966,
+      "output_tokens": 41
+    },
+    "answers": {
+      "audit": {
+        "type": "choice",
+        "choice": "PASS",
+        "confidence": 0.88,
+        "probabilities": {
+          "UNVERIFIED": 0.03,
+          "PASS": 0.92,
+          "FAIL": 0.05
+        }
+      }
+    },
+    "helper": {}
+  }
+}

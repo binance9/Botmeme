@@ -1,0 +1,27 @@
+{
+  "file": "ai.mjs",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 6073,
+      "output_tokens": 87
+    },
+    "answers": {
+      "blocker": {
+        "type": "choice",
+        "choice": "OMITTED_BUG",
+        "confidence": 0.09,
+        "probabilities": {
+          "OTHER_UNVERIFIED": 0.2,
+          "MISCLASSIFIED": 0.04,
+          "MISSING_DEPENDENCY": 0.21,
+          "OMITTED_BUG": 0.24,
+          "RUNTIME_REQUIRED": 0.23,
+          "VAGUE_PORT": 0.08
+        }
+      }
+    },
+    "helper": {}
+  }
+}

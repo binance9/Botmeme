@@ -1,0 +1,1351 @@
+2026-09-29T18:39:59.524Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:40:27.783Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:40:48.131Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:41:17.008Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:41:38.696Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:42:08.659Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:42:46.535Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:45:56.701Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:46:18.147Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:46:47.838Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:47:09.455Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:47:40.542Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:47:59.936Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:48:31.243Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:48:51.355Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:49:15.663Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:49:39.331Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:50:06.903Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:50:30.062Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:50:56.314Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:51:19.836Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:51:46.844Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:54:36.841Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:55:00.531Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:55:29.277Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:55:50.446Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:56:21.922Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:56:41.800Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:57:11.387Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:57:56.477Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:58:19.255Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:58:46.871Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:59:10.561Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:59:37.597Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T18:59:59.691Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T19:00:26.973Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T19:00:50.238Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T19:01:18.717Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T19:06:12.252Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T19:06:39.893Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T19:07:02.419Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T19:07:29.442Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T19:07:53.032Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T19:08:19.787Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T19:08:42.562Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T19:09:09.748Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T19:10:25.922Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T20:00:02.098Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T20:04:38.662Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T20:07:09.071Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T20:12:37.175Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T20:13:24.682Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T20:15:32.624Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T20:19:16.543Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T20:23:55.754Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T20:25:52.227Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T20:29:13.479Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T20:33:24.454Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T20:40:27.707Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T20:42:35.837Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T20:48:25.937Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T20:48:48.653Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T20:52:59.658Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T20:53:49.565Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-09-29T22:45:14.340Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-09-29T23:01:49.837Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-09-29T23:07:10.903Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-09-29T23:08:38.230Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-09-29T23:09:54.180Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-01T13:41:55.557Z Error: WALLET_PRICE_STALE_OR_INVALID
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:42:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-01T15:01:51.805Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:44:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:89:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at async C:\Botmeme\runtime\application.cjs:162:103
+2026-10-01T15:01:51.806Z Error: WALLET_SESSION_CHANGED
+    at TestContext.<anonymous> (C:\Botmeme\tests\chart-control-regression.test.cjs:49:24)
+    at async Test.run (node:internal/test_runner/test:1332:7)
+    at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+2026-10-01T15:08:53.070Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:44:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:89:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at async C:\Botmeme\runtime\application.cjs:162:103
+2026-10-01T15:08:53.071Z Error: WALLET_SESSION_CHANGED
+    at TestContext.<anonymous> (C:\Botmeme\tests\chart-control-regression.test.cjs:49:24)
+    at async Test.run (node:internal/test_runner/test:1332:7)
+    at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+2026-10-01T15:45:13.870Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:80:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-01T22:54:24.373Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T00:03:06.244Z Error: WALLET_PRICE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:38:23)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T00:04:37.375Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T00:06:47.006Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T00:12:26.541Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T00:14:48.801Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T00:16:18.273Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T00:18:10.497Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T00:28:20.645Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T00:29:59.039Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T00:31:44.311Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T00:33:26.280Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T00:35:24.344Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T00:36:52.536Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T00:38:21.977Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T00:40:56.382Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T00:55:06.188Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T01:03:41.220Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T01:30:10.070Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T01:31:56.296Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T01:33:19.147Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:67:23)
+2026-10-02T03:06:37.757Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-02T03:12:16.878Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-02T03:13:01.623Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-02T03:13:42.964Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-02T03:32:42.166Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:33:15.104Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:33:36.528Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:34:04.278Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:34:31.887Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:35:08.270Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:35:40.282Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:36:36.036Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:37:00.722Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:37:23.526Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-02T03:37:25.208Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:37:37.663Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:56:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:15)
+    at async C:\Botmeme\runtime\application.cjs:166:103
+2026-10-02T03:37:37.666Z Error: WALLET_SESSION_CHANGED
+    at TestContext.<anonymous> (C:\Botmeme\tests\chart-control-regression.test.cjs:49:24)
+    at async Test.run (node:internal/test_runner/test:1332:7)
+    at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+2026-10-02T03:37:46.408Z Error: RUNTIME_BACKPRESSURE
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:95:38)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-02T03:37:50.719Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:37:51.251Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:42:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:68:36)
+2026-10-02T03:38:15.742Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:38:43.505Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:39:08.287Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:39:32.763Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:39:58.272Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:40:22.062Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:56:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:15)
+    at async C:\Botmeme\runtime\application.cjs:166:103
+2026-10-02T03:40:22.063Z Error: WALLET_SESSION_CHANGED
+    at TestContext.<anonymous> (C:\Botmeme\tests\chart-control-regression.test.cjs:49:24)
+    at async Test.run (node:internal/test_runner/test:1332:7)
+    at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+2026-10-02T03:40:23.288Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:40:36.015Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:42:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:68:36)
+2026-10-02T03:40:47.794Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:41:28.263Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:41:46.166Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:56:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:15)
+    at async C:\Botmeme\runtime\application.cjs:166:103
+2026-10-02T03:41:46.167Z Error: WALLET_SESSION_CHANGED
+    at TestContext.<anonymous> (C:\Botmeme\tests\chart-control-regression.test.cjs:49:24)
+    at async Test.run (node:internal/test_runner/test:1332:7)
+    at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+2026-10-02T03:41:53.109Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:41:59.697Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:42:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:68:36)
+2026-10-02T03:42:17.612Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:42:43.110Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:43:08.141Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:43:11.738Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:42:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:68:36)
+2026-10-02T03:43:32.603Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:43:58.122Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:44:23.115Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:44:47.635Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:45:13.172Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:45:38.182Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:46:02.657Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:46:35.577Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:47:00.360Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:47:17.213Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:56:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:15)
+    at async C:\Botmeme\runtime\application.cjs:166:103
+2026-10-02T03:47:17.214Z Error: WALLET_SESSION_CHANGED
+    at TestContext.<anonymous> (C:\Botmeme\tests\chart-control-regression.test.cjs:49:24)
+    at async Test.run (node:internal/test_runner/test:1332:7)
+    at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+2026-10-02T03:47:24.849Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:47:31.026Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:42:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:68:36)
+2026-10-02T03:47:50.373Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:48:15.369Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:48:39.889Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:49:05.387Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:49:30.420Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:49:54.891Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:50:20.483Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:50:45.498Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:51:09.924Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T03:51:35.492Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T06:12:28.924Z Error: WALLET_PRICE_STALE_OR_INVALID
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:42:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-02T08:38:56.203Z Error: WALLET_PRICE_STALE_OR_INVALID
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:42:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-03T05:06:30.312Z Error: WALLET_PRICE_STALE_OR_INVALID
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:42:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-04T01:01:29.374Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:60:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:15)
+    at async C:\Botmeme\runtime\application.cjs:184:103
+2026-10-04T01:01:29.378Z Error: WALLET_SESSION_CHANGED
+    at TestContext.<anonymous> (C:\Botmeme\tests\chart-control-regression.test.cjs:49:24)
+    at async Test.run (node:internal/test_runner/test:1332:7)
+    at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+2026-10-04T01:01:43.311Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:42:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:68:36)
+2026-10-04T01:05:05.524Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:60:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:15)
+    at async C:\Botmeme\runtime\application.cjs:184:103
+2026-10-04T01:05:05.528Z Error: WALLET_SESSION_CHANGED
+    at TestContext.<anonymous> (C:\Botmeme\tests\chart-control-regression.test.cjs:49:24)
+    at async Test.run (node:internal/test_runner/test:1332:7)
+    at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+2026-10-04T01:06:34.813Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:42:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:68:36)
+2026-10-04T01:07:46.875Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:60:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:15)
+    at async C:\Botmeme\runtime\application.cjs:184:103
+2026-10-04T01:07:46.879Z Error: WALLET_SESSION_CHANGED
+    at TestContext.<anonymous> (C:\Botmeme\tests\chart-control-regression.test.cjs:49:24)
+    at async Test.run (node:internal/test_runner/test:1332:7)
+    at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+2026-10-04T01:08:00.700Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:42:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:68:36)
+2026-10-04T01:49:51.816Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:69:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:15)
+    at async C:\Botmeme\runtime\application.cjs:184:103
+2026-10-04T01:49:51.821Z Error: WALLET_SESSION_CHANGED
+    at TestContext.<anonymous> (C:\Botmeme\tests\chart-control-regression.test.cjs:49:24)
+    at async Test.run (node:internal/test_runner/test:1332:7)
+    at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+2026-10-04T01:50:05.692Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:42:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:68:36)
+2026-10-04T01:52:35.017Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:42:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:68:36)
+2026-10-04T01:53:14.138Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:69:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:15)
+    at async C:\Botmeme\runtime\application.cjs:184:103
+2026-10-04T01:53:14.139Z Error: WALLET_SESSION_CHANGED
+    at TestContext.<anonymous> (C:\Botmeme\tests\chart-control-regression.test.cjs:49:24)
+    at async Test.run (node:internal/test_runner/test:1332:7)
+    at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+2026-10-04T01:53:28.129Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:42:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:68:36)
+2026-10-04T02:11:15.143Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:69:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:15)
+    at async C:\Botmeme\runtime\application.cjs:184:103
+2026-10-04T02:11:15.147Z Error: WALLET_SESSION_CHANGED
+    at TestContext.<anonymous> (C:\Botmeme\tests\chart-control-regression.test.cjs:49:24)
+    at async Test.run (node:internal/test_runner/test:1332:7)
+    at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+2026-10-04T02:11:28.880Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:42:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:68:36)
+2026-10-04T02:14:27.512Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:69:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:15)
+    at async C:\Botmeme\runtime\application.cjs:184:103
+2026-10-04T02:14:27.517Z Error: WALLET_SESSION_CHANGED
+    at TestContext.<anonymous> (C:\Botmeme\tests\chart-control-regression.test.cjs:49:24)
+    at async Test.run (node:internal/test_runner/test:1332:7)
+    at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+2026-10-04T02:14:41.628Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:42:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:68:36)
+2026-10-04T22:27:23.549Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-04T22:27:48.921Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-05T00:28:48.674Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:68:23)
+2026-10-05T01:33:47.042Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:42:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:68:36)
+2026-10-05T01:35:30.734Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:42:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:68:36)
+2026-10-05T02:24:04.111Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:42:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T02:25:04.943Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T02:26:05.355Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T02:27:19.605Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T03:29:22.661Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T03:33:03.131Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T03:33:51.376Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T03:34:34.089Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T03:37:01.154Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T03:38:51.861Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T03:58:48.343Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T04:02:30.765Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T04:06:45.549Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T04:13:57.646Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T04:15:44.045Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T04:16:30.780Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T04:22:28.238Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T04:23:32.484Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T04:24:22.801Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T04:47:30.002Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T04:49:21.185Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T04:49:58.894Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T04:51:05.331Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T05:26:39.314Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T05:27:57.840Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T05:29:00.056Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:55:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T06:04:57.013Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:101:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T06:05:39.259Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:101:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T06:08:37.840Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T06:10:08.239Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T06:11:31.653Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:69:36)
+2026-10-05T06:54:12.097Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:73:36)
+2026-10-05T07:00:43.184Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:75:36)
+2026-10-05T07:01:44.074Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:75:36)
+2026-10-05T07:03:26.540Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:75:36)
+2026-10-05T07:06:17.528Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:75:36)
+2026-10-05T07:08:54.049Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:75:36)
+2026-10-05T07:19:18.397Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:75:23)
+2026-10-05T07:47:53.863Z Error: WALLET_PRICE_STALE_OR_INVALID
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:42:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:75:23)
+    at async C:\Botmeme\runtime\application.cjs:237:103
+2026-10-05T07:52:41.350Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:75:36)
+2026-10-05T07:54:13.970Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:75:36)
+2026-10-05T07:55:47.331Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:75:36)
+2026-10-05T10:57:03.130Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:36)
+2026-10-05T10:57:33.474Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:36)
+2026-10-05T11:15:45.868Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:36)
+2026-10-05T11:16:18.661Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:36)
+2026-10-05T11:38:05.318Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:36)
+2026-10-05T11:39:07.665Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:36)
+2026-10-05T11:40:48.815Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:36)
+2026-10-05T11:41:14.987Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:36)
+2026-10-05T11:42:36.554Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:36)
+2026-10-05T11:43:02.625Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:36)
+2026-10-05T11:43:28.187Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:36)
+2026-10-05T11:44:19.242Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:81:36)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+2026-10-05T12:08:00.706Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T12:09:02.513Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T12:28:22.971Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T12:56:13.739Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T12:56:39.647Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T12:57:06.412Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T12:57:45.586Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T13:47:03.854Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T13:48:42.379Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+2026-10-05T13:55:31.074Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:72:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:95:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\Botmeme\runtime\application.cjs:249:103
+2026-10-05T13:57:42.178Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:72:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:95:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\Botmeme\runtime\application.cjs:249:103
+2026-10-05T13:58:07.197Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:72:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:95:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\Botmeme\runtime\application.cjs:249:103
+2026-10-05T13:58:43.905Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:72:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:95:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\Botmeme\runtime\application.cjs:249:103
+2026-10-05T14:33:51.578Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+2026-10-05T14:34:55.758Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T14:41:01.045Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:72:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:95:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\Botmeme\runtime\application.cjs:249:103
+2026-10-05T14:58:18.680Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T14:59:44.523Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+2026-10-05T20:00:31.614Z Error: WALLET_BALANCE_UNVERIFIED
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:8:46)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:82:23)
+2026-10-05T20:43:36.364Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T21:05:03.339Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T21:05:51.184Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T21:14:53.168Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T21:15:33.806Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T21:23:01.762Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T21:25:25.450Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T21:27:02.406Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T21:30:13.693Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T21:31:43.645Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T21:32:49.833Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T22:09:03.933Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-05T22:32:12.728Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-06T00:01:28.792Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-06T00:03:19.770Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-06T00:04:20.229Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-06T01:30:35.580Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-06T01:33:50.462Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-06T01:34:54.725Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+2026-10-06T01:53:53.974Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-06T01:54:56.574Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:82:36)
+2026-10-06T02:37:17.910Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:86:36)
+2026-10-06T02:39:12.671Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:86:36)
+2026-10-06T04:49:55.695Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:86:36)
+2026-10-06T04:50:48.271Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:86:36)
+2026-10-06T11:59:31.318Z Error: WALLET_SESSION_CHANGED
+    at readFunding (C:\Botmeme\runtime\application.cjs:94:220)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-06T11:59:31.550Z Error: WALLET_SESSION_CHANGED
+    at readFunding (C:\Botmeme\runtime\application.cjs:94:220)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-06T11:59:32.302Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:82:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:99:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\Botmeme\runtime\application.cjs:303:103
+2026-10-06T11:59:44.993Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:86:36)
+2026-10-06T12:04:44.130Z Error: WALLET_SESSION_CHANGED
+    at readFunding (C:\Botmeme\runtime\application.cjs:94:220)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-06T12:04:44.345Z Error: WALLET_SESSION_CHANGED
+    at readFunding (C:\Botmeme\runtime\application.cjs:94:220)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-06T12:04:46.192Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:82:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:99:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\Botmeme\runtime\application.cjs:303:103
+2026-10-06T12:04:57.016Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:86:36)
+2026-10-06T12:07:00.958Z Error: WALLET_SESSION_CHANGED
+    at readFunding (C:\Botmeme\runtime\application.cjs:94:220)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-06T12:07:01.219Z Error: WALLET_SESSION_CHANGED
+    at readFunding (C:\Botmeme\runtime\application.cjs:94:220)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-06T12:07:02.511Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:82:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:99:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\Botmeme\runtime\application.cjs:303:103
+2026-10-06T12:07:14.284Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:86:36)
+2026-10-06T12:08:33.373Z Error: WALLET_SESSION_CHANGED
+    at readFunding (C:\Botmeme\runtime\application.cjs:94:220)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-06T12:08:34.167Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:82:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:99:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\Botmeme\runtime\application.cjs:303:103
+2026-10-06T12:08:34.169Z Error: WALLET_SESSION_CHANGED
+    at readFunding (C:\Botmeme\runtime\application.cjs:94:220)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-06T12:08:46.189Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:86:36)
+2026-10-06T12:12:01.080Z Error: WALLET_SESSION_CHANGED
+    at readFunding (C:\Botmeme\runtime\application.cjs:94:220)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-06T12:12:01.361Z Error: WALLET_SESSION_CHANGED
+    at readFunding (C:\Botmeme\runtime\application.cjs:94:220)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-06T12:12:02.279Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:82:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:99:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\Botmeme\runtime\application.cjs:303:103
+2026-10-06T12:12:14.575Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:86:36)
+2026-10-06T12:13:51.473Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:86:36)
+2026-10-06T12:14:24.849Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:86:36)
+2026-10-06T12:14:40.621Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:86:36)
+2026-10-06T12:15:01.201Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:82:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:99:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\Botmeme\runtime\application.cjs:303:103
+2026-10-06T12:15:20.381Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:82:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:99:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\Botmeme\runtime\application.cjs:303:103
+2026-10-06T12:20:34.626Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:82:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:99:15)
+    at async C:\Botmeme\runtime\application.cjs:303:103
+2026-10-06T12:20:34.632Z Error: WALLET_SESSION_CHANGED
+    at TestContext.<anonymous> (C:\Botmeme\tests\chart-control-regression.test.cjs:54:24)
+    at async Test.run (node:internal/test_runner/test:1332:7)
+    at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+2026-10-06T12:21:08.375Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:82:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:99:15)
+    at async C:\Botmeme\runtime\application.cjs:303:103
+2026-10-06T12:21:08.385Z Error: WALLET_SESSION_CHANGED
+    at TestContext.<anonymous> (C:\Botmeme\tests\chart-control-regression.test.cjs:54:24)
+    at async Test.run (node:internal/test_runner/test:1332:7)
+    at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+2026-10-06T12:21:10.687Z Error: WALLET_SESSION_CHANGED
+    at readFunding (C:\Botmeme\runtime\application.cjs:94:220)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-06T12:21:10.915Z Error: WALLET_SESSION_CHANGED
+    at readFunding (C:\Botmeme\runtime\application.cjs:94:220)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-06T12:21:23.470Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:86:36)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+2026-10-06T13:21:13.857Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:82:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:133:15)
+    at async C:\Botmeme\runtime\application.cjs:342:103
+2026-10-06T13:21:13.861Z Error: WALLET_SESSION_CHANGED
+    at TestContext.<anonymous> (C:\Botmeme\tests\chart-control-regression.test.cjs:54:24)
+    at async Test.run (node:internal/test_runner/test:1332:7)
+    at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+2026-10-06T13:26:40.630Z Error: WALLET_PRICE_STALE_OR_INVALID
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:46:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:120:23)
+    at async C:\Botmeme\runtime\application.cjs:308:47
+2026-10-05T10:00:00.000Z revived 3 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-06T13:52:04.455Z Error: EEXIST: file already exists, open 'C:\Users\BAOAN\AppData\Local\Temp\botmeme-exitquote-Bh98Vi\capital-evidence\test.json'
+    at Object.openSync (node:fs:561:18)
+    at Object.writeFileSync (node:fs:2436:35)
+    at readFunding (C:\Botmeme\runtime\application.cjs:131:52)
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-06T13:57:32.606Z Error: EEXIST: file already exists, open 'C:\Users\BAOAN\AppData\Local\Temp\botmeme-exitquote-x6jIzh\capital-evidence\test.json'
+    at Object.openSync (node:fs:561:18)
+    at Object.writeFileSync (node:fs:2436:35)
+    at readFunding (C:\Botmeme\runtime\application.cjs:131:52)
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-06T14:14:34.655Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:82:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:133:15)
+    at async C:\Botmeme\runtime\application.cjs:394:103
+2026-10-06T14:14:34.670Z Error: WALLET_SESSION_CHANGED
+    at TestContext.<anonymous> (C:\Botmeme\tests\chart-control-regression.test.cjs:54:24)
+    at async Test.run (node:internal/test_runner/test:1332:7)
+    at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+2026-10-06T14:14:37.031Z Error: WALLET_SESSION_CHANGED
+    at readFunding (C:\Botmeme\runtime\application.cjs:128:220)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-06T14:14:37.277Z Error: WALLET_SESSION_CHANGED
+    at readFunding (C:\Botmeme\runtime\application.cjs:128:220)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-06T14:14:50.104Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:120:36)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:538:9)
+2026-10-06T14:17:01.637Z revived 66 archived lineage events for open live positions
+2026-10-06T14:20:37.671Z revived 74 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-05T10:00:00.000Z revived 7 archived lineage events for open live positions
+2026-10-07T00:18:20.595Z Error: INVALID_EVENT_WALLET_VALUATION
+    at Object.bad (C:\Botmeme\runtime\contracts\schema.cjs:2:29)
+    at validateEvent (C:\Botmeme\runtime\contracts\index.cjs:82:203)
+    at Object.publish (C:\Botmeme\runtime\events\bus.cjs:93:19)
+    at readFunding (C:\Botmeme\runtime\application.cjs:133:15)
+    at async C:\Botmeme\runtime\application.cjs:409:103
+2026-10-07T00:18:20.601Z Error: WALLET_SESSION_CHANGED
+    at TestContext.<anonymous> (C:\Botmeme\tests\chart-control-regression.test.cjs:54:24)
+    at async Test.run (node:internal/test_runner/test:1332:7)
+    at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+2026-10-07T00:18:22.252Z Error: WALLET_SESSION_CHANGED
+    at readFunding (C:\Botmeme\runtime\application.cjs:128:220)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-07T00:18:22.511Z Error: WALLET_SESSION_CHANGED
+    at readFunding (C:\Botmeme\runtime\application.cjs:128:220)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-10-07T00:18:35.679Z Error: quote unavailable
+    at Object.read (C:\Botmeme\tests\wallet-capital.test.cjs:126:21)
+    at readFunding (C:\Botmeme\runtime\application.cjs:120:36)
+2026-10-07T04:18:14.070Z Error: WALLET_PRICE_STALE_OR_INVALID
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:46:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:120:23)
+2026-10-07T11:31:35.038Z Error: WALLET_PRICE_STALE_OR_INVALID
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:46:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:120:23)
+2026-10-07T13:14:29.514Z Error: WALLET_PRICE_STALE_OR_INVALID
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:46:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:120:23)
+2026-10-07T15:02:46.423Z Error: WALLET_PRICE_STALE_OR_INVALID
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:46:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:120:23)
+2026-10-08T00:59:00.927Z Error: WALLET_PRICE_STALE_OR_INVALID
+    at Object.read (C:\Botmeme\wallet\connection\valuation.cjs:46:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async readFunding (C:\Botmeme\runtime\application.cjs:120:23)

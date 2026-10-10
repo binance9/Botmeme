@@ -1,0 +1,523 @@
+Fresh-window sizing validation — 2026-10-05
+
+Required command:
+node --test tests/risk.test.cjs tests/owner-strategy.test.cjs tests/exit-manager.test.cjs tests/manual-entry.test.cjs tests/state-layer.test.cjs tests/dashboard-adapter.test.cjs
+Exit code: 0
+
+✔ live overview ignores paper fills while history retains both modes and capital uses live cash (22.4018ms)
+✔ served UI has no obsolete labels or wallet connection entry points (4.7419ms)
+✔ real withdrawal UI validates base58, reserve, quick amounts, confirmation and duplicate submits (3.0877ms)
+✔ dashboard renders one live SOL wallet and converts capital and PnL to SOL (3.3676ms)
+✔ paper SOL settlement uses funding and reference prices without changing USD capital (6.1504ms)
+✔ empty runtime projects frozen UI shape without pretend scan progress or win rate (1.5313ms)
+✔ real runtime Hunter activity and observed prices reach one subscribed dashboard projection (76.7348ms)
+✔ network switch clears old chart and agent state; snapshot and refresh use actual epoch (3.7236ms)
+✔ stale weak and future observed prices never masquerade as current chart data (2.923ms)
+✔ failing SSE listener is isolated and adapter close detaches without closing runtime (1.4077ms)
+✔ JEV progress uses recorded discovery progress with original MARKET_DATA attribution (1.7559ms)
+✔ scan metrics are plain counts with percentages only while running (2.1696ms)
+✔ price wave points preserve observed timestamps and prices rather than candle bucket times (2.6882ms)
+✔ SOL reference feed keeps the chart alive and observations never steal focus (1.762ms)
+✔ structured scanner counts reach dashboard without parsing activity prose (1.1907ms)
+✔ JEV card follows scan lifecycle instead of retaining an older Hunter result (2.7922ms)
+✔ AI completed-task counts deduplicate updates and exclude waiting or failed tasks (1.9954ms)
+✔ safety and Jev projections show the latest verdict per candidate only (4.0644ms)
+✔ protection projection exposes real stop, take-profit and high-water for an open position (221.9991ms)
+✔ chart and trades stay on selected network; same-network BUY takes focus (1.0097ms)
+✔ stop remains at -15%: a -14% quote holds before recovery (125.7164ms)
+✔ stagnation: 31 minutes exits fully (106.9085ms)
+✔ stagnation: 30 minute boundary exits fully (92.406ms)
+✔ stagnation: volume 500 holds (95.1953ms)
+✔ stagnation: volume 200 holds (94.763ms)
+✔ stagnation: 29 minutes holds (94.9033ms)
+✔ stagnation: price above entry still exits (95.3081ms)
+✔ stagnation: stagnation overrides partial recovery with full exit (95.03ms)
+✔ stagnation: old entry holds (93.3456ms)
+✔ stagnation: five-minute entry remains eligible after crossing the buy window (96.856ms)
+✔ stagnation: missing volume holds (93.5014ms)
+✔ open meme position buys only after an approved safety verdict; -16% print cuts the FULL position at -15% (94.1365ms)
+✔ +20% is noise — no exit below x2 and above -15% (95.1541ms)
+✔ x2 banks half once (RECOVER_ORIGINAL) and never repeats (125.4931ms)
+✔ trailing only governs AFTER the recover tranche (chốt dần) (188.9147ms)
+✔ legacy x10 multiple is retired — at x10 only the tranche + trail govern (94.2892ms)
+✔ an availability outage is UNVERIFIED-advisory, an opaque reader failure still blocks the buy (125.0331ms)
+✔ old volume spike returns through autonomous chain: approved (138.0992ms)
+✔ old volume spike returns through autonomous chain: Jev (105.1581ms)
+✔ old volume spike returns through autonomous chain: safety (92.8822ms)
+✔ entry policy: new 1 minute (31.2277ms)
+✔ entry policy: new 5 minute boundary (32.0142ms)
+✔ entry policy: 59 seconds rejected (31.8959ms)
+✔ entry policy: 301 seconds approved (31.1533ms)
+✔ entry policy: 6 minutes approved (31.7241ms)
+✔ entry policy: 29 minutes approved (32.0229ms)
+✔ entry policy: 30 minutes approved (31.5016ms)
+✔ entry policy: 31 minutes rejected (31.4327ms)
+✔ entry policy: volume 199 rejected (30.6415ms)
+✔ entry policy: volume 2000 approved (32.0652ms)
+✔ entry policy: volume 2001 rejected (31.9365ms)
+✔ entry policy: 2h boundary rejected (31.8256ms)
+✔ entry policy: middle 15 days rejected (30.7834ms)
+✔ entry policy: just before 30 days rejected (31.8611ms)
+✔ entry policy: young 8k cap and 800 USD volume (31.0901ms)
+✔ entry policy: young 25k cap (30.935ms)
+✔ entry policy: young 300 USD volume (31.5986ms)
+✔ entry policy: young 200 USD volume boundary (31.7817ms)
+✔ entry policy: young 150 USD volume (32.2258ms)
+✔ entry policy: young lower boundary (31.8795ms)
+✔ entry policy: young 3.5k approved (32.5031ms)
+✔ entry policy: young 2.5k rejected (30.8118ms)
+✔ entry policy: young 1B rejected (31.7712ms)
+✔ entry policy: young upper boundary (30.7279ms)
+✔ entry policy: young headline fallback (31.0844ms)
+✔ entry policy: old 45d 25k cap and 1500 recent volume (31.4165ms)
+✔ entry policy: old 15k below floor (31.5433ms)
+✔ entry policy: old 20k floor (32.2663ms)
+✔ entry policy: old 10M ceiling boundary (31.2999ms)
+✔ entry policy: old 50M rejected (31.6497ms)
+✔ entry policy: old 1B rejected (30.2817ms)
+✔ entry policy: old low recent volume overrides large real volume (31.8265ms)
+✔ entry policy: 30d old boundary and real-volume fallback (31.148ms)
+✔ entry policy: old cap below band (31.9095ms)
+✔ manual entry rejects an invalid body without touching the journal (1.0526ms)
+✔ manual entry requires quote and regime evidence for the token (0.6511ms)
+✔ manual entry buys a banded meme after safety passes (FILLED, position OPEN) (30.6728ms)
+✔ manual settlement retries async safety on the newest admissible quote after another fill (92.9441ms)
+✔ timed out manual BUY stays cancelled after late safety, quotes and consumer replay (48.2609ms)
+✔ manual BUY preserves the original candidate Jev veto (30.9245ms)
+✔ Gecko admits only fresh pools and never requests old-band rotation (43.0149ms)
+✔ owner entry constants and inclusive age/volume boundaries (0.5958ms)
+✔ hard cap ceiling applies to both age buckets with the owner rejection reason (0.2197ms)
+✔ sweep drops 31-minute and old-band tokens before quoting; 29-minute token ages out (13.4018ms)
+✔ fresh thin-pool sizing: zero depth (52.6739ms)
+✔ fresh thin-pool sizing: rounded dust (30.4805ms)
+✔ fresh thin-pool sizing: viability dust (46.0978ms)
+✔ fresh thin-pool sizing: inclusive lower age (30.6073ms)
+✔ fresh thin-pool sizing: inclusive upper age (31.1313ms)
+✔ fresh thin-pool sizing: old unchanged (30.8602ms)
+✔ fresh thin-pool sizing: cash bounded (31.1003ms)
+✔ fresh thin-pool sizing: exposure bounded (30.231ms)
+✔ fresh thin-pool sizing: concentration bounded (31.3366ms)
+✔ fresh thin-pool sizing: equity bounded (31.0366ms)
+✔ fresh thin-pool sizing: execution cap bounded (32.0243ms)
+✔ fresh thin-pool sizing: tunable floor capped (32.0455ms)
+✔ fresh thin-pool sizing: no cash (31.1623ms)
+✔ fresh thin-pool sizing: exposure exhausted (31.7552ms)
+✔ fresh thin-pool sizing: unrepresentable floor (31.8473ms)
+✔ fresh thin-pool sizing: costs still too high (31.8499ms)
+✔ non-meme zero depth retains its sizing veto (31.6666ms)
+✔ independent meme risk boundary: age 59000, volume 1000 (30.5346ms)
+✔ independent meme risk boundary: age 60000, volume 1000 (32.0766ms)
+✔ independent meme risk boundary: age 300000, volume 1000 (32.1073ms)
+✔ independent meme risk boundary: age 301000, volume 1000 (31.662ms)
+✔ independent meme risk boundary: age 360000, volume 1000 (30.7844ms)
+✔ independent meme risk boundary: age 1740000, volume 1000 (31.9444ms)
+✔ independent meme risk boundary: age 1800000, volume 1000 (30.8843ms)
+✔ independent meme risk boundary: age 1860000, volume 1000 (31.2307ms)
+✔ independent meme risk boundary: age 180000, volume 199 (31.199ms)
+✔ independent meme risk boundary: age 180000, volume 200 (32.0235ms)
+✔ independent meme risk boundary: age 180000, volume 2000 (32.2329ms)
+✔ independent meme risk boundary: age 180000, volume 2001 (31.6765ms)
+✔ EZzimpx9 liquidity 50: fresh exemption and old floor at age 60000 (31.8531ms)
+✔ EZzimpx9 liquidity 50: fresh exemption and old floor at age 180000 (31.6019ms)
+✔ EZzimpx9 liquidity 50: fresh exemption and old floor at age 300000 (31.6049ms)
+✔ EZzimpx9 liquidity 50: fresh exemption and old floor at age 2592000000 (30.7245ms)
+✔ independent risk rejects oversized BUY even outside meme strategy: 50000000 (31.0901ms)
+✔ independent risk rejects oversized BUY even outside meme strategy: 1000000000 (31.1944ms)
+✔ risk independently approves bounded paper evaluation size and preserves trace (31.9445ms)
+✔ risk vetoes stale uncertain adverse unsupported and losing research despite commander BUY (283.0308ms)
+✔ risk liquidity floor: 150 USD (31.89ms)
+✔ risk liquidity floor: 200 USD (31.1213ms)
+✔ risk liquidity floor: 300 USD (31.8736ms)
+✔ risk queued approvals reserve global capital and concentration without duplicate grants (31.231ms)
+✔ risk skips HOLD and NO_ACTION and refuses nonexistent exit positions (31.7357ms)
+✔ risk allows a position-reducing exit despite low regime confidence and reserves its quantity (62.035ms)
+✔ risk policy rejects unbounded nonfinite or unknown configuration (0.9173ms)
+✔ risk cash sizing reserves fee and slippage rather than spending the whole balance (30.6656ms)
+✔ risk approves after five realized losses even with compatibility cooldown policy (348.0273ms)
+✔ risk cannot reuse old supported critique after newer rejection (31.9241ms)
+✔ risk releases only canonical evidenced terminal paper failure, not an unrelated failed activity (124.8444ms)
+✔ risk releases expired-epoch approvals when returning to the same network (63.6201ms)
+✔ risk releases canonical strategy pre-intent failure but not an unrelated failed activity (125.1417ms)
+✔ a strategy failure cannot cancel capital already handed to execution (93.0431ms)
+✔ paper capital persists deposits/withdrawals, rejects invalid values and serializes overdraws (184.5141ms)
+✔ capital ledger HTTP endpoints expose Settings projection and return 400 on invalid requests (154.1946ms)
+✔ live withdraw exposes balance hints and quick buttons within the native submit form (1.3916ms)
+✔ empty state has no invented prices, trades, activity, progress or budget (11.5204ms)
+✔ JEV shows a plain completed count and running sweep progress; duplicates cannot advance it (2.786ms)
+✔ scan errors count processed work and completion reports error instead of fake success (0.8054ms)
+✔ scanner adapter waits for actual work completion and logs a real file-read failure (4.9034ms)
+✔ AI shows completed work without quota progress and Forensic Analyst cannot become execution (0.7833ms)
+✔ Activity retains producer identity; quotes do not invent an AI action (0.6308ms)
+✔ BUY, market marks, partial SELL and full SELL reconcile fees across every projection (3.9912ms)
+✔ multiple BUY fills use weighted cost and do not create phantom fractional positions (2.41ms)
+✔ no price means unknown unrealized PnL; a fill never fabricates chart candles (0.6313ms)
+✔ idempotency prevents duplicate fills across different event IDs; collisions reject atomically (1.0641ms)
+✔ oversell, conflicting token, late fill, execution source and real money are rejected (0.9586ms)
+✔ market candles use event time, aggregate OHLCV and reject late prices (0.7422ms)
+✔ today metrics roll over in Vietnam timezone while positions remain open (0.8476ms)
+✔ journal replay restores state and duplicate protection after restart (21.74ms)
+✔ corrupt/truncated journal fails loudly without changing or deleting it (2.0902ms)
+✔ unknown fields, NaN, future timestamps and prototype identities cannot mutate state (0.5737ms)
+✔ subscriber receives one atomic complete snapshot; caller cannot mutate stored state (0.4966ms)
+✔ real HTTP/SSE transport, duplicate replay, isolation and durable server restart (119.5319ms)
+ℹ tests 156
+ℹ suites 0
+ℹ pass 156
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2621.8699
+
+Additional command:
+node --test tests/live-execution.test.cjs tests/viability.test.cjs tests/runtime-contracts.test.cjs tests/market-data.test.cjs
+Exit code: 1
+
+✔ zero chain balance cannot arm (35.4488ms)
+✔ armed application sweep reaches a live fill with fresh liquidity 0 (154.6696ms)
+✔ armed application sweep reaches a live fill with fresh liquidity 10 (110.4352ms)
+✔ armed application sweep reaches a live fill with fresh liquidity 1000 (96.3495ms)
+✔ live sweep waits for asynchronous safety before broadcasting (140.8769ms)
+✔ pending live safety cannot trade after reject (50.9889ms)
+✔ pending live safety cannot trade after stop (43.3424ms)
+✔ real SOL withdrawal signs a SystemProgram transfer, deducts chain balance, persists signature and projects history (49.9873ms)
+✔ withdraw rejects invalid destination, precision, overdraw and reserve without broadcast (37.2509ms)
+✔ concurrent withdrawals serialize; ambiguous send locks and never resends (67.2795ms)
+✔ withdrawal obeys kill switch and queued STOP without broadcasting (9.992ms)
+✔ live fills reach dashboard positions, trade history and activity without source filtering (238.3417ms)
+✔ application keeps legacy paper history without funding live overview or live positions (151.3422ms)
+✔ withdrawal HTTP validates requests and destination store persists independently per network (112.718ms)
+✔ live accepts order at or below $1 cap: $0.5 (89.6981ms)
+✔ live accepts order at or below $1 cap: $1 (95.2813ms)
+✔ explicit position cap override is honored by mocked Jupiter (108.1986ms)
+✔ application LIVE routes BUY into live portfolio and DISARM stays safe (95.103ms)
+✔ wallet HTTP creates encrypted key, exposes only address, survives restart and enforces confirmation (1053.9089ms)
+✔ key removal and paper intents never reach a live swap (77.3599ms)
+✔ LOCKED without key; valid key alone never arms or sends (5.6616ms)
+✔ invalid key is redacted and exact confirmation is required (9.9031ms)
+✔ mock Jupiter BUY signs once and publishes actual contract-valid live receipt; SELL closes full position (160.0602ms)
+✔ position cap rejects without broadcasting (48.566ms)
+✔ gas reserve rejects without broadcasting (46.8296ms)
+✔ simulation spend cap rejects without broadcasting (60.8342ms)
+✔ safety veto rejects without broadcasting (46.0193ms)
+✔ kill before signing rejects without broadcasting (48.4605ms)
+✔ STOP during quote rejects without broadcasting (62.6883ms)
+✔ remote errors cannot leak keys rejects without broadcasting (63.267ms)
+✔ kill file blocks arming (10.7252ms)
+✔ daily loss cap persists across engine restart and blocks new trades (183.9561ms)
+✔ ambiguous broadcast persists signature, locks restart, never retries (75.8163ms)
+✔ pre-arm backlog is ignored; paper cannot consume live intents even after STOP (91.9674ms)
+✔ application HTTP LIVE requires exact confirmation; STOP and restart remain safe (27.0129ms)
+✔ dashboard requires typed LIVE and renders chain balance only while live/safe (1.2544ms)
+✔ rate-limited unread pools stay queued and are not counted as found (10.4072ms)
+✔ market discovery outage stays partial and only resets after a successful scan (5.2523ms)
+✖ market discovery progress advances only after actual provider work settles and errors never fabricate prices (8.0405ms)
+✔ market service never substitutes a different network provider and rejects late sessions (2.1974ms)
+✖ market service retains missing upstream evidence and denies mismatched token records (2.0472ms)
+✔ market service bounds hung providers and stop cancels outstanding discovery (19.0826ms)
+✖ research composition wires discovery through journal to Hunter and follows the selected network (3.084ms)
+✖ market deduplicates repeated and older timestamps across service restart while retaining real progress (1.5651ms)
+✖ market rejects changed price at identical timestamp and validates malformed/future timestamps before dedupe (1.4569ms)
+✖ market timestamp dedupe isolates token network epoch and accepts strictly newer observations (12.0252ms)
+✔ stop cancels a chunked scan without waiting for the remaining pools (3.924ms)
+✖ newest pool precedes alphabetical order for equal liquidity priority (2.1532ms)
+✔ runtime contracts validate all nineteen explicit types and four independent network identities (11.5903ms)
+✔ runtime contracts reject extra missing nested or unrecognized envelope and payload fields (1.0268ms)
+✔ runtime contracts prohibit producer role escalation and activity impersonation (0.5777ms)
+✔ runtime contracts bound finite confidence epochs strings and arrays without coercion (1.6881ms)
+✔ runtime contracts enforce execution modes, producer identity, prices, quantities, fees and trade state (1.3171ms)
+✔ runtime contracts retain risk veto and permit explicit uncertainty and NO_ACTION (1.1793ms)
+✔ runtime contracts reject malformed future and reversed observation timestamps (0.5234ms)
+✔ runtime contracts reject credential fields and serialized secrets without echoing values (0.5134ms)
+✔ runtime contracts preserve unknown dashboard metrics without inventing zeros (0.409ms)
+✔ runtime contracts reject quant promotion and unfounded or contradictory execution authority (1.0492ms)
+✔ costs that consume the existing stop room wait, and a larger actual size does not (0.9763ms)
+ℹ tests 59
+ℹ suites 0
+ℹ pass 52
+ℹ fail 7
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4002.449
+
+✖ failing tests:
+
+test at tests\market-data.test.cjs:30:1
+✖ market discovery progress advances only after actual provider work settles and errors never fabricate prices (8.0405ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at TestContext.<anonymous> (C:\Botmeme\tests\market-data.test.cjs:42:10)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\market-data.test.cjs:55:1
+✖ market service retains missing upstream evidence and denies mismatched token records (2.0472ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at TestContext.<anonymous> (C:\Botmeme\tests\market-data.test.cjs:61:10)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\market-data.test.cjs:77:1
+✖ research composition wires discovery through journal to Hunter and follows the selected network (3.084ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at TestContext.<anonymous> (C:\Botmeme\tests\market-data.test.cjs:83:10)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\market-data.test.cjs:89:1
+✖ market deduplicates repeated and older timestamps across service restart while retaining real progress (1.5651ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at TestContext.<anonymous> (C:\Botmeme\tests\market-data.test.cjs:95:52)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\market-data.test.cjs:103:1
+✖ market rejects changed price at identical timestamp and validates malformed/future timestamps before dedupe (1.4569ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at TestContext.<anonymous> (C:\Botmeme\tests\market-data.test.cjs:108:92)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\market-data.test.cjs:112:1
+✖ market timestamp dedupe isolates token network epoch and accepts strictly newer observations (12.0252ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 8
+  
+      at TestContext.<anonymous> (C:\Botmeme\tests\market-data.test.cjs:119:91)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 8,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\market-data.test.cjs:147:1
+✖ newest pool precedes alphabetical order for equal liquidity priority (2.1532ms)
+  AssertionError [ERR_ASSERTION]: owner directive: oldest pool first
+  + actual - expected
+  
+  + []
+  - [
+  -   'a-old',
+  -   'z-new'
+  - ]
+  
+      at TestContext.<anonymous> (C:\Botmeme\tests\market-data.test.cjs:147:448)
+      at runNextTicks (node:internal/process/task_queues:65:5)
+      at process.processImmediate (node:internal/timers:472:9)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [],
+    expected: [ 'a-old', 'z-new' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+Isolation check: market-data.test.cjs with the tokenDecimals forwarding addition removed using an in-memory CommonJS loader (no source files changed). Same seven failures. Existing record() age/universe filter discards these fixtures before snapshot construction.
+Exit code: 1
+
+✔ rate-limited unread pools stay queued and are not counted as found (6.1079ms)
+✔ market discovery outage stays partial and only resets after a successful scan (2.1808ms)
+✖ market discovery progress advances only after actual provider work settles and errors never fabricate prices (3.5279ms)
+✔ market service never substitutes a different network provider and rejects late sessions (0.9194ms)
+✖ market service retains missing upstream evidence and denies mismatched token records (1.2311ms)
+✔ market service bounds hung providers and stop cancels outstanding discovery (16.8281ms)
+✖ research composition wires discovery through journal to Hunter and follows the selected network (1.9008ms)
+✖ market deduplicates repeated and older timestamps across service restart while retaining real progress (1.2013ms)
+✖ market rejects changed price at identical timestamp and validates malformed/future timestamps before dedupe (1.1808ms)
+✖ market timestamp dedupe isolates token network epoch and accepts strictly newer observations (9.115ms)
+✔ stop cancels a chunked scan without waiting for the remaining pools (1.2262ms)
+✖ newest pool precedes alphabetical order for equal liquidity priority (1.4268ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 5
+ℹ fail 7
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 50.6809
+
+✖ failing tests:
+
+test at tests\market-data.test.cjs:30:1
+✖ market discovery progress advances only after actual provider work settles and errors never fabricate prices (3.5279ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at TestContext.<anonymous> (C:\Botmeme\tests\market-data.test.cjs:42:10)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\market-data.test.cjs:55:1
+✖ market service retains missing upstream evidence and denies mismatched token records (1.2311ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at TestContext.<anonymous> (C:\Botmeme\tests\market-data.test.cjs:61:10)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\market-data.test.cjs:77:1
+✖ research composition wires discovery through journal to Hunter and follows the selected network (1.9008ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at TestContext.<anonymous> (C:\Botmeme\tests\market-data.test.cjs:83:10)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\market-data.test.cjs:89:1
+✖ market deduplicates repeated and older timestamps across service restart while retaining real progress (1.2013ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at TestContext.<anonymous> (C:\Botmeme\tests\market-data.test.cjs:95:52)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\market-data.test.cjs:103:1
+✖ market rejects changed price at identical timestamp and validates malformed/future timestamps before dedupe (1.1808ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at TestContext.<anonymous> (C:\Botmeme\tests\market-data.test.cjs:108:92)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\market-data.test.cjs:112:1
+✖ market timestamp dedupe isolates token network epoch and accepts strictly newer observations (9.115ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 8
+  
+      at TestContext.<anonymous> (C:\Botmeme\tests\market-data.test.cjs:119:91)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 8,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\market-data.test.cjs:147:1
+✖ newest pool precedes alphabetical order for equal liquidity priority (1.4268ms)
+  AssertionError [ERR_ASSERTION]: owner directive: oldest pool first
+  + actual - expected
+  
+  + []
+  - [
+  -   'a-old',
+  -   'z-new'
+  - ]
+  
+      at TestContext.<anonymous> (C:\Botmeme\tests\market-data.test.cjs:147:448)
+      at runNextTicks (node:internal/process/task_queues:65:5)
+      at process.processImmediate (node:internal/timers:472:9)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+

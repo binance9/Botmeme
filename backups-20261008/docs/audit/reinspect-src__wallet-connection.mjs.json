@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-24T05:48:24.382Z",
+  "file": "src/wallet-connection.mjs",
+  "sha256": "d9b312d52c7899627a62ab42dddf045c47d0672578f3b6242898b8ec46fa81de",
+  "recommendation": "PORT",
+  "scope": "STATIC_MIGRATION_RECOMMENDATION_ONLY",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 2558,
+      "output_tokens": 41
+    },
+    "answers": {
+      "audit": {
+        "type": "choice",
+        "choice": "PASS",
+        "confidence": 0.08,
+        "probabilities": {
+          "PASS": 0.38,
+          "UNVERIFIED": 0.34,
+          "FAIL": 0.28
+        }
+      }
+    },
+    "helper": {}
+  }
+}

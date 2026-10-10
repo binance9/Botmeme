@@ -1,0 +1,17 @@
+node_modules/
+data/
+wallet/
+wallet-key.env
+*.env
+*.key
+*.pem
+*.sqlite*
+node_modules/
+data/
+wallet/
+wallet-key.env
+wallet-key.cjs
+*.env
+*.key
+*.pem
+docs/WALLET-*.md

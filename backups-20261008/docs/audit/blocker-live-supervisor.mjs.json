@@ -1,0 +1,27 @@
+{
+  "file": "live-supervisor.mjs",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1500,
+      "output_tokens": 87
+    },
+    "answers": {
+      "blocker": {
+        "type": "choice",
+        "choice": "MISCLASSIFIED",
+        "confidence": 0.2,
+        "probabilities": {
+          "VAGUE_PORT": 0.07,
+          "RUNTIME_REQUIRED": 0.01,
+          "OTHER_UNVERIFIED": 0.26,
+          "OMITTED_BUG": 0.16,
+          "MISCLASSIFIED": 0.34,
+          "MISSING_DEPENDENCY": 0.16
+        }
+      }
+    },
+    "helper": {}
+  }
+}

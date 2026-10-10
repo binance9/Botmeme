@@ -1,0 +1,38 @@
+{
+  "at": "2026-09-24T05:49:44.890Z",
+  "file": "src/ai.mjs",
+  "sha256": "d276db7dad3c4186a050d5206a514cee235f104fac94d7b9641be1d284291339",
+  "recommendation": {
+    "file": "src/ai.mjs",
+    "purpose": "Provider calls and research result validation",
+    "currentDependencies": [],
+    "quality": "Useful bounded logic; adaptation and new verification required",
+    "decision": "PORT",
+    "destination": "services/jev/provider; runtime/contracts",
+    "reason": "Port deadline/abort, endpoint allowlist, safe error codes and strict probability checks. Replace roles, prompts and result envelopes; require a bounded stream reader. Do not port research() wholesale.",
+    "risks": "readJson fallback response.text reads unbounded before checking size. TypeClient forces missing=[] and omits provider request identity. Local correlation must not masquerade as remote request ID. Remote availability not verified",
+    "sha256": "d276db7dad3c4186a050d5206a514cee235f104fac94d7b9641be1d284291339"
+  },
+  "scope": "STATIC_MIGRATION_RECOMMENDATION_ONLY",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 6007,
+      "output_tokens": 41
+    },
+    "answers": {
+      "audit": {
+        "type": "choice",
+        "choice": "PASS",
+        "confidence": 0.24,
+        "probabilities": {
+          "UNVERIFIED": 0.07,
+          "PASS": 0.49,
+          "FAIL": 0.44
+        }
+      }
+    },
+    "helper": {}
+  }
+}

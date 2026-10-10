@@ -1,0 +1,817 @@
+{
+  "id": "48ec25e5-b858-49e0-870b-0b3f4c27b2d7",
+  "timestamp": "2026-09-24T06:24:39.032Z",
+  "kind": "METADATA_CORRECTION_NOT_ACCEPTANCE",
+  "beforeSha256": "686a275c0a7180101dcbe54c8aa90a1b8d8265f575336e0a72b11bc7de064cb8",
+  "afterSha256": "11cb5a1f077eec1cb657b833f5479d11b465c7c45fade9197ea7421527629cbf",
+  "rows": [
+    {
+      "file": "public-desk/wallet-providers.mjs",
+      "before": {
+        "file": "public-desk/wallet-providers.mjs",
+        "purpose": "Legacy UI, demo or wallet frontend",
+        "currentDependencies": [
+          "./wallet-networks.mjs",
+          ","
+        ],
+        "quality": "Excluded from target, not a general quality assertion",
+        "decision": "DROP",
+        "destination": "none",
+        "reason": "Owner froze Botmeme UI and forbids old UI migration. Network metadata may inform fresh independently verified adapters.",
+        "risks": "Old layouts, extra networks, signing methods and generated motion",
+        "sha256": "87f203220bfb2f383805854168571f05673e516f00e739939d093fb767b329cb",
+        "initialJevDecision": "DROP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-public-desk__wallet-providers.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      },
+      "after": {
+        "file": "public-desk/wallet-providers.mjs",
+        "purpose": "Legacy UI, demo or wallet frontend",
+        "currentDependencies": [
+          "./wallet-networks.mjs"
+        ],
+        "quality": "Excluded from target, not a general quality assertion",
+        "decision": "DROP",
+        "destination": "none",
+        "reason": "Owner froze Botmeme UI and forbids old UI migration. Network metadata may inform fresh independently verified adapters.",
+        "risks": "Old layouts, extra networks, signing methods and generated motion",
+        "sha256": "87f203220bfb2f383805854168571f05673e516f00e739939d093fb767b329cb",
+        "initialJevDecision": "DROP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-public-desk__wallet-providers.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      }
+    },
+    {
+      "file": "src/ceo-schema.json",
+      "before": {
+        "file": "src/ceo-schema.json",
+        "purpose": "Legacy CEO result schema",
+        "currentDependencies": [],
+        "quality": "Existing implementation unsuitable for target",
+        "decision": "REWRITE",
+        "destination": "runtime/contracts",
+        "reason": "No strategy lifecycle, causal chain or quant/critic proposal references.",
+        "risks": "Legacy approval must not authorize execution",
+        "sha256": "ebe912d609b2c9f4c27deac77d028810f31dd7e76fd92c7d09d63120eca3c093",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__ceo-schema.json.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      },
+      "after": {
+        "file": "src/ceo-schema.json",
+        "purpose": "Legacy CEO result schema",
+        "currentDependencies": [],
+        "quality": "Existing implementation unsuitable for target",
+        "decision": "REWRITE",
+        "destination": "runtime/contracts",
+        "reason": "No strategy lifecycle, causal chain or quant/critic proposal references. New decision contracts must include confidence, evidence_quality, missing_evidence, uncertainty, regime, network, strategy version and the full causal evidence chain.",
+        "risks": "Legacy approval must not authorize execution",
+        "sha256": "ebe912d609b2c9f4c27deac77d028810f31dd7e76fd92c7d09d63120eca3c093",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__ceo-schema.json.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      }
+    },
+    {
+      "file": "src/ceo.mjs",
+      "before": {
+        "file": "src/ceo.mjs",
+        "purpose": "Codex process orchestration and decision",
+        "currentDependencies": [
+          "node:child_process",
+          "node:fs/promises",
+          "node:os",
+          "node:path",
+          "node:url"
+        ],
+        "quality": "Useful bounded logic; adaptation and new verification required",
+        "decision": "PORT",
+        "destination": "services/commander/provider",
+        "reason": "Retain isolated tool-disabled subprocess and response validation; rewrite mandate and proposal contract.",
+        "risks": "Prompt biases toward approval; current tool/CLI compatibility not verified",
+        "sha256": "84569fffe5d53c8d8f31825f29363855f7d2c0254f6237797ea3ea76f1d1db5a",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__ceo.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      },
+      "after": {
+        "file": "src/ceo.mjs",
+        "purpose": "Codex process orchestration and decision",
+        "currentDependencies": [
+          "node:child_process",
+          "node:fs/promises",
+          "node:os",
+          "node:path",
+          "node:url"
+        ],
+        "quality": "Useful bounded logic; adaptation and new verification required",
+        "decision": "PORT",
+        "destination": "services/commander/provider",
+        "reason": "Retain isolated tool-disabled subprocess and response validation; rewrite mandate and proposal contract. The new commander requires persistent world state, objectives, uncertainty, task planning, evidence synthesis, risk awareness, an auditable NO_ACTION decision and failure recovery; a subprocess transport alone is not a decision brain.",
+        "risks": "Prompt biases toward approval; current tool/CLI compatibility not verified",
+        "sha256": "84569fffe5d53c8d8f31825f29363855f7d2c0254f6237797ea3ea76f1d1db5a",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__ceo.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      }
+    },
+    {
+      "file": "src/gmgn.mjs",
+      "before": {
+        "file": "src/gmgn.mjs",
+        "purpose": "Optional read-only market/trending API",
+        "currentDependencies": [
+          "node:crypto",
+          "@solana/web3.js",
+          ","
+        ],
+        "quality": "Useful bounded logic; adaptation and new verification required",
+        "decision": "PORT",
+        "destination": "core/market-data/providers/gmgn",
+        "reason": "Allowlisted routes, response bounds, provenance hash and sanitized errors are useful.",
+        "risks": "Requires external credential; trending is not verified social sentiment",
+        "sha256": "dc748e793674ca5837eda1edb8cb7af7b149cfb77f853cd7079510d94b701d02",
+        "initialJevDecision": "PORT",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__gmgn.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      },
+      "after": {
+        "file": "src/gmgn.mjs",
+        "purpose": "Optional read-only market/trending API",
+        "currentDependencies": [
+          "node:crypto",
+          "@solana/web3.js"
+        ],
+        "quality": "Useful bounded logic; adaptation and new verification required",
+        "decision": "PORT",
+        "destination": "core/market-data/providers/gmgn",
+        "reason": "Allowlisted routes, response bounds, provenance hash and sanitized errors are useful.",
+        "risks": "Requires external credential; trending is not verified social sentiment",
+        "sha256": "dc748e793674ca5837eda1edb8cb7af7b149cfb77f853cd7079510d94b701d02",
+        "initialJevDecision": "PORT",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__gmgn.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      }
+    },
+    {
+      "file": "src/paper-engine.mjs",
+      "before": {
+        "file": "src/paper-engine.mjs",
+        "purpose": "Risk, execution, exits, ledger, performance",
+        "currentDependencies": [
+          "node:crypto",
+          "./ledger.mjs",
+          "./paper-policy.mjs",
+          "./paper-policy.mjs"
+        ],
+        "quality": "Existing implementation unsuitable for target",
+        "decision": "REWRITE",
+        "destination": "core/strategy; core/execution; core/trades; core/performance",
+        "reason": "Useful risk/atomic rollback/quote checks must be separated; old class mixes at least five responsibilities and fixed exits.",
+        "risks": "Partial exit trusts reason string; lifecycle and complete lineage absent",
+        "sha256": "4c599a4909dfc6663363221e939bbce2cce5746483ce0d422c0373d7bae857b3",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__paper-engine.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      },
+      "after": {
+        "file": "src/paper-engine.mjs",
+        "purpose": "Risk, execution, exits, ledger, performance",
+        "currentDependencies": [
+          "node:crypto",
+          "./ledger.mjs",
+          "./paper-policy.mjs",
+          "./paper-policy.mjs"
+        ],
+        "quality": "Existing implementation unsuitable for target",
+        "decision": "REWRITE",
+        "destination": "core/strategy; core/execution; core/trades; core/performance",
+        "reason": "Useful risk/atomic rollback/quote checks must be separated; old class mixes at least five responsibilities and fixed exits. Keep strategy evaluation, independent risk approval, intent creation and paper fills separate; all actions require approved immutable evidence and network identity.",
+        "risks": "Partial exit trusts reason string; lifecycle and complete lineage absent",
+        "sha256": "4c599a4909dfc6663363221e939bbce2cce5746483ce0d422c0373d7bae857b3",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__paper-engine.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      }
+    },
+    {
+      "file": "src/paper-policy.mjs",
+      "before": {
+        "file": "src/paper-policy.mjs",
+        "purpose": "Limits and holder/verifier gates",
+        "currentDependencies": [],
+        "quality": "Useful bounded logic; adaptation and new verification required",
+        "decision": "PORT",
+        "destination": "core/strategy/risk; core/market-data/validation",
+        "reason": "Port conservative integer holder bounds and probability validation; remove unproven legacy boolean shortcut and hardcoded strategy.",
+        "risks": "Counterexample proves holder PASS without coverage evidence",
+        "sha256": "d6a8acd5826e7111324a4479ed996a8c3c8e8cdc8acf5a3440deab0b053dae86",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__paper-policy.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      },
+      "after": {
+        "file": "src/paper-policy.mjs",
+        "purpose": "Limits and holder/verifier gates",
+        "currentDependencies": [],
+        "quality": "Useful bounded logic; adaptation and new verification required",
+        "decision": "PORT",
+        "destination": "core/strategy/risk; core/market-data/validation",
+        "reason": "Port conservative integer holder bounds and probability validation; remove unproven legacy boolean shortcut and hardcoded strategy. Implement the retained invariants behind an independent Risk Engine with unconditional veto, exposure/sizing/liquidity/concentration/drawdown/cooldown limits. Regime and uncertainty constrain risk.",
+        "risks": "Counterexample proves holder PASS without coverage evidence",
+        "sha256": "d6a8acd5826e7111324a4479ed996a8c3c8e8cdc8acf5a3440deab0b053dae86",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__paper-policy.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      }
+    },
+    {
+      "file": "src/runtime.mjs",
+      "before": {
+        "file": "src/runtime.mjs",
+        "purpose": "Legacy global orchestration/state/feedback",
+        "currentDependencies": [
+          "node:events",
+          "node:crypto",
+          "./ai.mjs",
+          "./store.mjs",
+          "./solana-source.mjs",
+          "./gmgn.mjs",
+          "./ceo.mjs",
+          "./paper-engine.mjs",
+          "./research-evidence.mjs",
+          "./paper-policy.mjs",
+          "./statistics.mjs",
+          "@solana/web3.js"
+        ],
+        "quality": "Existing implementation unsuitable for target",
+        "decision": "REWRITE",
+        "destination": "services/*; runtime/state; runtime/events",
+        "reason": "Global object mixes scheduling, risk, quote sizing, UI messages, wallet gating and all old AI roles.",
+        "risks": "No quant walk-forward, five-class forensic or versioned champion lifecycle",
+        "sha256": "91c1a65293c164daa61ffcd0eebf865131dfa878a53208fd07fa313e0f6ba20f",
+        "initialJevDecision": "REWRITE",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__runtime.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      },
+      "after": {
+        "file": "src/runtime.mjs",
+        "purpose": "Legacy global orchestration/state/feedback",
+        "currentDependencies": [
+          "node:events",
+          "node:crypto",
+          "./ai.mjs",
+          "./store.mjs",
+          "./solana-source.mjs",
+          "./gmgn.mjs",
+          "./ceo.mjs",
+          "./paper-engine.mjs",
+          "./research-evidence.mjs",
+          "./paper-policy.mjs",
+          "./statistics.mjs",
+          "@solana/web3.js"
+        ],
+        "quality": "Existing implementation unsuitable for target",
+        "decision": "REWRITE",
+        "destination": "services/*; runtime/state; runtime/events",
+        "reason": "Global object mixes scheduling, risk, quote sizing, UI messages, wallet gating and all old AI roles. Rewrite event-driven autonomous observation/decision/learning orchestration, START/STOP, durable tasks, module isolation and network-switch cancellation; never auto-BUY on candidate arrival.",
+        "risks": "No quant walk-forward, five-class forensic or versioned champion lifecycle",
+        "sha256": "91c1a65293c164daa61ffcd0eebf865131dfa878a53208fd07fa313e0f6ba20f",
+        "initialJevDecision": "REWRITE",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__runtime.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      }
+    },
+    {
+      "file": "src/solana-source.mjs",
+      "before": {
+        "file": "src/solana-source.mjs",
+        "purpose": "Pump logs/RPC/holders/quotes/wallet tracking",
+        "currentDependencies": [
+          "./paper-policy.mjs",
+          "node:events",
+          "node:crypto",
+          "@solana/web3.js",
+          "@coral-xyz/anchor",
+          "@solana/spl-token",
+          "@pump-fun/pump-sdk"
+        ],
+        "quality": "Useful bounded logic; adaptation and new verification required",
+        "decision": "PORT",
+        "destination": "core/market-data/providers/solana/{rpc,decode}; services/jev/discovery",
+        "reason": "PORT only decodePumpLogs authenticated-frame algorithm and bounded read-only rpc/jsonResponse ideas, with current SDK validation required before deployment. REWRITE source lifecycle/enrichment/quotes independently. Same-slot holder proof is a candidate idea, not accepted implementation. No wholesale SolanaSource or old quote/cost math transfer.",
+        "risks": "JEV granular review supports decoder PORT but requires independent SDK/deployed-layout proof for quotes: CHUA_XAC_MINH, excluded from approved port. walletLeaders returns BigInt comparator and treats cash flow as profit; drop old ranking. All provider runtime availability remains unverified",
+        "sha256": "218786491bd77ee392fdc2e635d287fd14e2c38c66291259d586b54d8586b079",
+        "initialJevDecision": "PORT",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__solana-source.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      },
+      "after": {
+        "file": "src/solana-source.mjs",
+        "purpose": "Pump logs/RPC/holders/quotes/wallet tracking",
+        "currentDependencies": [
+          "./paper-policy.mjs",
+          "node:events",
+          "node:crypto",
+          "@solana/web3.js",
+          "@coral-xyz/anchor",
+          "@solana/spl-token",
+          "@pump-fun/pump-sdk"
+        ],
+        "quality": "Useful bounded logic; adaptation and new verification required",
+        "decision": "PORT",
+        "destination": "core/market-data/providers/solana/{rpc,decode}; services/jev/discovery",
+        "reason": "PORT only decodePumpLogs authenticated-frame algorithm and bounded read-only rpc/jsonResponse ideas, with current SDK validation required before deployment. REWRITE source lifecycle/enrichment/quotes independently. Same-slot holder proof is a candidate idea, not accepted implementation. No wholesale SolanaSource or old quote/cost math transfer. The hunter proactively ranks candidates for the active network; switching away cancels or quarantines SOL work and rejects stale cross-network results.",
+        "risks": "Historical auxiliary classifier suggested decoder PORT; this has no acceptance authority. SDK/deployed-layout proof for quotes remains CHUA_XAC_MINH and is excluded from any authorized port. walletLeaders returns BigInt comparator and treats cash flow as profit; drop old ranking. All provider runtime availability remains unverified",
+        "sha256": "218786491bd77ee392fdc2e635d287fd14e2c38c66291259d586b54d8586b079",
+        "initialJevDecision": "PORT",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__solana-source.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      }
+    },
+    {
+      "file": "src/source.mjs",
+      "before": {
+        "file": "src/source.mjs",
+        "purpose": "GeckoTerminal Robinhood discovery",
+        "currentDependencies": [
+          "node:crypto"
+        ],
+        "quality": "Useful bounded logic; adaptation and new verification required",
+        "decision": "PORT",
+        "destination": "core/market-data/providers/geckoterminal",
+        "reason": "Useful public discovery and raw-response hash; normalize through typed candidates.",
+        "risks": "Hardcoded chain, mutable RPC allowlist, response bounds and identity checks incomplete",
+        "sha256": "124950637a63833d6706a89ad2c493c51afa4f7ef99a476205218411ac0c2a78",
+        "initialJevDecision": "PORT",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__source.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      },
+      "after": {
+        "file": "src/source.mjs",
+        "purpose": "GeckoTerminal Robinhood discovery",
+        "currentDependencies": [
+          "node:crypto"
+        ],
+        "quality": "Useful bounded logic; adaptation and new verification required",
+        "decision": "PORT",
+        "destination": "core/market-data/providers/geckoterminal",
+        "reason": "Useful public discovery and raw-response hash; normalize through typed candidates. Discovery must use the selected network universe and verified provider capabilities; no hidden fallback to another chain.",
+        "risks": "Hardcoded chain, mutable RPC allowlist, response bounds and identity checks incomplete",
+        "sha256": "124950637a63833d6706a89ad2c493c51afa4f7ef99a476205218411ac0c2a78",
+        "initialJevDecision": "PORT",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__source.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      }
+    },
+    {
+      "file": "src/store.mjs",
+      "before": {
+        "file": "src/store.mjs",
+        "purpose": "SQLite state/events/evidence transactions",
+        "currentDependencies": [
+          "node:sqlite",
+          "node:fs",
+          "node:path"
+        ],
+        "quality": "Useful bounded logic; adaptation and new verification required",
+        "decision": "PORT",
+        "destination": "runtime/state; runtime/events; runtime/telemetry",
+        "reason": "Retain transaction atomicity and parameterized statements; add schema validation, unique event IDs, replay and lineage.",
+        "risks": "saveMany assumes nonempty events; no V2 versioned contract or event dedupe",
+        "sha256": "d204d15aae033eb39c5e522b3fd1b345354df9674e0bc58ae62799c705decfbb",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__store.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      },
+      "after": {
+        "file": "src/store.mjs",
+        "purpose": "SQLite state/events/evidence transactions",
+        "currentDependencies": [
+          "node:sqlite",
+          "node:fs",
+          "node:path"
+        ],
+        "quality": "Useful bounded logic; adaptation and new verification required",
+        "decision": "PORT",
+        "destination": "runtime/state; runtime/events; runtime/telemetry",
+        "reason": "Retain transaction atomicity and parameterized statements; add schema validation, unique event IDs, replay and lineage. Persist candidates, positions, strategies/champion/challengers, regime, AI tasks, failures, risk state, decision journal, performance attribution and unresolved anomalies.",
+        "risks": "saveMany assumes nonempty events; no V2 versioned contract or event dedupe",
+        "sha256": "d204d15aae033eb39c5e522b3fd1b345354df9674e0bc58ae62799c705decfbb",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__store.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      }
+    },
+    {
+      "file": "src/wallet-connection.mjs",
+      "before": {
+        "file": "src/wallet-connection.mjs",
+        "purpose": "Public session and read-only balances",
+        "currentDependencies": [
+          "@solana/web3.js",
+          "../public-desk/wallet-networks.mjs"
+        ],
+        "quality": "Useful bounded logic; adaptation and new verification required",
+        "decision": "PORT",
+        "destination": "wallet/connection; wallet/network/*",
+        "reason": "Retain chain validation, public-only lease and disconnect invalidation; independent adapters, no liveEnabled path.",
+        "risks": "Imports registry from old frontend; five networks vs required four; no ownership proof",
+        "sha256": "d9b312d52c7899627a62ab42dddf045c47d0672578f3b6242898b8ec46fa81de",
+        "initialJevDecision": "PORT",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__wallet-connection.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      },
+      "after": {
+        "file": "src/wallet-connection.mjs",
+        "purpose": "Public session and read-only balances",
+        "currentDependencies": [
+          "@solana/web3.js",
+          "../public-desk/wallet-networks.mjs"
+        ],
+        "quality": "Useful bounded logic; adaptation and new verification required",
+        "decision": "PORT",
+        "destination": "wallet/connection; wallet/network/*",
+        "reason": "Retain chain validation, public-only lease and disconnect invalidation; independent adapters, no liveEnabled path. Changing active network must drive the matching hunter/provider subscriptions. Existing positions/history retain original network identity; unsupported Robinhood/provider capability remains CHUA_XAC_MINH.",
+        "risks": "Imports registry from old frontend; five networks vs required four; no ownership proof",
+        "sha256": "d9b312d52c7899627a62ab42dddf045c47d0672578f3b6242898b8ec46fa81de",
+        "initialJevDecision": "PORT",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-src__wallet-connection.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      }
+    },
+    {
+      "file": "tests/live-projection.test.mjs",
+      "before": {
+        "file": "tests/live-projection.test.mjs",
+        "purpose": "Legacy regression specification",
+        "currentDependencies": [
+          "node:test",
+          "node:assert/strict",
+          "../public-desk/projection.mjs"
+        ],
+        "quality": "Excluded from target, not a general quality assertion",
+        "decision": "DROP",
+        "destination": "tests/v2 (selected contract cases only)",
+        "reason": "Reuse relevant invariant ideas only after deriving expectations from V2 contracts. Old test results cannot establish V2 PASS.",
+        "risks": "Fixtures and old assertions can preserve defects; tests were read, not executed",
+        "sha256": "8f5db8856aac476582166d07c5d4e1aa727fafb03e55a07c2c44ee8e17a55066",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-tests__live-projection.test.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      },
+      "after": {
+        "file": "tests/live-projection.test.mjs",
+        "purpose": "Legacy regression specification",
+        "currentDependencies": [
+          "node:test",
+          "node:assert/strict",
+          "../public-desk/projection.mjs"
+        ],
+        "quality": "Excluded from target, not a general quality assertion",
+        "decision": "DROP",
+        "destination": "none; historical evidence only",
+        "reason": "Do not port this test artifact because it targets excluded live execution, autopilot or legacy UI. Preserve it only as historical audit evidence.",
+        "risks": "Fixtures and old assertions can preserve defects; tests were read, not executed",
+        "sha256": "8f5db8856aac476582166d07c5d4e1aa727fafb03e55a07c2c44ee8e17a55066",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-tests__live-projection.test.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      }
+    },
+    {
+      "file": "tests/live-supervisor.test.mjs",
+      "before": {
+        "file": "tests/live-supervisor.test.mjs",
+        "purpose": "Legacy regression specification",
+        "currentDependencies": [
+          "node:test",
+          "node:assert/strict",
+          "../src/live-supervisor.mjs"
+        ],
+        "quality": "Excluded from target, not a general quality assertion",
+        "decision": "DROP",
+        "destination": "tests/v2 (selected contract cases only)",
+        "reason": "Reuse relevant invariant ideas only after deriving expectations from V2 contracts. Old test results cannot establish V2 PASS.",
+        "risks": "Fixtures and old assertions can preserve defects; tests were read, not executed",
+        "sha256": "d5cde42be80077db8f34838ff3567398016d2aea840ac2fc784daceea21573a2",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-tests__live-supervisor.test.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      },
+      "after": {
+        "file": "tests/live-supervisor.test.mjs",
+        "purpose": "Legacy regression specification",
+        "currentDependencies": [
+          "node:test",
+          "node:assert/strict",
+          "../src/live-supervisor.mjs"
+        ],
+        "quality": "Excluded from target, not a general quality assertion",
+        "decision": "DROP",
+        "destination": "none; historical evidence only",
+        "reason": "Do not port this test artifact because it targets excluded live execution, autopilot or legacy UI. Preserve it only as historical audit evidence.",
+        "risks": "Fixtures and old assertions can preserve defects; tests were read, not executed",
+        "sha256": "d5cde42be80077db8f34838ff3567398016d2aea840ac2fc784daceea21573a2",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-tests__live-supervisor.test.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      }
+    },
+    {
+      "file": "tests/live-trade.test.mjs",
+      "before": {
+        "file": "tests/live-trade.test.mjs",
+        "purpose": "Legacy regression specification",
+        "currentDependencies": [
+          "node:test",
+          "node:assert/strict",
+          "../src/live-trade.mjs"
+        ],
+        "quality": "Excluded from target, not a general quality assertion",
+        "decision": "DROP",
+        "destination": "tests/v2 (selected contract cases only)",
+        "reason": "Reuse relevant invariant ideas only after deriving expectations from V2 contracts. Old test results cannot establish V2 PASS.",
+        "risks": "Fixtures and old assertions can preserve defects; tests were read, not executed",
+        "sha256": "9308108de0b1dd1f541a6c49e77c98e653f6e79ea928c6f5b0eef321289557bd",
+        "initialJevDecision": "DROP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-tests__live-trade.test.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      },
+      "after": {
+        "file": "tests/live-trade.test.mjs",
+        "purpose": "Legacy regression specification",
+        "currentDependencies": [
+          "node:test",
+          "node:assert/strict",
+          "../src/live-trade.mjs"
+        ],
+        "quality": "Excluded from target, not a general quality assertion",
+        "decision": "DROP",
+        "destination": "none; historical evidence only",
+        "reason": "Do not port this test artifact because it targets excluded live execution, autopilot or legacy UI. Preserve it only as historical audit evidence.",
+        "risks": "Fixtures and old assertions can preserve defects; tests were read, not executed",
+        "sha256": "9308108de0b1dd1f541a6c49e77c98e653f6e79ea928c6f5b0eef321289557bd",
+        "initialJevDecision": "DROP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-tests__live-trade.test.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      }
+    },
+    {
+      "file": "tests/motion-contract.test.mjs",
+      "before": {
+        "file": "tests/motion-contract.test.mjs",
+        "purpose": "Legacy regression specification",
+        "currentDependencies": [
+          "node:test",
+          "node:assert/strict",
+          "node:fs/promises",
+          "node:crypto",
+          "../public-desk/projection.mjs"
+        ],
+        "quality": "Excluded from target, not a general quality assertion",
+        "decision": "DROP",
+        "destination": "tests/v2 (selected contract cases only)",
+        "reason": "Reuse relevant invariant ideas only after deriving expectations from V2 contracts. Old test results cannot establish V2 PASS.",
+        "risks": "Fixtures and old assertions can preserve defects; tests were read, not executed",
+        "sha256": "a7abd04f2cf00330ccdc845afe295078f3095ad3f8eb4cd536bdc977e77c2641",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-tests__motion-contract.test.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      },
+      "after": {
+        "file": "tests/motion-contract.test.mjs",
+        "purpose": "Legacy regression specification",
+        "currentDependencies": [
+          "node:test",
+          "node:assert/strict",
+          "node:fs/promises",
+          "node:crypto",
+          "../public-desk/projection.mjs"
+        ],
+        "quality": "Excluded from target, not a general quality assertion",
+        "decision": "DROP",
+        "destination": "none; historical evidence only",
+        "reason": "Do not port this test artifact because it targets excluded live execution, autopilot or legacy UI. Preserve it only as historical audit evidence.",
+        "risks": "Fixtures and old assertions can preserve defects; tests were read, not executed",
+        "sha256": "a7abd04f2cf00330ccdc845afe295078f3095ad3f8eb4cd536bdc977e77c2641",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-tests__motion-contract.test.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      }
+    },
+    {
+      "file": "tests/robinhood-autopilot.test.mjs",
+      "before": {
+        "file": "tests/robinhood-autopilot.test.mjs",
+        "purpose": "Legacy regression specification",
+        "currentDependencies": [
+          "node:test",
+          "node:assert/strict",
+          "node:fs/promises",
+          "node:path",
+          "node:os",
+          "../src/robinhood-autopilot.mjs"
+        ],
+        "quality": "Excluded from target, not a general quality assertion",
+        "decision": "DROP",
+        "destination": "tests/v2 (selected contract cases only)",
+        "reason": "Reuse relevant invariant ideas only after deriving expectations from V2 contracts. Old test results cannot establish V2 PASS.",
+        "risks": "Fixtures and old assertions can preserve defects; tests were read, not executed",
+        "sha256": "c638d92663e062a5365ee01dc035e468138bf00a29bdf7d3ab160abacdcb2de3",
+        "initialJevDecision": "DROP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-tests__robinhood-autopilot.test.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      },
+      "after": {
+        "file": "tests/robinhood-autopilot.test.mjs",
+        "purpose": "Legacy regression specification",
+        "currentDependencies": [
+          "node:test",
+          "node:assert/strict",
+          "node:fs/promises",
+          "node:path",
+          "node:os",
+          "../src/robinhood-autopilot.mjs"
+        ],
+        "quality": "Excluded from target, not a general quality assertion",
+        "decision": "DROP",
+        "destination": "none; historical evidence only",
+        "reason": "Do not port this test artifact because it targets excluded live execution, autopilot or legacy UI. Preserve it only as historical audit evidence.",
+        "risks": "Fixtures and old assertions can preserve defects; tests were read, not executed",
+        "sha256": "c638d92663e062a5365ee01dc035e468138bf00a29bdf7d3ab160abacdcb2de3",
+        "initialJevDecision": "DROP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-tests__robinhood-autopilot.test.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      }
+    },
+    {
+      "file": "tests/robinhood-signer.test.mjs",
+      "before": {
+        "file": "tests/robinhood-signer.test.mjs",
+        "purpose": "Legacy regression specification",
+        "currentDependencies": [
+          "node:test",
+          "node:assert/strict",
+          "../src/robinhood-signer.mjs"
+        ],
+        "quality": "Excluded from target, not a general quality assertion",
+        "decision": "DROP",
+        "destination": "tests/v2 (selected contract cases only)",
+        "reason": "Reuse relevant invariant ideas only after deriving expectations from V2 contracts. Old test results cannot establish V2 PASS.",
+        "risks": "Fixtures and old assertions can preserve defects; tests were read, not executed",
+        "sha256": "829e7b236acd88c2ef96b6b6b37e0f86476813d4ceeeec20861db722bbea311b",
+        "initialJevDecision": "DROP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-tests__robinhood-signer.test.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      },
+      "after": {
+        "file": "tests/robinhood-signer.test.mjs",
+        "purpose": "Legacy regression specification",
+        "currentDependencies": [
+          "node:test",
+          "node:assert/strict",
+          "../src/robinhood-signer.mjs"
+        ],
+        "quality": "Excluded from target, not a general quality assertion",
+        "decision": "DROP",
+        "destination": "none; historical evidence only",
+        "reason": "Do not port this test artifact because it targets excluded live execution, autopilot or legacy UI. Preserve it only as historical audit evidence.",
+        "risks": "Fixtures and old assertions can preserve defects; tests were read, not executed",
+        "sha256": "829e7b236acd88c2ef96b6b6b37e0f86476813d4ceeeec20861db722bbea311b",
+        "initialJevDecision": "DROP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-tests__robinhood-signer.test.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      }
+    },
+    {
+      "file": "tests/ui-runtime.test.mjs",
+      "before": {
+        "file": "tests/ui-runtime.test.mjs",
+        "purpose": "Legacy regression specification",
+        "currentDependencies": [
+          "node:test",
+          "node:assert/strict",
+          "node:events",
+          "node:fs/promises",
+          "node:os",
+          "node:path",
+          "../src/server.mjs",
+          "../public-desk/state.mjs"
+        ],
+        "quality": "Excluded from target, not a general quality assertion",
+        "decision": "DROP",
+        "destination": "tests/v2 (selected contract cases only)",
+        "reason": "Reuse relevant invariant ideas only after deriving expectations from V2 contracts. Old test results cannot establish V2 PASS.",
+        "risks": "Fixtures and old assertions can preserve defects; tests were read, not executed",
+        "sha256": "774fe12b217fe988a466ee420652dfa24ce59bd6f0484dc844f8048e4144586e",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-tests__ui-runtime.test.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      },
+      "after": {
+        "file": "tests/ui-runtime.test.mjs",
+        "purpose": "Legacy regression specification",
+        "currentDependencies": [
+          "node:test",
+          "node:assert/strict",
+          "node:events",
+          "node:fs/promises",
+          "node:os",
+          "node:path",
+          "../src/server.mjs",
+          "../public-desk/state.mjs"
+        ],
+        "quality": "Excluded from target, not a general quality assertion",
+        "decision": "DROP",
+        "destination": "none; historical evidence only",
+        "reason": "Do not port this test artifact because it targets excluded live execution, autopilot or legacy UI. Preserve it only as historical audit evidence.",
+        "risks": "Fixtures and old assertions can preserve defects; tests were read, not executed",
+        "sha256": "774fe12b217fe988a466ee420652dfa24ce59bd6f0484dc844f8048e4144586e",
+        "initialJevDecision": "KEEP",
+        "initialJevAsIs": "NO",
+        "reviewReceipt": "jev-tests__ui-runtime.test.mjs.json",
+        "acceptance": "PENDING_INTERNAL_JEV_AUDITOR",
+        "auxiliaryClassifier": "jev-1.13.0"
+      }
+    }
+  ],
+  "addedRequirements": [
+    "Autonomous commander with durable world state, uncertainty, planning, NO_ACTION, decision journal and failure recovery",
+    "Independent Risk Engine veto and regime-sensitive sizing/exposure/cooldown",
+    "Confidence, evidence_quality, missing_evidence and uncertainty in typed AI results",
+    "Proactive degradation, missed-opportunity, abstention and performance-attribution feedback",
+    "Network-switch cancellation, stale-event rejection, network-qualified history and capability gates"
+  ],
+  "authority": "Owner autonomy requirements and independent implementation review; pending JEV migration acceptance"
+}

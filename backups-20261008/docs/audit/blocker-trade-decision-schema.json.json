@@ -1,0 +1,27 @@
+{
+  "file": "trade-decision-schema.json",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 967,
+      "output_tokens": 87
+    },
+    "answers": {
+      "blocker": {
+        "type": "choice",
+        "choice": "OTHER_UNVERIFIED",
+        "confidence": 0.41,
+        "probabilities": {
+          "MISCLASSIFIED": 0.2,
+          "OMITTED_BUG": 0.17,
+          "RUNTIME_REQUIRED": 0.02,
+          "MISSING_DEPENDENCY": 0.08,
+          "VAGUE_PORT": 0.02,
+          "OTHER_UNVERIFIED": 0.51
+        }
+      }
+    },
+    "helper": {}
+  }
+}

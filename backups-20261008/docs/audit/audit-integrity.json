@@ -1,0 +1,592 @@
+{
+  "at": "2026-09-24T15:55:42.481Z",
+  "scope": "FILE_INTEGRITY_ONLY_NOT_ACCEPTANCE",
+  "uiChecks": [
+    {
+      "file": "public/meme-trader/index.html",
+      "expected": "BA25FE848E88EBCE80B278C4E7357664304FA28120249E3ABCD7819B8205E02C",
+      "actual": "BA25FE848E88EBCE80B278C4E7357664304FA28120249E3ABCD7819B8205E02C",
+      "unchanged": true
+    },
+    {
+      "file": "public/meme-trader/styles.css",
+      "expected": "86AD05F4ACFC0445E455DCAE5FC4D412DA22C75EA5E87862E5EA514CD5EF7291",
+      "actual": "86AD05F4ACFC0445E455DCAE5FC4D412DA22C75EA5E87862E5EA514CD5EF7291",
+      "unchanged": true
+    },
+    {
+      "file": "public/meme-trader/app.js",
+      "expected": "73D8C49FFF0064FD1F365E7C5AB05178E71B3A0384B95FA3AE0151B2432FFC40",
+      "actual": "73D8C49FFF0064FD1F365E7C5AB05178E71B3A0384B95FA3AE0151B2432FFC40",
+      "unchanged": true
+    },
+    {
+      "file": "public/meme-trader/reference.png",
+      "expected": "F28E2B8FBAF8B7AF90C72FFD5C75B739AB812FC798EA0545BEC4A955DB195FF1",
+      "actual": "F28E2B8FBAF8B7AF90C72FFD5C75B739AB812FC798EA0545BEC4A955DB195FF1",
+      "unchanged": true
+    }
+  ],
+  "legacyChecks": [
+    {
+      "file": ".gitignore",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "ARCHITECTURE.md",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "docs/DATA_SOURCES.md",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "docs/ORG_CHART.md",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "docs/PAPER_PROFILE.md",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "docs/RESEARCH_BOT_2026_09_23.md",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "docs/RUNTIME_TRACE.md",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "docs/WALLET_CONNECTION.md",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "package-lock.json",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "package.json",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "PROJECT_MAP.md",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-desk/app.js",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-desk/connected.css",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-desk/connected.js",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-desk/dashboard.html",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-desk/fit.css",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-desk/fit.js",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-desk/fonts/pressstart2p.ttf",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-desk/fonts/vt323.ttf",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-desk/index.html",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-desk/live.css",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-desk/projection.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-desk/state.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-desk/style.css",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-desk/vendor/metamask-solana.js",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-desk/wallet-networks.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-desk/wallet-providers.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-desk/wallet.css",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-desk/wallet.js",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-test/app.js",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-test/dashboard.html",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-test/fit.css",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-test/fit.js",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-test/fonts/pressstart2p.ttf",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-test/fonts/vt323.ttf",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-test/index.html",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "public-test/style.css",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "README.md",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "RUN_DEMO.cmd",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "RUN_RESEARCH.cmd",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "scripts/check-project-map.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "scripts/configure-hidden-input.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "scripts/jev-consult.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "scripts/jev-ui-consult.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "scripts/strategy-vote.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "SECURITY.md",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/ai.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/ceo-schema.json",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/ceo.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/codex-trader.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/gmgn.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/ledger.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/live-supervisor.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/live-trade.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/paper-engine.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/paper-policy.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/research-evidence.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/robinhood-autopilot.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/robinhood-intelligence.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/robinhood-signer.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/runtime.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/server.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/solana-source.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/source.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/statistics.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/store.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/trade-decision-schema.json",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/vault.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "src/wallet-connection.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "tests/ai.test.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "tests/ceo.test.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "tests/live-projection.test.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "tests/live-supervisor.test.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "tests/live-trade.test.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "tests/motion-contract.test.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "tests/paper-engine.test.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "tests/paper-policy.test.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "tests/research-evidence.test.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "tests/risk.test.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "tests/robinhood-autopilot.test.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "tests/robinhood-intelligence.test.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "tests/robinhood-signer.test.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "tests/runtime.test.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "tests/security.test.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "tests/sources.test.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "tests/statistics.test.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "tests/ui-runtime.test.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "tests/wallet-connection.test.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "TEST_REPORT.md",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "VIDEO_PARITY_RUNTIME_AUDIT.md",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "wallet-client/metamask-solana.mjs",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "wallet-client/package-lock.json",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    },
+    {
+      "file": "wallet-client/package.json",
+      "missing": true,
+      "unchanged": null,
+      "binding": "EXTERNAL_COPY_ABSENT"
+    }
+  ],
+  "legacyRoot": "C:/botcode 1/MemePilot",
+  "classifierAuthority": "NONE; all TypeSafe receipts are auxiliary historical signals"
+}

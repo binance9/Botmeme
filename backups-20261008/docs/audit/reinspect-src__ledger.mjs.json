@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-24T05:48:14.814Z",
+  "file": "src/ledger.mjs",
+  "sha256": "e9b00a522a2f1b18ad3cd630a070d815bbb25017758fad151236cecfdc323ae1",
+  "recommendation": "PORT",
+  "scope": "STATIC_MIGRATION_RECOMMENDATION_ONLY",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 3652,
+      "output_tokens": 41
+    },
+    "answers": {
+      "audit": {
+        "type": "choice",
+        "choice": "PASS",
+        "confidence": 0.21,
+        "probabilities": {
+          "UNVERIFIED": 0.34,
+          "PASS": 0.47,
+          "FAIL": 0.19
+        }
+      }
+    },
+    "helper": {}
+  }
+}

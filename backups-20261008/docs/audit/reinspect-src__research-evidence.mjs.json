@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-24T05:48:17.473Z",
+  "file": "src/research-evidence.mjs",
+  "sha256": "ecfe668f40a36054a813a66ac269fa0e46e226dec9d81493d51e4d58401ba46c",
+  "recommendation": "PORT",
+  "scope": "STATIC_MIGRATION_RECOMMENDATION_ONLY",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 2207,
+      "output_tokens": 41
+    },
+    "answers": {
+      "audit": {
+        "type": "choice",
+        "choice": "FAIL",
+        "confidence": 0.05,
+        "probabilities": {
+          "PASS": 0.35,
+          "UNVERIFIED": 0.28,
+          "FAIL": 0.37
+        }
+      }
+    },
+    "helper": {}
+  }
+}

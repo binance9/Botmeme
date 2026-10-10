@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-24T05:48:21.100Z",
+  "file": "src/solana-source.mjs",
+  "sha256": "218786491bd77ee392fdc2e635d287fd14e2c38c66291259d586b54d8586b079",
+  "recommendation": "PORT",
+  "scope": "STATIC_MIGRATION_RECOMMENDATION_ONLY",
+  "response": {
+    "ok": true,
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 16456,
+      "output_tokens": 41
+    },
+    "answers": {
+      "audit": {
+        "type": "choice",
+        "choice": "FAIL",
+        "confidence": 0.06,
+        "probabilities": {
+          "PASS": 0.3,
+          "FAIL": 0.38,
+          "UNVERIFIED": 0.32
+        }
+      }
+    },
+    "helper": {}
+  }
+}
